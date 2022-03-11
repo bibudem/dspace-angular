@@ -173,7 +173,7 @@
   "admin.registries.bitstream-formats.table.supportLevel.head": "Niveau de support",
 
   // "admin.registries.bitstream-formats.title": "DSpace Angular :: Bitstream Format Registry",
-  "admin.registries.bitstream-formats.title": "DSpace Angular :: Registre des formats Bitstream",
+  "admin.registries.bitstream-formats.title": "Papyrus Angular :: Registre des formats Bitstream",
 
 
 
@@ -308,7 +308,7 @@
   "admin.access-control.epeople.actions.stop-impersonating": "Retour à votre propre EPerson ",
 
   // "admin.access-control.epeople.title": "DSpace Angular :: EPeople",
-  "admin.access-control.epeople.title": "DSpace Angular :: EPeople",
+  "admin.access-control.epeople.title": "Papyrus Angular :: EPeople",
 
   // "admin.access-control.epeople.head": "EPeople",
   "admin.access-control.epeople.head": "EPeople",
@@ -2938,7 +2938,7 @@
   "menu.section.browse_community_by_title": "Titre",
 
   // "menu.section.browse_global": "All of DSpace",
-  "menu.section.browse_global": "Tout DSpace",
+  "menu.section.browse_global": "Tout Papyrus",
 
   // "menu.section.browse_global_by_author": "By Author",
   "menu.section.browse_global_by_author": "Auteur",
@@ -3241,7 +3241,7 @@
   "mydspace.status.workspace": "Workspace",
 
   // "mydspace.title": "MyDSpace",
-  "mydspace.title": "MyDSpace",
+  "mydspace.title": "Mon Papyrus",
 
   // "mydspace.upload.upload-failed": "Error creating new workspace. Please verify the content uploaded before retry.",
   "mydspace.upload.upload-failed": "Erreur à la création du Workspace. Veuillez vérifier le contenu téléchargé avant de réessayer.",
@@ -3264,7 +3264,7 @@
 
 
   // "nav.browse.header": "All of DSpace",
-  "nav.browse.header": "Tout Dspace",
+  "nav.browse.header": "Tout Papyrus",
 
   // "nav.community-browse.header": "By Community",
   "nav.community-browse.header": "Par Communauté",
@@ -3279,7 +3279,7 @@
   "nav.logout": "Se déconnecter",
 
   // "nav.mydspace": "MyDSpace",
-  "nav.mydspace": "MyDSpace",
+  "nav.mydspace": "Mon papyrus",
 
   // "nav.profile": "Profile",
   "nav.profile": "Profil",
@@ -3375,7 +3375,7 @@
   "person.search.results.head": "Résultats de recherche Personne",
 
   // "person.search.title": "DSpace Angular :: Person Search",
-  "person.search.title": "DSpace Angular :: Recherche Personne",
+  "person.search.title": "Papyrus Angular :: Recherche Personne",
 
 
 
@@ -3662,7 +3662,7 @@
   "publication.search.results.head": "Résultats de recherche Publication",
 
   // "publication.search.title": "DSpace Angular :: Publication Search",
-  "publication.search.title": "DSpace Angular :: Recherche Publication",
+  "publication.search.title": "Papyrus Angular :: Recherche Publication",
 
 
   // "register-email.title": "New user registration",
@@ -3736,7 +3736,7 @@
   "register-page.registration.header": "Inscription nouvel utilisateur",
 
   // "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to DSpace.",
-  "register-page.registration.info": "Créer un compte pour pouvoir vous abonner aux collections et recevoir les nouveautés via mail ainsi que déposer de nouveaux Items dans DSpace.",
+  "register-page.registration.info": "Créer un compte pour pouvoir vous abonner aux collections et recevoir les nouveautés via mail ainsi que déposer de nouveaux Items dans Papyrus.",
 
   // "register-page.registration.email": "Email Address *",
   "register-page.registration.email": "Adresse e-mail *",
@@ -3982,7 +3982,7 @@
   "search.switch-configuration.title": "Afficher",
 
   // "search.title": "DSpace Angular :: Search",
-  "search.title": "DSpace Angular :: Recherche",
+  "search.title": "Papyrus Angular :: Recherche",
 
   // "search.breadcrumbs": "Search",
   "search.breadcrumbs": "Recherche",
@@ -4215,10 +4215,10 @@
   "search.form.search": "Recherche",
 
   // "search.form.search_dspace": "Search DSpace",
-  "search.form.search_dspace": "Recherche dans DSpace",
+  "search.form.search_dspace": "Recherche dans Papyrus",
 
   // "search.form.search_mydspace": "Search MyDSpace",
-  "search.form.search_mydspace": "Recherche dans MyDSpace",
+  "search.form.search_mydspace": "Recherche dans Papyrus",
 
 
 
@@ -4363,7 +4363,7 @@
   "submission.import-external.page.hint": "Entrer votre recherche ci-dessus pour rechercher les publications à importer.",
 
   // "submission.import-external.back-to-my-dspace": "Back to MyDSpace",
-  "submission.import-external.back-to-my-dspace": "De retour vers MyDSpace",
+  "submission.import-external.back-to-my-dspace": "De retour vers Papyrus",
 
   // "submission.import-external.search.placeholder": "Search the external source",
   "submission.import-external.search.placeholder": "Recherche source externe",
@@ -4983,7 +4983,7 @@
 
 
   // "title": "DSpace",
-  "title": "DSpace",
+  "title": "Papyrus",
 
 
 
@@ -5088,22 +5088,55 @@
   "workflow-item.send-back.button.cancel": "Annuler",
 
   // "workflow-item.send-back.button.confirm": "Send back"
-  "workflow-item.send-back.button.confirm": "Renvoyer"
+  "workflow-item.send-back.button.confirm": "Renvoyer",
+
   /**********************************************************************/
   /**************Ajout des variables manquantes dans Papyrus***************/
 
-  // placeholder pour la recherche dans la page d'accueil
-  "home.search-form.placeholder": "Rechercher",
-  "home.accueil.title": "Papyrus : Dépôt institutionnel",
-  "home.btn.about": "À propos",
+
   //menu pricipale
-  "menu.principale.info": "INFO",
-  "menu.principale.contact": "Contact",
+  "papyrus.menu.principale.info": "INFO",
+  "papyrus.menu.principale.info.a-propos": "À propos",
+  "papyrus.menu.principale.info.depot": "Dépôt institutionnel",
+  "papyrus.menu.principale.info.droit": "Droit d'auteur et politiques",
+  "papyrus.menu.principale.info.interrogation": "Interrogation de Papyrus",
+  "papyrus.menu.principale.contact": "Contact",
 
+  //top udem
+  "papyrus.top.menu.repertoire": "Répertoire",
+  "papyrus.top.menu.faculte": "Facultés",
+  "papyrus.top.menu.bibliotheque": "Bibliothèques",
+  "papyrus.top.menu.campus": "Plan campus",
+  "papyrus.top.menu.connexion": "Connexion",
+  "papyrus.top.menu.connexion.monudem": "Mon UdeM",
+  "papyrus.top.menu.connexion.studium": "StudiUM",
+  "papyrus.top.menu.connexion.nomcourriel": "Mon courriel",
+  "papyrus.top.menu.jedonne": "Je donne",
+  "papyrus.top.menu.jedonne.desc": "Faire un don à l’Université de Montréal",
+  "papyrus.top.menu.rechercher": "Rechercher",
+  "papyrus.top.menu.cesite": "Ce site",
+  "papyrus.top.menu.toutudem": "Tout UdeM",
 
-  "footer.title": "Papyrus : Le dépôt institutionnel de l'Université de Montréal",
-  "footer.description": "La création de dépôts institutionnels est issue des préoccupations liées à la diffusion de la recherche et au développement de modèles de communication savante basé sur le principe du libre accès.",
-  "footer.suivi": "Suivez-nous sur les médias sociaux:",
+  //page d'accueil
+  "papyrus.home.search-form.placeholder": "Rechercher",
+  "papyrus.home.accueil.title": "Papyrus : Dépôt institutionnel",
+  "papyrus.home.accueil.depos-memoire": "Dépôt de thèse ou mémoire",
+  "papyrus.home.accueil.guide": "Guide pour le dépôt dans les collections | Travaux et publications",
+  "papyrus.home.btn.about": "À propos",
+
+  //papyrus footer
+  "papyrus.footer.title": "Papyrus",
+  "papyrus.footer.text": "Dépôt institutionnel de l'Université de Montréal",
+  "papyrus.footer.suivi": "Suivez-nous",
+  "papyrus.footer.menu.apropos": "À propos",
+  "papyrus.footer.menu.depot": "Règlements",
+  "papyrus.footer.menu.politique": "Politiques",
+  "papyrus.footer.menu.contact": "Nous joindre",
+
+  //pages ajoutées
+  "papyrus.page-udem.apropos.titre": "À propos",
+  "papyrus.page-udem.apropos.titre-page": "À propos de Papyrus",
+  "papyrus.page-udem.apropos.date-mis-a-jour": "Dernière mise-à-jour : 27 juillet 2020",
   /******************************fin****************************************/
   /*******************/
 
