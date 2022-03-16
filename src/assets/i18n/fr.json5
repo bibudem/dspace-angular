@@ -5104,6 +5104,80 @@
   "footer.title": "Papyrus : Le dépôt institutionnel de l'Université de Montréal",
   "footer.description": "La création de dépôts institutionnels est issue des préoccupations liées à la diffusion de la recherche et au développement de modèles de communication savante basé sur le principe du libre accès.",
   "footer.suivi": "Suivez-nous sur les médias sociaux:",
+
+  /**********************************************************************/
+  /**************Ajout des nouveaux ou variables manquantes dans Papyrus***************/
+  //variables non traduit
+  //feedback
+  "info.feedback.breadcrumbs": "Nous joindre",
+  "info.feedback.head": "Soumettre un commentaire",
+  "info.feedback.info": "Merci de prendre quelques minutes pour nous faire part de vos commentaires à propos du dépôt institutionnel Papyrus.",
+  "info.feedback.email-label": "Votre courriel:",
+  "info.feedback.email_help": "Cette adresse sera utilisée pour effectuer un suivi de votre commentaire.",
+  "info.feedback.comments": "Commentaires",
+  "info.feedback.send": "Envoyer votre commentaire",
+  "info.feedback.error.email.required": "Courriel invalide",
+  "info.feedback.page-label": "texte texte",
+  "info.feedback.error.message.required": "Votre message ne doit pas être vide ",
+
+  //contact
+  "papyrus.info.contact.titre.global": "Dépôt de thèses et mémoires, de travaux et publications :",
+  "papyrus.info.contact.courriel.global": "depot@bib.umontreal.ca",
+  "papyrus.info.contact.phone.global": "514-343-6111 x33345",
+  "papyrus.info.contact.titre.creation": "Création de collection :",
+  "papyrus.info.contact.courriel.creation": "Communiquez avec votre bibliothécaire ou depot@bib.umontreal.ca",
+  "papyrus.info.contact.titre.administration": "Administration de la plateforme :",
+  "papyrus.info.contact.personne.administration": "Marie-Hélène Vézina, Bibliothécaire · Projets numériques",
+  "papyrus.info.contact.phone.administration": "(514) 343-6111 x5225",
+
+  //top udem
+  "papyrus.top.menu.repertoire": "Répertoire",
+  "papyrus.top.menu.faculte": "Facultés",
+  "papyrus.top.menu.bibliotheque": "Bibliothèques",
+  "papyrus.top.menu.campus": "Plan campus",
+  "papyrus.top.menu.connexion": "Connexion",
+  "papyrus.top.menu.connexion.monudem": "Mon UdeM",
+  "papyrus.top.menu.connexion.studium": "StudiUM",
+  "papyrus.top.menu.connexion.nomcourriel": "Mon courriel",
+  "papyrus.top.menu.jedonne": "Je donne",
+  "papyrus.top.menu.jedonne.desc": "Faire un don à l’Université de Montréal",
+  "papyrus.top.menu.rechercher": "Rechercher",
+  "papyrus.top.menu.cesite": "Ce site",
+  "papyrus.top.menu.toutudem": "Tout UdeM",
+
+  //menu pricipale
+  "papyrus.menu.principale.info": "INFO",
+  "papyrus.menu.principale.info.a-propos": "À propos",
+  "papyrus.menu.principale.info.depot": "Dépôt institutionnel",
+  "papyrus.menu.principale.info.droit": "Droit d'auteur et politiques",
+  "papyrus.menu.principale.info.interrogation": "Interrogation de Papyrus",
+  "papyrus.menu.principale.contact": "Contact",
+
+  //page d'accueil
+  "papyrus.home.search-form.placeholder": "Rechercher",
+  "papyrus.home.accueil.title": "Papyrus : Dépôt institutionnel",
+  "papyrus.home.accueil.depos-memoire": "Dépôt de thèse ou mémoire",
+  "papyrus.home.accueil.guide": "Guide pour le dépôt dans les collections | Travaux et publications",
+  "papyrus.home.btn.about": "À propos",
+
+  //papyrus footer
+  "papyrus.footer.title": "Papyrus",
+  "papyrus.footer.text": "Dépôt institutionnel de l'Université de Montréal",
+  "papyrus.footer.propulse": "Propulsé par: Bibliothèques",
+  "papyrus.footer.suivi": "Suivez-nous",
+  "papyrus.footer.menu.apropos": "À propos",
+  "papyrus.footer.menu.depot": "Règlements",
+  "papyrus.footer.menu.politique": "Politiques",
+  "papyrus.footer.menu.contact": "Nous joindre",
+  "papyrus.footer.dspace.mention": "DSpace software [version 7.2]",
+  "papyrus.footer.dspace.duraspace": "DuraSpace",
+
+  //pages ajoutées
+  "papyrus.page-udem.apropos.titre": "À propos",
+  "papyrus.page-udem.apropos.titre-page": "À propos de Papyrus",
+  "papyrus.page-udem.apropos.date-mis-a-jour": "Dernière mise-à-jour : 27 juillet 2020",
+  /******************************fin****************************************/
+  /*******************/
   /******************************fin****************************************/
   /*******************/
 
