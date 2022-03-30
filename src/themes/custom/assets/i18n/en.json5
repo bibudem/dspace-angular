@@ -1,7 +1,66 @@
 {
-  // DSpace default: "All of DSpace"
-  "menu.section.browse_global": "Browse DSpace",
 
-  // DSpace default: "DSpace Angular :: "
-  "repository.title.prefix": "DSpace :: ",
+  /**********************************************************************/
+  /******************** Ajout de variables dans Papyrus *****************/
+  /**********************************************************************/
+
+  //contact
+  "papyrus.info.contact.titre.global": "Submission of theses and dissertations, works and publications:",
+  "papyrus.info.contact.courriel.global": "depot@bib.umontreal.ca",
+  "papyrus.info.contact.phone.global": "514-343-6111 x33345",
+  "papyrus.info.contact.titre.creation": "Collection creation:",
+  "papyrus.info.contact.courriel.creation": "Contact your librarian or depot@bib.umontreal.ca",
+  "papyrus.info.contact.titre.administration": "Platform administration:",
+  "papyrus.info.contact.personne.administration": "Marie-Hélène Vézina, Librarian · Digital projects",
+  "papyrus.info.contact.phone.administration": "(514) 343-6111 x5225",
+
+  //top udem
+  "papyrus.top.menu.repertoire": "Directory",
+  "papyrus.top.menu.faculte": "Faculties",
+  "papyrus.top.menu.bibliotheque": "Libraries",
+  "papyrus.top.menu.campus": "Campus map",
+  "papyrus.top.menu.connexion": "Login",
+  "papyrus.top.menu.connexion.monudem": "My UdeM",
+  "papyrus.top.menu.connexion.studium": "StudiUM",
+  "papyrus.top.menu.connexion.nomcourriel": "My email",
+  "papyrus.top.menu.jedonne": "Je donne",
+  "papyrus.top.menu.jedonne.desc": "Make a donation to University of Montreal",
+  "papyrus.top.menu.rechercher": "Search",
+  "papyrus.top.menu.cesite": "This site",
+  "papyrus.top.menu.toutudem": "All UdeM",
+
+  //menu pricipal
+  "papyrus.menu.principale.info": "Info",
+  "papyrus.menu.principale.info.a-propos": "About",
+  "papyrus.menu.principale.info.depot": "Institutional repository",
+  "papyrus.menu.principale.info.droit": "Copyright and Policies",
+  "papyrus.menu.principale.info.interrogation": "Papyrus Query",
+  "papyrus.menu.principale.contact": "Contact",
+
+  //page d'accueil
+  "papyrus.home.search-form.placeholder": "Search",
+  "papyrus.home.accueil.title": "Papyrus: Institutional Repository",
+  "papyrus.home.accueil.depos-memoire": "Thesis or dissertation submission",
+  "papyrus.home.accueil.guide": "Guide for Depositing in Collections \"Works and publications\"",
+  "papyrus.home.btn.about": "About",
+
+  //papyrus footer
+  "papyrus.footer.title": "Papyrus",
+  "papyrus.footer.text": "Université de Montréal Institutional repository",
+  "papyrus.footer.propulse": "Powered by: Bibliothèques",
+  "papyrus.footer.suivi": "Follow us",
+  "papyrus.footer.menu.apropos": "About",
+  "papyrus.footer.menu.depot": "Regulations",
+  "papyrus.footer.menu.politique": "Policies",
+  "papyrus.footer.menu.contact": "Contact",
+  "papyrus.footer.dspace.mention": "Application DSpace [version 7.2]",
+  "papyrus.footer.dspace.duraspace": "DuraSpace",
+
+  //page details d'items
+  "papyrus.item.tab.resume": "Abstract",
+  "papyrus.item.tab.description": "Details",
+
+
+  /**********************************************************************/
+
 }
