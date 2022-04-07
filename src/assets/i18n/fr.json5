@@ -746,15 +746,15 @@
 
   "collection.edit.item-mapper.no-search": "Veuillez entrer une requête de recherche",
 
-  "collection.edit.item-mapper.notifications.map.error.content": "Des erreurs se sont produites lors de l'association de {{amount}} document(s).",
+  "collection.edit.item-mapper.notifications.map.error.content": "Des erreurs se sont produites lors de l'association de {{amount}} document.s.",
 
   "collection.edit.item-mapper.notifications.map.error.head": "Erreurs d'association",
 
-  "collection.edit.item-mapper.notifications.map.success.content": "{{amount}} document(s) associé(s) avec succès.",
+  "collection.edit.item-mapper.notifications.map.success.content": "{{amount}} document.s associé.s avec succès.",
 
   "collection.edit.item-mapper.notifications.map.success.head": "Association terminée",
 
-  "collection.edit.item-mapper.notifications.unmap.error.content": "Des erreurs se sont produites lors de la suppression de l'association de {{amount}} document(s).",
+  "collection.edit.item-mapper.notifications.unmap.error.content": "Des erreurs se sont produites lors de la suppression de l'association de {{amount}} document.s.",
 
   "collection.edit.item-mapper.notifications.unmap.error.head": "Erreurs de suppression d'association(s)",
 
@@ -1186,7 +1186,7 @@
 
   "curation.form.handle.hint": "Aide : Saisir [votre-préfixe-handle]/0 afin de lancer une tâche de conservation sur l'entièreté du site (ceci peut ne pas être supporté pour toutes les tâches)",
 
-  "deny-request-copy.email.message": "Cher.ère {{ recipientName }},\nEn réponse à votre demande, j'ai le regret de vous informer qu'il n'est pas possible de vous envoyer une copie du ou des fichiers que vous avez demandés, concernant le document : \"{{ itemUrl }}\" ({{ itemName }}), dont je suis l'auteur(e).\n\nCordialement,\n{{ authorName }} <{{ auteurEmail }}>",
+  "deny-request-copy.email.message": "Cher.ère {{ recipientName }},NEn réponse à votre demande, j'ai le regret de vous informer qu'il n'est pas possible de vous envoyer une copie du ou des fichiers que vous avez demandés, concernant le document : \"{{ itemUrl }}\" ({{ itemName }}), dont je suis l'auteur(e).\n\nCordialement,\n{{ authorName }} <{{ auteurEmail }}>",
 
   "deny-request-copy.email.subject": "Demander une copie du document",
 
@@ -1254,7 +1254,7 @@
 
   "confirmation-modal.delete-eperson.confirm": "Supprimer",
 
-  "error.bitstream": "Erreur lors de la récupération du ou des fichier(s)",
+  "error.bitstream": "Erreur lors de la récupération du ou des fichier.s",
 
   "error.browse-by": "Erreur lors de la récupération des documents",
 
@@ -1532,7 +1532,7 @@
 
   "item.alerts.withdrawn": "Ce document a été retiré",
 
-  "item.edit.authorizations.heading": "Avec cet éditeur, il vous est possible de visualiser et modifier les autorisations d'un document de même que de modifier les autorisations de ses composants groupements et fichiers. Un document peut inclure un ou plusieurs groupement(s) et chaque groupement peut inclure un ou plusieurs fichier(s). Les documents et groupements ont habituellement des autorisations de type ADD/REMOVE/READ/WRITE alors que les fichiers ont uniquement des autorisations READ/WRITE.",
+  "item.edit.authorizations.heading": "Avec cet éditeur, il vous est possible de visualiser et modifier les autorisations d'un document de même que de modifier les autorisations de ses composants groupements et fichiers. Un document peut inclure un ou plusieurs groupement.s et chaque groupement peut inclure un ou plusieurs fichier.s. Les documents et groupements ont habituellement des autorisations de type ADD/REMOVE/READ/WRITE alors que les fichiers ont uniquement des autorisations READ/WRITE.",
 
   "item.edit.authorizations.title": "Éditer les autorisations du document",
 
@@ -1564,7 +1564,7 @@
 
   "item.edit.bitstreams.bundle.edit.buttons.upload": "Télécharger",
 
-  "item.edit.bitstreams.bundle.displaying": "{{ amount }} fichiers actuellement visible(s) sur un total de {{ total }}.",
+  "item.edit.bitstreams.bundle.displaying": "{{ amount }} fichiers actuellement visible.s sur un total de {{ total }}.",
 
   "item.edit.bitstreams.bundle.load.all": "Charger tous les ({{ total }})",
 
@@ -1612,7 +1612,7 @@
 
   "item.edit.bitstreams.notifications.remove.failed.title": "Erreur lors de la suppression du fichier",
 
-  "item.edit.bitstreams.notifications.remove.saved.content": "La suppression du ou des fichier(s) de ce document a été sauvegardée avec succès.",
+  "item.edit.bitstreams.notifications.remove.saved.content": "La suppression du ou des fichier.s de ce document a été sauvegardée avec succès.",
 
   "item.edit.bitstreams.notifications.remove.saved.title": "Suppression(s) sauvegardée(s)",
 
@@ -2284,7 +2284,7 @@
 
   "menu.section.browse_community_by_title": "Titre",
 
-  "menu.section.browse_global": "Tout DSpace",
+  "menu.section.browse_global": "Tout le dépôt Papyrus",
 
   "menu.section.browse_global_by_author": "Auteur.e",
 
@@ -3718,7 +3718,7 @@
 
   "submission.sections.upload.header.policy.default.withlist": "Veuillez noter que, en complément des accès spécifiquement accordés pour le fichier, les fichiers téléchargés dans la collection {{collectionName}} seront accessibles par défaut au(x) groupe(s) suivant(s) :",
 
-  "submission.sections.upload.info": "Vous trouverez ici tous les fichiers actuellement associés au document. Vous pouvez éditer les métadonnés et les niveaux d'accès de ce(s) fichier(s) ou <strong>télécharger des fichiers complémentaires simplement en les glissant n'importe où sur cette page</strong>",
+  "submission.sections.upload.info": "Vous trouverez ici tous les fichiers actuellement associés au document. Vous pouvez éditer les métadonnés et les niveaux d'accès de ce.s fichier.s ou <strong>télécharger des fichiers complémentaires simplement en les glissant n'importe où sur cette page</strong>",
 
   "submission.sections.upload.no-entry": "Non",
 
@@ -3834,7 +3834,7 @@
 
   "thumbnail.person.placeholder": "Aucune photo de profil disponible",
 
-  "title: "DSpace",
+  title: "DSpace",
 
   "vocabulary-treeview.header": "Arborescence hiérarchique",
 
@@ -4008,15 +4008,15 @@
 
   "papyrus.item.tab.voir-plus": "Voir plus",
 
-  "papyrus.item.page.dcterms.alternative": "Autre titre",
+  "papyrus.item.page.dcterms.alternative": "Autre.s titre.s",
 
   "papyrus.item.page.oaire": "Fait partie de",
 
   "papyrus.item.page.affiliation": "Affiliation",
 
-  "papyrus.item.page.dc.contributor": "Collaborateur",
+  "papyrus.item.page.dc.contributor": "Collaborateur.trice.s",
 
-  "papyrus.item.page.dc.contributor.advisor": "Directeur(s) de recherche",
+  "papyrus.item.page.dc.contributor.advisor": "Directeur.trice.s de recherche",
 
   "papyrus.item.page.identifier.doi": "DOI",
 
@@ -4026,7 +4026,7 @@
 
   "papyrus.item.degree.level": "Cycle d'études",
 
-  "papyrus.item.UdeM.cycle": "Cycle UdeM",
+  "papyrus.item.UdeM.cycle": "Cycle d'études",
 
   "papyrus.item.etd.degree.name": "Grade",
 
@@ -4034,13 +4034,13 @@
 
   "papyrus.item.dcterms.language": "Langue",
 
-  "papyrus.item.dcterms.hasVersion": "Autre(s) version(s) linguistique(s)",
+  "papyrus.item.dcterms.hasVersion": "Autre.s version.s linguistique.s",
 
-  "papyrus.item.dcterms.description": "Description",
+  "papyrus.item.dcterms.description": "Note.s",
 
-  "papyrus.item.dcterms.relation": "Relation",
+  "papyrus.item.dcterms.relation": "Ensemble.s de données liées",
 
-  "papyrus.item.dcterms.tableOfContents": "Liste des sous-unités",
+  "papyrus.item.dcterms.tableOfContents": "Table des matières",
 
   "papyrus.item.subject": "Sujets",
 
@@ -4052,7 +4052,9 @@
 
   "menu.section.browse_global_by_affiliation": "Affiliation",
 
-  "menu.section.browse_global_by_advisor": "Advisor",
+  "menu.section.browse_global_by_advisor": "Directeur.trice de recherche",
 
+  "papyrus.item.dcterms.abstract": "Résumé.s",
 
+  "papyrus.item.rights": "Droits d'utilisation",
 }

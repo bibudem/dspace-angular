@@ -3834,7 +3834,7 @@
 
   "thumbnail.person.placeholder": "No Profile Picture Available",
 
-  title: "DSpace",
+  "title": "DSpace",
 
   "vocabulary-treeview.header": "Hierarchical tree view",
 
@@ -4008,7 +4008,7 @@
 
   "papyrus.item.tab.description": "Details",
 
-  "papyrus.item.page.dcterms.alternative": "Other title",
+  "papyrus.item.page.dcterms.alternative": "Other title(s)",
 
   "papyrus.item.page.oaire": "Is part of",
 
@@ -4057,5 +4057,4 @@
   "papyrus.item.dcterms.abstract": "Abstract(s)",
 
   "papyrus.item.rights": "Rights",
-
 }
