@@ -1186,7 +1186,7 @@
 
   "curation.form.handle.hint": "Aide : Saisir [votre-préfixe-handle]/0 afin de lancer une tâche de conservation sur l'entièreté du site (ceci peut ne pas être supporté pour toutes les tâches)",
 
-  "deny-request-copy.email.message": "Cher.ère {{ recipientName }},NEn réponse à votre demande, j'ai le regret de vous informer qu'il n'est pas possible de vous envoyer une copie du ou des fichiers que vous avez demandés, concernant le document : \"{{ itemUrl }}\" ({{ itemName }}), dont je suis l'auteur(e).\n\nCordialement,\n{{ authorName }} <{{ auteurEmail }}>",
+  "deny-request-copy.email.message": "Cher.ère {{ recipientName }},\nEn réponse à votre demande, j'ai le regret de vous informer qu'il n'est pas possible de vous envoyer une copie du ou des fichiers que vous avez demandés, concernant le document : \"{{ itemUrl }}\" ({{ itemName }}), dont je suis l'auteur(e).\n\nCordialement,\n{{ authorName }} <{{ auteurEmail }}>",
 
   "deny-request-copy.email.subject": "Demander une copie du document",
 
@@ -3834,7 +3834,7 @@
 
   "thumbnail.person.placeholder": "Aucune photo de profil disponible",
 
-  title: "DSpace",
+  "title: "DSpace",
 
   "vocabulary-treeview.header": "Arborescence hiérarchique",
 
@@ -4053,4 +4053,6 @@
   "menu.section.browse_global_by_affiliation": "Affiliation",
 
   "menu.section.browse_global_by_advisor": "Advisor",
+
+
 }

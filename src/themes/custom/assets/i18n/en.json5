@@ -72,7 +72,7 @@
   "papyrus.item.tab.description": "Details",
 
   //titre pour les détails d'un item
-  "papyrus.item.page.dcterms.alternative": "Other title",
+  "papyrus.item.page.dcterms.alternative": "Other title(s)",
   "papyrus.item.page.oaire": "Is part of",
   "papyrus.item.page.affiliation": "Affiliation",
   "papyrus.item.page.dc.contributor": "Contributor(s)",
@@ -93,8 +93,6 @@
   "papyrus.item.subject": "Keywords",
   "papyrus.item.rights": "Rights",  
   
-  /**********************************************************************/
-
   /**********************************************************************/
 
 }
