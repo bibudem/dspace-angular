@@ -12,15 +12,15 @@ $image-path: "../assets/images" !default;
 
 /** Bootstrap Variables **/
 /* Colors */
-$gray-700: #495057 !default;  // Bootstrap $gray-700
+$gray-700: #191a1a !default;  // Bootstrap $gray-700
 $gray-100: #f8f9fa !default;  //           $gray-100
 
 /* Reassign color vars to semantic color scheme */
-$blue:   #2B4E72 !default;
-$green:  #94BA65 !default;
-$cyan:   #006666 !default;
-$yellow: #ec9433 !default;
-$red:    #CF4444 !default;
+$blue: #025d9d !default;
+$green:  #A5CD9D !default;
+$cyan:   #0a4974 !default;
+$yellow: #FBD769 !default;
+$red:    #F0553D !default;
 $dark:   darken($blue, 17%) !default;
 
 $theme-colors: (
@@ -37,7 +37,7 @@ $theme-colors: (
 $link-color: map-get($theme-colors, info) !default;
 
 $navbar-dark-color: rgba(white, .5) !default;
-$navbar-light-color: rgba(black, .5) !default;
+$navbar-light-color: rgba(#292b2c, .5) !default;
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,<svg+viewBox='0+0+30+30'+xmlns='http://www.w3.org/2000/svg'><path+stroke='#{$navbar-dark-color}'+stroke-width='2'+stroke-linecap='round'+stroke-miterlimit='10'+d='M4+7h22M4+15h22M4+23h22'/></svg>") !default;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,<svg+viewBox='0+0+30+30'+xmlns='http://www.w3.org/2000/svg'><path+stroke='#{$navbar-light-color}'+stroke-width='2'+stroke-linecap='round'+stroke-miterlimit='10'+d='M4+7h22M4+15h22M4+23h22'/></svg>") !default;
 
