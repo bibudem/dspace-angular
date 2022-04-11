@@ -13,14 +13,14 @@ export class NavbarTopUdemComponent implements OnInit {
 
 
   // langue par default
-  langue='fr'
+  langue:string ='fr'
   // titre du logo par default
-  imageLogo='logo-papyrus-fr.png'
+  imageLogo:string ='logo-papyrus-fr.png'
   constructor(private localeService: LocaleService) { }
 
   ngOnInit() {
-    if(this.trouverLangueSession()!='')
-      this.langue=this.trouverLangueSession()
+    if(this.trouverLangueSession()!=null){
+      this.langue=this.trouverLangueSession()}
 
     // titre du logo avec la session du langue
     this.imageLogo='logo-papyrus-'+this.langue+'.png'
@@ -34,8 +34,6 @@ export class NavbarTopUdemComponent implements OnInit {
   // code ajouté par udem
   // truver la langue de la session pour afficher le bon logo
   trouverLangueSession(){
-
     return this.localeService.getCurrentLanguageCode()
-
   }
 }
