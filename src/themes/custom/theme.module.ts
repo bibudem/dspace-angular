@@ -88,7 +88,7 @@ import { FeedbackComponent } from './app/info/feedback/feedback.component';
 
 /**********Ajout des components udem***************************/
 
-import {NavbarTopUdemComponent} from "./app/navbar/navbar-top-udem/navbar-top-udem.component";
+import {NavbarTopUdemComponent} from './app/navbar/navbar-top-udem/navbar-top-udem.component';
 
 const DECLARATIONS = [
   FileSectionComponent,

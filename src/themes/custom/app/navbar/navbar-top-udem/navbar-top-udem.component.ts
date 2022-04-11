@@ -13,9 +13,9 @@ export class NavbarTopUdemComponent implements OnInit {
 
   @ViewChild('udemRecherche') ngForm: NgForm;
 
-  //langue par default
+  // langue par default
   langue='fr'
-  //titre du logo par default
+  // titre du logo par default
   imageLogo='logo-papyrus-fr.png'
   constructor(private localeService: LocaleService) { }
 
@@ -23,16 +23,16 @@ export class NavbarTopUdemComponent implements OnInit {
     if(this.trouverLangueSession()!='')
       this.langue=this.trouverLangueSession()
 
-    //titre du logo avec la session du langue
+    // titre du logo avec la session du langue
     this.imageLogo='logo-papyrus-'+this.langue+'.png'
   }
-//fonction pour submit le form udemRecherche
+// fonction pour submit le form udemRecherche
   send() {
     this.ngForm.ngSubmit.emit();
   }
 
-  //code ajouté par udem
-  //truver la langue de la session pour afficher le bon logo
+  // code ajouté par udem
+  // truver la langue de la session pour afficher le bon logo
   trouverLangueSession(){
     return this.localeService.getCurrentLanguageCode()
   }

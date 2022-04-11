@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SearchPageComponent as BaseComponent } from '../../../../app/search-page/search-page.component';
-//Add missing provider pour udem debug
+// Add missing provider pour udem debug
 import { SEARCH_CONFIG_SERVICE } from '../../../../app/my-dspace-page/my-dspace-page.component';
 import { SearchConfigurationService } from '../../../../app/core/shared/search/search-configuration.service';
 
