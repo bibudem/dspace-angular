@@ -11,7 +11,6 @@ import { LocaleService } from 'src/app/core/locale/locale.service';
 
 export class NavbarTopUdemComponent implements OnInit {
 
-  @ViewChild('udemRecherche') ngForm: NgForm;
 
   // langue par default
   langue='fr'
@@ -28,12 +27,15 @@ export class NavbarTopUdemComponent implements OnInit {
   }
 // fonction pour submit le form udemRecherche
   send() {
-    this.ngForm.ngSubmit.emit();
+    // implimenter submit form
+    console.log('Form non functionel')
   }
 
   // code ajouté par udem
   // truver la langue de la session pour afficher le bon logo
   trouverLangueSession(){
+
     return this.localeService.getCurrentLanguageCode()
+
   }
 }
