@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import { ItemComponent } from '../shared/item.component';
 import { ItemVersionsSummaryModalComponent } from '../../../../shared/item/item-versions/item-versions-summary-modal/item-versions-summary-modal.component';
 import { getFirstCompletedRemoteData, getFirstSucceededRemoteDataPayload } from '../../../../core/shared/operators';
@@ -17,6 +17,7 @@ import { Item } from '../../../../core/shared/item.model';
 import { ItemDataService } from '../../../../core/data/item-data.service';
 import { WorkspaceItem } from '../../../../core/submission/models/workspaceitem.model';
 import { RouteService } from '../../../../core/services/route.service';
+import { LocaleService } from 'src/app/core/locale/locale.service';
 
 @Component({
   selector: 'ds-versioned-item',
@@ -24,6 +25,10 @@ import { RouteService } from '../../../../core/services/route.service';
   styleUrls: ['./versioned-item.component.scss']
 })
 export class VersionedItemComponent extends ItemComponent {
+
+  //langue par default
+  langue='fr'
+
 
   constructor(
     private modalService: NgbModal,
@@ -35,7 +40,8 @@ export class VersionedItemComponent extends ItemComponent {
     private workspaceItemDataService: WorkspaceitemDataService,
     private searchService: SearchService,
     private itemService: ItemDataService,
-    protected routeService: RouteService
+    protected routeService: RouteService,
+    private localeService: LocaleService
   ) {
     super(routeService);
   }
@@ -76,5 +82,54 @@ export class VersionedItemComponent extends ItemComponent {
       this.router.navigateByUrl(route);
     });
 
+  }
+  /**
+   * mars 2022: Creer des fonctions Udem pour recouperer la langue et les valeurs des attribut selon sa valeur
+   */
+
+  langueSession(): void {
+    if(this.localeService.getCurrentLanguageCode())
+      this.langue=this.localeService.getCurrentLanguageCode()
+  }
+
+  recouperationValeurItem(string):string{
+    this.langueSession()
+    let  donnes,valueRetur=''
+    donnes = string.value.split("/");
+    switch (this.langue) {
+      case 'fr':
+      case 'fra':
+        valueRetur=donnes[0]
+        break;
+      case 'en':
+      case 'eng':
+        //si la personne n'a pas saisir du texte en anglais
+        if(donnes[1])
+          valueRetur=donnes[1]
+        else
+          valueRetur=donnes[0]
+        break;
+    }
+    return valueRetur
+  }
+
+  //ecrire au complet la langue
+  langueAuComple(param):string{
+    this.langueSession()
+    if(this.localeService.getCurrentLanguageCode())
+      this.langue=this.localeService.getCurrentLanguageCode()
+
+    let langfr={"fra":"Français", "fr":"Français", "eng":"Anglais", "en":"Anglais", "spa":"Espagnol", "ita":"Italien", "deu":"Allemand", "por":"Portugais", "ell":"Grec", "lat":"Latin"}
+
+    let langen={"fra":"French", "fr":"French", "eng":"English", "en":"English", "spa":"Spanish", "ita":"Italian", "deu":"German", "por":"Portuguese", "ell":"Greek", "lat":"Latin"}
+
+    switch (this.langue) {
+      case 'fr':
+        return langfr[param]
+        break;
+      case 'en':
+        return langen[param]
+        break;
+    }
   }
 }

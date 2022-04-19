@@ -13,9 +13,9 @@ export class NavbarTopUdemComponent implements OnInit {
 
 
   // langue par default
-  langue:string ='fr'
+  langue ='fr'
   // titre du logo par default
-  imageLogo:string ='logo-papyrus-fr.png'
+  imageLogo ='logo-papyrus-fr.png'
   constructor(private localeService: LocaleService) { }
 
   ngOnInit() {
