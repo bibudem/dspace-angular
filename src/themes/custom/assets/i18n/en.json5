@@ -7,6 +7,15 @@
   // "menu.section.browse_global": "All of DSpace",
  "menu.section.browse_global": "All of Papyrus",
 
+  // "search.form.scope.all": "All of DSpace",
+"search.form.scope.all": "All of Papyrus",
+
+  // "nav.browse.header": "All of DSpace",
+  "nav.browse.header": "All of Papyrus",
+  
+  // "home.top-level-communities.head": "Communities in DSpace",
+  "home.top-level-communities.head": "Communities in Papyrus",
+  
   /**********************************************************************/
   /******************** Ajout de variables dans Papyrus *****************/
   /**********************************************************************/
@@ -47,6 +56,8 @@
   "menu.section.browse_global_by_discipline": "By Discipline",
   "menu.section.browse_global_by_affiliation": "By Affiliation",
   "menu.section.browse_global_by_advisor": "By Advisor",
+  "menu.section.browse_global_by_titleindex": "By Title (All forms)",
+
 
   //page d'accueil
   "papyrus.home.search-form.placeholder": "Search",
@@ -91,8 +102,42 @@
   "papyrus.item.dcterms.abstract": "Abstract(s)",
   "papyrus.item.dcterms.tableOfContents": "Table of contents",
   "papyrus.item.subject": "Keywords",
-  "papyrus.item.rights": "Rights",  
-  
+  "papyrus.item.rights": "Rights",
+
+  //tab menu
+  "browse.comcol.by.advisor": "Advisor(s)",
+  "browse.comcol.by.discipline": "Discipline",
+  "browse.comcol.by.affiliation": "Affiliation",
+  "browse.comcol.by.titleindex": "All Titles",
+
+  "browse.metadata.advisor": "Advisor",
+  "browse.metadata.discipline": "Discipline",
+  "browse.metadata.affiliation": "Affiliation",
+  "browse.metadata.titleindex": "All Titles",
+
+  "browse.metadata.discipline.breadcrumbs": "Browse by Discipline",
+  "browse.metadata.affiliation.breadcrumbs": "Browse by Affiliation",
+  "browse.metadata.titleindex.breadcrumbs": "Browse all titles forms",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //titre pour les formulaires dans workspaceitems
+  "submission.sections.submit.progressbar.describe.step1": "Step 1",
+  "submission.sections.submit.progressbar.describe.step2": "Step 2",
+
+
   /**********************************************************************/
 
 }

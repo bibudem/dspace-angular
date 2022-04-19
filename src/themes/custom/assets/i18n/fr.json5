@@ -17,7 +17,7 @@
 // Execute:
 //
 // yarn merge-i18n -s src/themes/[theme-name]/assets/i18n
-// 
+//
 // ex.:
 // [/data/dspace-dev/dspace-angular/scripts]#> yarn merge-i18n -s src/themes/custom/assets/i18n
 //
@@ -820,6 +820,12 @@
   // "menu.section.browse_global": "Tout DSpace",
   "menu.section.browse_global": "Tout le dépôt Papyrus",
 
+  // "search.form.scope.all": "Tout le dépôt DSpace",
+  "search.form.scope.all": "Tout le dépôt Papyrus",
+
+  // "nav.browse.header": "Tout Dspace",
+  "nav.browse.header": "Tout Papyrus",
+
   // "menu.section.browse_global_by_author": "Auteur",
   "menu.section.browse_global_by_author": "Auteur.e",
 
@@ -1188,9 +1194,36 @@
 
 
 
+  // "browse.startsWith.submit": "Valider",
+  "browse.startsWith.submit": "Parcourir",
 
 
+  // "browse.metadata.author.breadcrumbs": "Parcourir par Auteur",
+  "browse.metadata.author.breadcrumbs": "Parcourir par auteur.e",
+  
+  // "browse.metadata.dateissued.breadcrumbs": "Parcourir par Date",
+  "browse.metadata.dateissued.breadcrumbs": "Parcourir par date",
+  
+  // "browse.metadata.subject.breadcrumbs": "Parcourir par Sujet",
+  "browse.metadata.subject.breadcrumbs": "Parcourir par sujet",
+  
+  // "browse.metadata.title.breadcrumbs": "Parcourir par Titre",
+  "browse.metadata.title.breadcrumbs": "Parcourir par titre",
 
+  // "browse.metadata.author": "Auteur",
+  "browse.metadata.author": "auteur.e",
+  
+  // "browse.metadata.dateissued": "Date de publication",
+  "browse.metadata.dateissued": "date de publication",
+  
+  // "browse.metadata.subject": "Sujet",
+  "browse.metadata.subject": "sujet",
+  
+  // "browse.metadata.title": "Titre",
+  "browse.metadata.title": "titre",
+
+  // "home.top-level-communities.head": "Communautés dans DSpace",
+  "home.top-level-communities.head": "Communautés représentées dans Papyrus",
 
   /**********************************************************************/
   /******************** Ajout de variables dans Papyrus *****************/
@@ -1233,6 +1266,8 @@
   "menu.section.browse_global_by_discipline": "Discipline",
   "menu.section.browse_global_by_affiliation": "Affiliation",
   "menu.section.browse_global_by_advisor": "Directeur.trice de recherche",
+  "menu.section.browse_global_by_titleindex": "Titre (toutes les formes)",
+
 
   //page d'accueil
   "papyrus.home.search-form.placeholder": "Rechercher",
@@ -1276,9 +1311,35 @@
   "papyrus.item.dcterms.relation": "Ensemble.s de données liées",
   "papyrus.item.dcterms.abstract": "Résumé.s",
   "papyrus.item.dcterms.tableOfContents": "Table des matières",
-  "papyrus.item.subject": "Sujets", 
-  "papyrus.item.rights": "Droits d'utilisation",  
+  "papyrus.item.subject": "Sujets",
+  "papyrus.item.rights": "Droits d'utilisation",
+
+  //tab menu
+  "browse.comcol.by.advisor": "Directeur.trice de recherche",
+  "browse.comcol.by.discipline": "Programme",
+  "browse.comcol.by.affiliation": "Affiliation",
+  "browse.comcol.by.titleindex": "Toute forme de titres",
+  "browse.comcol.by.author": "Auteur.e",
+
+
   
+  "browse.metadata.advisor": "directeur.trice de recherche",
+  "browse.metadata.discipline": "programme",
+  "browse.metadata.affiliation": "affiliation",
+  "browse.metadata.titleindex": "toutes les formes de titres",
+
+  "browse.metadata.discipline.breadcrumbs": "Parcourir par programme",
+  "browse.metadata.advisor.breadcrumbs": "Parcourir par directeur.trice de recherche",
+  "browse.metadata.affiliation.breadcrumbs": "Parcourir par affiliation",
+  "browse.metadata.titleindex.breadcrumbs": "Parcourir l'index de tous les titres",
+
+
+
+
+  //titre pour les formulaires dans workspaceitems
+  "submission.sections.submit.progressbar.describe.step1": "Section 1",
+  "submission.sections.submit.progressbar.describe.step2": "Section 2",
+
 
   /**********************************************************************/
 

@@ -622,7 +622,7 @@
 
   "bitstream-request-a-copy.submit.error": "Un problème est survenu lors de la soumission de la demande de document",
 
-  "browse.comcol.by.author": "Auteur",
+  "browse.comcol.by.author": "Auteur.e",
 
   "browse.comcol.by.dateissued": "Date de publication",
 
@@ -634,21 +634,21 @@
 
   "browse.empty": "Aucun résultat.",
 
-  "browse.metadata.author": "Auteur",
+  "browse.metadata.author": "auteur.e",
 
-  "browse.metadata.dateissued": "Date de publication",
+  "browse.metadata.dateissued": "date de publication",
 
-  "browse.metadata.subject": "Sujet",
+  "browse.metadata.subject": "sujet",
 
-  "browse.metadata.title": "Titre",
+  "browse.metadata.title": "titre",
 
-  "browse.metadata.author.breadcrumbs": "Parcourir par Auteur",
+  "browse.metadata.author.breadcrumbs": "Parcourir par auteur.e",
 
-  "browse.metadata.dateissued.breadcrumbs": "Parcourir par Date",
+  "browse.metadata.dateissued.breadcrumbs": "Parcourir par date",
 
-  "browse.metadata.subject.breadcrumbs": "Parcourir par Sujet",
+  "browse.metadata.subject.breadcrumbs": "Parcourir par sujet",
 
-  "browse.metadata.title.breadcrumbs": "Parcourir par Titre",
+  "browse.metadata.title.breadcrumbs": "Parcourir par titre",
 
   "browse.next.button": "Suivant(e)",
 
@@ -690,7 +690,7 @@
 
   "browse.startsWith.months.september": "Septembre",
 
-  "browse.startsWith.submit": "Valider",
+  "browse.startsWith.submit": "Parcourir",
 
   "browse.startsWith.type_date": "Ou saisir une date (année-mois) puis cliquer sur « Parcourir par »",
 
@@ -1476,7 +1476,7 @@
 
   "home.title": "Accueil",
 
-  "home.top-level-communities.head": "Communautés dans DSpace",
+  "home.top-level-communities.head": "Communautés représentées dans Papyrus",
 
   "home.top-level-communities.help": "Sélectionner une communauté pour parcourir les collections sous-jacentes.",
 
@@ -2490,7 +2490,7 @@
 
   "mydspace.view-btn": "Afficher",
 
-  "nav.browse.header": "Tout Dspace",
+  "nav.browse.header": "Tout Papyrus",
 
   "nav.community-browse.header": "Par communauté",
 
@@ -3182,7 +3182,7 @@
 
   "search.form.search_dspace": "Recherche dans DSpace",
 
-  "search.form.scope.all": "Tout le dépôt DSpace",
+  "search.form.scope.all": "Tout le dépôt Papyrus",
 
   "search.results.head": "Résultats de recherche",
 
@@ -4057,4 +4057,38 @@
   "papyrus.item.dcterms.abstract": "Résumé.s",
 
   "papyrus.item.rights": "Droits d'utilisation",
+
+  "browse.comcol.by.advisor": "Directeur.trice de recherche",
+
+  "browse.comcol.by.discipline": "Programme",
+
+  "browse.comcol.by.affiliation": "Affiliation",
+
+  "submission.sections.submit.progressbar.describe.step1": "Section 1",
+
+  "submission.sections.submit.progressbar.describe.step2": "Section 2",
+
+  "browse.comcol.by.titleindex": "Toute forme de titres",
+
+  "browse.metadata.advisor": "directeur.trice de recherche",
+
+  "browse.metadata.discipline": "programme",
+
+  "browse.metadata.affiliation": "affiliation",
+
+  "browse.metadata.discipline.breadcrumbs": "Parcourir par programme",
+
+  "browse.metadata.affiliation.advisor": "Parcourir par directeur.trice de recherche",
+
+  "browse.metadata.affiliation.breadcrumbs": "Parcourir par affiliation",
+
+  "browse.metadata.indextitle.breadcrumbs": "Parcourir l'index de tous les titres",
+
+  "menu.section.browse_global_by_titleindex": "Titre (toutes les formes)",
+
+  "browse.metadata.titleindex": "toutes les formes de titres",
+
+  "browse.metadata.advisor.breadcrumbs": "Parcourir par directeur.trice de recherche",
+
+  "browse.metadata.titleindex.breadcrumbs": "Parcourir l'index de tous les titres",
 }

@@ -1476,7 +1476,7 @@
 
   "home.title": "Home",
 
-  "home.top-level-communities.head": "Communities in DSpace",
+  "home.top-level-communities.head": "Communities in Papyrus",
 
   "home.top-level-communities.help": "Select a community to browse its collections.",
 
@@ -2490,7 +2490,7 @@
 
   "mydspace.view-btn": "View",
 
-  "nav.browse.header": "All of DSpace",
+  "nav.browse.header": "All of Papyrus",
 
   "nav.community-browse.header": "By Community",
 
@@ -3182,7 +3182,7 @@
 
   "search.form.search_dspace": "All repository",
 
-  "search.form.scope.all": "All of DSpace",
+  "search.form.scope.all": "All of Papyrus",
 
   "search.results.head": "Search Results",
 
@@ -3834,7 +3834,7 @@
 
   "thumbnail.person.placeholder": "No Profile Picture Available",
 
-  "title": "DSpace",
+  title: "DSpace",
 
   "vocabulary-treeview.header": "Hierarchical tree view",
 
@@ -4057,4 +4057,34 @@
   "papyrus.item.dcterms.abstract": "Abstract(s)",
 
   "papyrus.item.rights": "Rights",
+
+  "browse.comcol.by.advisor": "Advisor(s)",
+
+  "browse.comcol.by.discipline": "Discipline",
+
+  "browse.comcol.by.affiliation": "Affiliation",
+
+  "submission.sections.submit.progressbar.describe.step1": "Step 1",
+
+  "submission.sections.submit.progressbar.describe.step2": "Step 2",
+
+  "browse.comcol.by.titleindex": "All Titles",
+
+  "browse.metadata.advisor": "Advisor",
+
+  "browse.metadata.discipline": "Discipline",
+
+  "browse.metadata.affiliation": "Affiliation",
+
+  "browse.metadata.discipline.breadcrumbs": "Browse by Discipline",
+
+  "browse.metadata.affiliation.breadcrumbs": "Browse by Affiliation",
+
+  "browse.metadata.indextitle.breadcrumbs": "Browse all titles forms",
+
+  "menu.section.browse_global_by_titleindex": "By Title (All forms)",
+
+  "browse.metadata.titleindex": "All Titles",
+
+  "browse.metadata.titleindex.breadcrumbs": "Browse all titles forms",
 }
