@@ -13,27 +13,28 @@ export class NavbarTopUdemComponent implements OnInit {
 
 
   // langue par default
-  langue ='fr'
+  langue = 'fr';
   // titre du logo par default
-  imageLogo ='logo-papyrus-fr.png'
+  imageLogo = 'logo-papyrus-fr.png';
   constructor(private localeService: LocaleService) { }
 
   ngOnInit() {
-    if(this.trouverLangueSession()!=null){
-      this.langue=this.trouverLangueSession()}
+    if (this.trouverLangueSession()) {
+      this.langue = this.trouverLangueSession();
+    }
 
     // titre du logo avec la session du langue
-    this.imageLogo='logo-papyrus-'+this.langue+'.png'
+    this.imageLogo = 'logo-papyrus-' + this.langue + '.png';
   }
 // fonction pour submit le form udemRecherche
   send() {
     // implimenter submit form
-    console.log('Form non functionel')
+    console.log('Form non functionel');
   }
 
   // code ajouté par udem
   // truver la langue de la session pour afficher le bon logo
-  trouverLangueSession(){
-    return this.localeService.getCurrentLanguageCode()
+  trouverLangueSession() {
+    return this.localeService.getCurrentLanguageCode();
   }
 }
