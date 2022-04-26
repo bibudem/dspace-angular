@@ -3,7 +3,7 @@ import { CommunityListPageComponent as BaseComponent } from '../../../../app/com
 
 @Component({
   selector: 'ds-community-list-page',
-  // styleUrls: ['./community-list-page.component.scss'],
+  styleUrls: ['./community-list-page.component.scss'],
   // templateUrl: './community-list-page.component.html'
   templateUrl: '../../../../app/community-list-page/community-list-page.component.html'
 })
