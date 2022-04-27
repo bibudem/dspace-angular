@@ -75,8 +75,8 @@ jobs:
       - name: Run build
         run: yarn run build:prod
 
-      - name: Run specs (unit tests)
-        run: yarn run test:headless
+      #- name: Run specs (unit tests)
+       # run: yarn run test:headless
 
       # NOTE: Angular CLI only supports code coverage for specs. See https://github.com/angular/angular-cli/issues/6286
       # Upload coverage reports to Codecov (for Node v12 only)
@@ -87,11 +87,11 @@ jobs:
 
       # Using docker-compose start backend using CI configuration
       # and load assetstore from a cached copy
-      - name: Start DSpace REST Backend via Docker (for e2e tests)
-        run: |
-          docker-compose -f ./docker/docker-compose-ci.yml up -d
-          docker-compose -f ./docker/cli.yml -f ./docker/cli.assetstore.yml run --rm dspace-cli
-          docker container ls
+      #- name: Start DSpace REST Backend via Docker (for e2e tests)
+      # run: |
+          #docker-compose -f ./docker/docker-compose-ci.yml up -d
+          #docker-compose -f ./docker/cli.yml -f ./docker/cli.assetstore.yml run --rm dspace-cli
+          #docker container ls
 
       # Run integration tests via Cypress.io
       # https://github.com/cypress-io/github-action
