@@ -15,4 +15,14 @@
       </div>
     </div>
   </ds-metadata-field-wrapper>
+  <!--UdeM avril 2022 : add Udem pour plus des détails sur l'embargo-->
+  <ng-container *ngIf="afficherBoutonResult" >
+      <span  class="f-13 font-italic d-block"> {{'papyrus.delais.embargo.date' | translate}}
+         <strong><ds-metadata-values [mdValues]="item?.allMetadata(embargo)"></ds-metadata-values></strong>
+      </span>
+    <a  routerLink="{{urlDemandeCopie}}" class="btn btn-danger btn-sm rounded-pill text-white mb-4 mt-2 " target="_blank">
+      <span class="fas fa-copy text-white"></span> {{'papyrus.demande.une.copie' | translate}}
+    </a><br>
+  </ng-container>
+  <!--Fin add-->
 </ng-container>

@@ -5,8 +5,10 @@ import { AuthorizationDataService } from '../../core/data/feature-authorization/
 import { FeatureID } from '../../core/data/feature-authorization/feature-id';
 import { hasValue, isNotEmpty } from '../empty.util';
 import { map } from 'rxjs/operators';
-import { of as observableOf, combineLatest as observableCombineLatest, Observable } from 'rxjs';
+import { of as observableOf, combineLatest as observableCombineLatest, Observable, BehaviorSubject } from 'rxjs';
 import { Item } from '../../core/shared/item.model';
+
+
 
 @Component({
   selector: 'ds-file-download-link',
@@ -35,7 +37,8 @@ export class FileDownloadLinkComponent implements OnInit {
   /**
    * A boolean representing if link is shown in same tab or in a new one.
    */
-  @Input() isBlank = false;
+    //@Input() isBlank = false;
+  @Input() isBlank = true;
 
   @Input() enableRequestACopy = true;
 
@@ -46,8 +49,9 @@ export class FileDownloadLinkComponent implements OnInit {
 
   canDownload$: Observable<boolean>;
 
+
   constructor(
-    private authorizationService: AuthorizationDataService,
+    private authorizationService: AuthorizationDataService
   ) {
   }
 
@@ -62,6 +66,7 @@ export class FileDownloadLinkComponent implements OnInit {
       this.bitstreamPath$ = observableOf(this.getBitstreamDownloadPath());
       this.canDownload$ = observableOf(true);
     }
+
   }
 
   getBitstreamPath(canDownload: boolean, canRequestACopy: boolean) {
@@ -77,4 +82,5 @@ export class FileDownloadLinkComponent implements OnInit {
       queryParams: {}
     };
   }
+
 }
