@@ -41,7 +41,7 @@ export class FileSectionComponent implements OnInit {
 
   pageSize = 5;
 
-  //avril 2022: add UdeM
+  // avril 2022: add UdeM
   embargo: string[] = [
     'UdeM.TestEmbargoLift'
   ];
@@ -65,7 +65,7 @@ export class FileSectionComponent implements OnInit {
     this.afficherBoutonResult = this.afficherBouton(this.item.allMetadata(this.embargo)[0].value)
     }
     this.urlDemandeCopie = '/items/' + this.item.id + '/request-a-copy';
-    console.log(this.item);
+    // console.log(this.item);
   }
 
   /**
