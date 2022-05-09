@@ -1,7 +1,7 @@
 <ds-metadata-field-wrapper [label]="label | translate">
     <div *ngVar="(originals$ | async)?.payload as originals">
         <div *ngIf="hasValuesInBundle(originals)">
-            <h5 class="simple-view-element-header">{{"item.page.filesection.original.bundle" | translate}}</h5>
+            <h5 class="simple-view-element-header mt-1">{{"item.page.filesection.original.bundle" | translate}}</h5>
             <ds-pagination *ngIf="originals?.page?.length > 0"
                            [hideGear]="true"
                            [hidePagerWhenSinglePage]="true"
@@ -11,11 +11,11 @@
                            [retainScrollPosition]="true">
 
 
-                <div class="file-section row mb-3" *ngFor="let file of originals?.page;">
-                    <div class="col-3">
+                <div class="file-section row mt-2" *ngFor="let file of originals?.page;">
+                    <div class="col-2">
                         <ds-thumbnail [thumbnail]="(file.thumbnail | async)?.payload"></ds-thumbnail>
                     </div>
-                    <div class="col-7">
+                    <div class="col-7 border-right">
                         <dl class="row">
                             <dt class="col-md-4">{{"item.page.filesection.name" | translate}}</dt>
                             <dd class="col-md-8">{{file.name}}</dd>
@@ -32,7 +32,7 @@
                             <dd class="col-md-8">{{file.firstMetadataValue("dc.description")}}</dd>
                         </dl>
                     </div>
-                    <div class="col-2">
+                    <div class="col-3">
                         <ds-file-download-link [bitstream]="file" [item]="item">
                             {{"item.page.filesection.download" | translate}}
                         </ds-file-download-link>
@@ -41,6 +41,7 @@
             </ds-pagination>
         </div>
     </div>
+  <br>
     <div *ngVar="(licenses$ | async)?.payload as licenses">
         <div *ngIf="hasValuesInBundle(licenses)">
             <h5 class="simple-view-element-header">{{"item.page.filesection.license.bundle" | translate}}</h5>
@@ -53,11 +54,11 @@
                            [retainScrollPosition]="true">
 
 
-                <div class="file-section row" *ngFor="let file of licenses?.page;">
-                    <div class="col-3">
+                <div class="file-section row mt-2" *ngFor="let file of licenses?.page;">
+                    <div class="col-2">
                         <ds-thumbnail [thumbnail]="(file.thumbnail | async)?.payload"></ds-thumbnail>
                     </div>
-                    <div class="col-7">
+                    <div class="col-7 border-right">
                         <dl class="row">
                             <dt class="col-md-4">{{"item.page.filesection.name" | translate}}</dt>
                             <dd class="col-md-8">{{file.name}}</dd>
@@ -73,7 +74,7 @@
                             <dd class="col-md-8">{{file.firstMetadataValue("dc.description")}}</dd>
                         </dl>
                     </div>
-                    <div class="col-2">
+                    <div class="col-3">
                         <ds-file-download-link [bitstream]="file" [item]="item">
                             {{"item.page.filesection.download" | translate}}
                         </ds-file-download-link>
