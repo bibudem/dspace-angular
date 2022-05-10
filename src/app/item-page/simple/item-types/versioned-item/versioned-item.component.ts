@@ -27,7 +27,7 @@ import { LocaleService } from 'src/app/core/locale/locale.service';
 export class VersionedItemComponent extends ItemComponent {
 
   // langue par default
-  langue = 'fr'
+  langue = 'fr';
 
 
   constructor(
@@ -87,47 +87,49 @@ export class VersionedItemComponent extends ItemComponent {
    * mars 2022: Creer des fonctions Udem pour recouperer la langue et les valeurs des attribut selon sa valeur
    */
 
-  langueSession(): void {
-    if(this.localeService.getCurrentLanguageCode())
-      this.langue=this.localeService.getCurrentLanguageCode()
+  langueSession() : void {
+    if ( this.localeService.getCurrentLanguageCode() ){
+      this.langue = this.localeService.getCurrentLanguageCode();
+    }
   }
 
-  recouperationValeurItem(string):string{
-    this.langueSession()
-    let  donnes,valueRetur=''
+  recouperationValeurItem(string) : string {
+    this.langueSession();
+    let  donnes, valueRetur = '';
     donnes = string.value.split("/");
     switch (this.langue) {
-      case 'fr':
-      case 'fra':
-        valueRetur = donnes[0]
+      case 'fr' :
+      case 'fra' :
+        valueRetur = donnes[0];
         break;
-      case 'en':
-      case 'eng':
+      case 'en' :
+      case 'eng' :
         // si la personne n'a pas saisir du texte en anglais
-        if(donnes[1])
-          valueRetur = donnes[1]
-        else
-          valueRetur = donnes[0]
+        if (donnes[1]) {
+          valueRetur = donnes[1];
+        }
+        else { valueRetur = donnes[0]; }
         break;
     }
-    return valueRetur
+    return valueRetur;
   }
 
   // ecrire au complet la langue
-  langueAuComple(param):string{
-    this.langueSession()
-    if (this.localeService.getCurrentLanguageCode())
-      this.langue = this.localeService.getCurrentLanguageCode()
+  langueAuComple(param) : string {
+    this.langueSession();
+    if ( this.localeService.getCurrentLanguageCode() ){
+      this.langue = this.localeService.getCurrentLanguageCode();
+    }
 
     const langfr = {'fra' : 'Français', 'fr' : 'Français', 'eng' : 'Anglais', 'en' : 'Anglais', 'spa' : 'Espagnol', 'ita' : 'Italien', 'deu' : 'Allemand', 'por' : 'Portugais', 'ell' : 'Grec', 'lat' : 'Latin'};
 
     const langen = {'fra' : 'French', 'fr' : 'French', 'eng' : 'English', 'en' : 'English', 'spa' : 'Spanish', 'ita' : 'Italian', 'deu' : 'German', 'por' : 'Portuguese', 'ell' : 'Greek', 'lat' : 'Latin'};
 
     switch ( this.langue ) {
-      case 'fr':
+      case 'fr' :
         return langfr[param];
         break;
-      case 'en':
+      case 'en' :
         return langen[param];
         break;
     }

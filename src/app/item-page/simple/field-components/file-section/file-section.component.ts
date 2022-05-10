@@ -62,7 +62,7 @@ export class FileSectionComponent implements OnInit {
 
     // add UdeM 2022
     if ( !( this.item.allMetadata(this.embargo)[0].value === undefined ) ){
-       this.afficherBoutonResult = this.afficherBouton(this.item.allMetadata(this.embargo)[0].value)
+       this.afficherBoutonResult = this.afficherBouton(this.item.allMetadata(this.embargo)[0].value);
     }
     this.urlDemandeCopie = '/items/' + this.item.id + '/request-a-copy';
     // console.log(this.item);
