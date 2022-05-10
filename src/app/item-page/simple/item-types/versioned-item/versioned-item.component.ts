@@ -87,37 +87,39 @@ export class VersionedItemComponent extends ItemComponent {
    * mars 2022: Creer des fonctions Udem pour recouperer la langue et les valeurs des attribut selon sa valeur
    */
 
-  langueSession() : void {
-    if ( this.localeService.getCurrentLanguageCode() ){
+  langueSession(): void {
+    if (this.localeService.getCurrentLanguageCode()) {
       this.langue = this.localeService.getCurrentLanguageCode();
     }
   }
 
-  recouperationValeurItem(string) : string {
+  recouperationValeurItem(string): string {
     this.langueSession();
-    let  donnes, valueRetur = '';
-    donnes = string.value.split("/");
+    let  donnesRep, valueRetur = '';
+    donnesRep = string.value.split('/');
     switch (this.langue) {
       case 'fr' :
       case 'fra' :
-        valueRetur = donnes[0];
+        valueRetur = donnesRep[0];
         break;
       case 'en' :
       case 'eng' :
         // si la personne n'a pas saisir du texte en anglais
-        if (donnes[1]) {
-          valueRetur = donnes[1];
+        if (donnesRep[1]) {
+          valueRetur = donnesRep[1];
         }
-        else { valueRetur = donnes[0]; }
+        else {
+          valueRetur = donnesRep[0];
+        }
         break;
     }
     return valueRetur;
   }
 
   // ecrire au complet la langue
-  langueAuComple(param) : string {
+  langueAuComple(param): string {
     this.langueSession();
-    if ( this.localeService.getCurrentLanguageCode() ){
+    if (this.localeService.getCurrentLanguageCode()) {
       this.langue = this.localeService.getCurrentLanguageCode();
     }
 
