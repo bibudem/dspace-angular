@@ -93,7 +93,7 @@ export class VersionedItemComponent extends ItemComponent {
     }
   }
 
-  recouperationDonnes(string): string {
+  recouperationDonnes(string) {
     this.langueSession();
     let  donnesRep = '';
     let valueRetur = '';
