@@ -93,9 +93,10 @@ export class VersionedItemComponent extends ItemComponent {
     }
   }
 
-  recouperationValeurItem(string): string {
+  recouperationValeur(string): string {
     this.langueSession();
-    let  donnesRep, valueRetur = '';
+    let  donnesRep = '';
+    let valueRetur = '';
     donnesRep = string.value.split('/');
     switch (this.langue) {
       case 'fr' :
@@ -108,9 +109,7 @@ export class VersionedItemComponent extends ItemComponent {
         if (donnesRep[1]) {
           valueRetur = donnesRep[1];
         }
-        else {
-          valueRetur = donnesRep[0];
-        }
+        else { valueRetur = donnesRep[0]; }
         break;
     }
     return valueRetur;
