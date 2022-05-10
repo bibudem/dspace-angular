@@ -27,7 +27,7 @@ import { LocaleService } from 'src/app/core/locale/locale.service';
 export class VersionedItemComponent extends ItemComponent {
 
   // langue par default
-  langue='fr'
+  langue = 'fr'
 
 
   constructor(
@@ -99,15 +99,15 @@ export class VersionedItemComponent extends ItemComponent {
     switch (this.langue) {
       case 'fr':
       case 'fra':
-        valueRetur=donnes[0]
+        valueRetur = donnes[0]
         break;
       case 'en':
       case 'eng':
         // si la personne n'a pas saisir du texte en anglais
         if(donnes[1])
-          valueRetur=donnes[1]
+          valueRetur = donnes[1]
         else
-          valueRetur=donnes[0]
+          valueRetur = donnes[0]
         break;
     }
     return valueRetur
@@ -116,19 +116,19 @@ export class VersionedItemComponent extends ItemComponent {
   // ecrire au complet la langue
   langueAuComple(param):string{
     this.langueSession()
-    if(this.localeService.getCurrentLanguageCode())
-      this.langue=this.localeService.getCurrentLanguageCode()
+    if (this.localeService.getCurrentLanguageCode())
+      this.langue = this.localeService.getCurrentLanguageCode()
 
-    let langfr={"fra":"Français", "fr":"Français", "eng":"Anglais", "en":"Anglais", "spa":"Espagnol", "ita":"Italien", "deu":"Allemand", "por":"Portugais", "ell":"Grec", "lat":"Latin"}
+    const langfr = {'fra' : 'Français', 'fr' : 'Français', 'eng' : 'Anglais', 'en' : 'Anglais', 'spa' : 'Espagnol', 'ita' : 'Italien', 'deu' : 'Allemand', 'por' : 'Portugais', 'ell' : 'Grec', 'lat' : 'Latin'};
 
-    let langen={"fra":"French", "fr":"French", "eng":"English", "en":"English", "spa":"Spanish", "ita":"Italian", "deu":"German", "por":"Portuguese", "ell":"Greek", "lat":"Latin"}
+    const langen = {'fra' : 'French', 'fr' : 'French', 'eng' : 'English', 'en' : 'English', 'spa' : 'Spanish', 'ita' : 'Italian', 'deu' : 'German', 'por' : 'Portuguese', 'ell' : 'Greek', 'lat' : 'Latin'};
 
-    switch (this.langue) {
+    switch ( this.langue ) {
       case 'fr':
-        return langfr[param]
+        return langfr[param];
         break;
       case 'en':
-        return langen[param]
+        return langen[param];
         break;
     }
   }
