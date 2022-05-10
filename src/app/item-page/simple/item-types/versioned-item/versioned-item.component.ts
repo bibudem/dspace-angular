@@ -93,11 +93,11 @@ export class VersionedItemComponent extends ItemComponent {
     }
   }
 
-  recouperationDonnes(string) {
+  recouperationDonnes(valDonnes): string {
     this.langueSession();
     let  donnesRep = '';
     let valueRetur = '';
-    donnesRep = string.value.split('/');
+    donnesRep = valDonnes.value.split('/');
     switch (this.langue) {
       case 'fr' :
       case 'fra' :
