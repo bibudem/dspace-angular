@@ -34,7 +34,7 @@ export class ItemPageDateFieldComponent extends ItemPageFieldComponent {
     /**
      * Label i18n key for the rendered metadata
      */
-    //label = 'item.page.date';
+    // label = 'item.page.date';
     label=''
 
 }

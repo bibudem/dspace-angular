@@ -61,8 +61,8 @@ export class FileSectionComponent implements OnInit {
     this.getNextPage();
 
     // add UdeM 2022
-    if(!(this.item.allMetadata(this.embargo)[0].value === undefined )){
-    this.afficherBoutonResult = this.afficherBouton(this.item.allMetadata(this.embargo)[0].value)
+    if (!(this.item.allMetadata(this.embargo)[0].value === undefined )){
+       this.afficherBoutonResult = this.afficherBouton(this.item.allMetadata(this.embargo)[0].value)
     }
     this.urlDemandeCopie = '/items/' + this.item.id + '/request-a-copy';
     // console.log(this.item);
@@ -102,11 +102,11 @@ export class FileSectionComponent implements OnInit {
   // add UdeM 2022 : afficher le bouton si l'item est sous embargo
   // On compare la date actuelle avec la date d'embargo definit pour cet item
   afficherBouton(dateCompare):boolean {
-    let dateItem = new Date(dateCompare);
-    let dateNow = new Date(moment().format("yyyy-MM-DD"));
+    const dateItem = new Date(dateCompare);
+    const dateNow = new Date(moment().format('yyyy-MM-DD'));
     let afficher = false
 
-    if(!(dateCompare === undefined || dateCompare == '')){
+    if (!(dateCompare == undefined || dateCompare == '')){
       if (dateNow.toISOString() < dateItem.toISOString()) {
         afficher = true;
       }

@@ -26,7 +26,7 @@ import { LocaleService } from 'src/app/core/locale/locale.service';
 })
 export class VersionedItemComponent extends ItemComponent {
 
-  //langue par default
+  // langue par default
   langue='fr'
 
 
@@ -103,7 +103,7 @@ export class VersionedItemComponent extends ItemComponent {
         break;
       case 'en':
       case 'eng':
-        //si la personne n'a pas saisir du texte en anglais
+        // si la personne n'a pas saisir du texte en anglais
         if(donnes[1])
           valueRetur=donnes[1]
         else
@@ -113,7 +113,7 @@ export class VersionedItemComponent extends ItemComponent {
     return valueRetur
   }
 
-  //ecrire au complet la langue
+  // ecrire au complet la langue
   langueAuComple(param):string{
     this.langueSession()
     if(this.localeService.getCurrentLanguageCode())
