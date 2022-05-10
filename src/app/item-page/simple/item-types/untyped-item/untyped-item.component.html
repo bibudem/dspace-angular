@@ -54,10 +54,10 @@
         <span  class="fa fa fa-bookmark text-info icon-info mr-1"></span>
         <!--Note udem: pas de libellé; concaténé avec dc.type ; partie en français dans interface français -->
         <span class="span-udem-item1" *ngFor="let mdValue of object?.allMetadata('dc.type');" >
-              {{ recouperationValeur(mdValue) }}
+              {{ recouperationDonnes(mdValue) }}
           </span>
         <span  class="span-udem-item2" *ngFor="let mdValue of object?.allMetadata('UdeM.VersionRioxx');" >
-              [ {{  recouperationValeur(mdValue) }} ]
+              [ {{  recouperationDonnes(mdValue) }} ]
           </span>
       </p>
     </div>
@@ -193,13 +193,13 @@
         <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('etd.degree.level')">
           <h6 class="simple-view-element-header">{{'papyrus.item.degree.level' | translate}}</h6>
           <p *ngFor="let mdValue of object?.allMetadata('etd.degree.level');" >
-            {{  recouperationValeur(mdValue) }}
+            {{  recouperationDonnes(mdValue) }}
           </p>
         </ds-metadata-field-wrapper>
         <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('UdeM.cycle')">
           <h6 class="simple-view-element-header">{{'papyrus.item.UdeM.cycle' | translate}}</h6>
           <p *ngFor="let mdValue of object?.allMetadata('UdeM.cycle');" >
-            {{  recouperationValeur(mdValue) }}
+            {{  recouperationDonnes(mdValue) }}
           </p>
         </ds-metadata-field-wrapper>
         <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('etd.degree.name')">
@@ -275,15 +275,15 @@
           <h6 class="simple-view-element-header">{{'papyrus.item.subject' | translate}}</h6>
           <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dc.subject'); let last=last;" [href]="'/browse/subject?value='+mdValue.value">
             <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
-            {{  recouperationValeur(mdValue) }}
+            {{  recouperationDonnes(mdValue) }}
           </a>
           <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dc.subject.mesh'); let last=last;" [href]="'/browse/subject?value='+mdValue.value">
             <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
-            {{  recouperationValeur(mdValue) }}
+            {{  recouperationDonnes(mdValue) }}
           </a>
           <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dc.subject.other'); let last=last;" [href]="'/browse/subject?value='+mdValue.value">
             <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
-            {{  recouperationValeur(mdValue) }}
+            {{  recouperationDonnes(mdValue) }}
           </a>
         </ds-metadata-field-wrapper>
         <!----------------Fin----------------------------------->

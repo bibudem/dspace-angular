@@ -93,7 +93,7 @@ export class VersionedItemComponent extends ItemComponent {
     }
   }
 
-  recouperationValeur(string): string {
+  recouperationDonnes(string): string {
     this.langueSession();
     let  donnesRep = '';
     let valueRetur = '';
@@ -105,11 +105,12 @@ export class VersionedItemComponent extends ItemComponent {
         break;
       case 'en' :
       case 'eng' :
+        valueRetur = donnesRep[0];
         // si la personne n'a pas saisir du texte en anglais
         if (donnesRep[1]) {
           valueRetur = donnesRep[1];
         }
-        else { valueRetur = donnesRep[0]; }
+
         break;
     }
     return valueRetur;
