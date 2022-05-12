@@ -50,7 +50,7 @@ export class FileSectionComponent implements OnInit {
 
   urlDemandeCopie = '';
 
-  dateEmbargoAfficher = ''
+  dateEmbargoAfficher = '';
 
   constructor(
     protected bitstreamDataService: BitstreamDataService,
@@ -66,7 +66,7 @@ export class FileSectionComponent implements OnInit {
     if (!(this.item.allMetadata( this.embargo)[0].value === undefined)) {
        this.afficherBoutonResult = this.afficherBouton(this.item.allMetadata(this.embargo)[0].value);
        // exemple de date: 2023-05-12T04:00:00Z
-       this.dateEmbargoAfficher = this.item.allMetadata(this.embargo)[0].value.split("T")[0];
+       this.dateEmbargoAfficher = this.item.allMetadata(this.embargo)[0].value.split('T')[0];
     }
     this.urlDemandeCopie = '/items/' + this.item.id + '/request-a-copy';
      // console.log(this.item);
