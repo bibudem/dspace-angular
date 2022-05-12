@@ -50,6 +50,8 @@ export class FileSectionComponent implements OnInit {
 
   urlDemandeCopie = '';
 
+  dateEmbargoAfficher = ''
+
   constructor(
     protected bitstreamDataService: BitstreamDataService,
     protected notificationsService: NotificationsService,
@@ -63,9 +65,12 @@ export class FileSectionComponent implements OnInit {
     // add UdeM 2022
     if (!(this.item.allMetadata( this.embargo)[0].value === undefined)) {
        this.afficherBoutonResult = this.afficherBouton(this.item.allMetadata(this.embargo)[0].value);
+       // exemple de date: 2023-05-12T04:00:00Z
+       this.dateEmbargoAfficher = this.item.allMetadata(this.embargo)[0].value.split("T")[0];
     }
     this.urlDemandeCopie = '/items/' + this.item.id + '/request-a-copy';
-    // console.log(this.item);
+     // console.log(this.item);
+
   }
 
   /**
