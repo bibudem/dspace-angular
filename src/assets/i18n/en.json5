@@ -590,7 +590,7 @@
 
   "bitstream-request-a-copy.header": "Request a copy of the file",
 
-  "bitstream-request-a-copy.intro": "Enter the following information to request a copy for the following item: ",
+  "bitstream-request-a-copy.intro": "This document is currently not available in open access. You can send a request to receive a copy by filling the form below; make sure to mention for what use you wish to obtain this document. Your request will be forwarded to the email address associated in our system with the person who submitted the document. We cannot guarantee that this address is still valid and therefore that you will receive an answer.",
 
   "bitstream-request-a-copy.intro.bitstream.one": "Requesting the following file: ",
 
@@ -4087,4 +4087,14 @@
   "browse.metadata.titleindex": "All Titles",
 
   "browse.metadata.titleindex.breadcrumbs": "Browse all titles forms",
+
+  "papyrus.delais.embargo.date": "Under embargo until:",
+
+  "papyrus.demande.une.copie": "Request a copy",
+
+  "papyrus.bitstream-request-a-copy.intro.ajout1": "IMPORTANT : Documents in Papyrus are works protected by copyright: copies obtained through this request service must be used within the limits of what is permitted by the Copyright Act and what was communicated to the copyright owner in the request.",
+
+  "papyrus.embargo.term": "Embargo period requested :",
+
+  "papyrus.embargo.term.mois": "months",
 }

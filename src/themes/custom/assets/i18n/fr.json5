@@ -1200,25 +1200,25 @@
 
   // "browse.metadata.author.breadcrumbs": "Parcourir par Auteur",
   "browse.metadata.author.breadcrumbs": "Parcourir par auteur.e",
-  
+
   // "browse.metadata.dateissued.breadcrumbs": "Parcourir par Date",
   "browse.metadata.dateissued.breadcrumbs": "Parcourir par date",
-  
+
   // "browse.metadata.subject.breadcrumbs": "Parcourir par Sujet",
   "browse.metadata.subject.breadcrumbs": "Parcourir par sujet",
-  
+
   // "browse.metadata.title.breadcrumbs": "Parcourir par Titre",
   "browse.metadata.title.breadcrumbs": "Parcourir par titre",
 
   // "browse.metadata.author": "Auteur",
   "browse.metadata.author": "auteur.e",
-  
+
   // "browse.metadata.dateissued": "Date de publication",
   "browse.metadata.dateissued": "date de publication",
-  
+
   // "browse.metadata.subject": "Sujet",
   "browse.metadata.subject": "sujet",
-  
+
   // "browse.metadata.title": "Titre",
   "browse.metadata.title": "titre",
 
@@ -1230,7 +1230,7 @@
   /**********************************************************************/
 
 
-  //contact
+  // contact
   "papyrus.info.contact.titre.global": "Dépôt de thèses et mémoires, de travaux et publications :",
   "papyrus.info.contact.courriel.global": "depot@bib.umontreal.ca",
   "papyrus.info.contact.phone.global": "514-343-6111 x33345",
@@ -1240,7 +1240,7 @@
   "papyrus.info.contact.personne.administration": "Marie-Hélène Vézina, Bibliothécaire · Projets numériques",
   "papyrus.info.contact.phone.administration": "(514) 343-6111 x5225",
 
-  //top udem
+  // top udem
   "papyrus.top.menu.repertoire": "Répertoire",
   "papyrus.top.menu.faculte": "Facultés",
   "papyrus.top.menu.bibliotheque": "Bibliothèques",
@@ -1255,28 +1255,28 @@
   "papyrus.top.menu.cesite": "Ce site",
   "papyrus.top.menu.toutudem": "Tout UdeM",
 
-  //menu pricipal
+  // menu pricipal
   "papyrus.menu.principale.info": "INFO",
   "papyrus.menu.principale.info.a-propos": "À propos",
   "papyrus.menu.principale.info.depot": "Dépôt institutionnel",
   "papyrus.menu.principale.info.droit": "Droit d'auteur et politiques",
   "papyrus.menu.principale.info.interrogation": "Interrogation de Papyrus",
   "papyrus.menu.principale.contact": "Nous joindre",
-  //variable dynamique, on peut pas changer le nom
+  // variable dynamique, on peut pas changer le nom
   "menu.section.browse_global_by_discipline": "Discipline",
   "menu.section.browse_global_by_affiliation": "Affiliation",
   "menu.section.browse_global_by_advisor": "Directeur.trice de recherche",
   "menu.section.browse_global_by_titleindex": "Titre (toutes les formes)",
 
 
-  //page d'accueil
+  // page d'accueil
   "papyrus.home.search-form.placeholder": "Rechercher",
   "papyrus.home.accueil.title": "Papyrus : Dépôt institutionnel",
   "papyrus.home.accueil.depos-memoire": "Dépôt de thèse ou mémoire",
   "papyrus.home.accueil.guide": "Guide pour le dépôt dans les collections « Travaux et publications »",
   "papyrus.home.btn.about": "À propos",
 
-  //papyrus footer
+  // papyrus footer
   "papyrus.footer.title": "Papyrus",
   "papyrus.footer.text": "Dépôt institutionnel de l'Université de Montréal",
   "papyrus.footer.propulse": "Offert par : Bibliothèques UdeM",
@@ -1288,11 +1288,11 @@
   "papyrus.footer.dspace.mention": "DSpace software [version 7.2]",
   "papyrus.footer.dspace.duraspace": "DuraSpace",
 
-  //page details d'items
+  // page details d'items
   "papyrus.item.tab.details": "Détails",
   "papyrus.item.tab.voir-plus": "Voir plus",
 
-  //titre pour les détails d'un item
+  // titre pour les détails d'un item
   "papyrus.item.page.dcterms.alternative": "Autre.s titre.s",
   "papyrus.item.page.oaire": "Fait partie de",
   "papyrus.item.page.affiliation": "Affiliation",
@@ -1314,7 +1314,7 @@
   "papyrus.item.subject": "Sujets",
   "papyrus.item.rights": "Droits d'utilisation",
 
-  //tab menu
+  // tab menu
   "browse.comcol.by.advisor": "Directeur.trice de recherche",
   "browse.comcol.by.discipline": "Programme",
   "browse.comcol.by.affiliation": "Affiliation",
@@ -1322,7 +1322,7 @@
   "browse.comcol.by.author": "Auteur.e",
 
 
-  
+
   "browse.metadata.advisor": "directeur.trice de recherche",
   "browse.metadata.discipline": "programme",
   "browse.metadata.affiliation": "affiliation",
@@ -1336,9 +1336,23 @@
 
 
 
-  //titre pour les formulaires dans workspaceitems
+  // titre pour les formulaires dans workspaceitems
   "submission.sections.submit.progressbar.describe.step1": "Section 1",
   "submission.sections.submit.progressbar.describe.step2": "Section 2",
+
+  // label pour la duré d'embargo
+  "papyrus.delais.embargo.date": "Sous embargo jusqu'au :",
+  "papyrus.demande.une.copie": "Demander une copie",
+
+  // titre de la duré d'embargo dans workflow
+  "papyrus.embargo.term": "Période d'embargo demandée :",
+  "papyrus.embargo.term.mois": "mois",
+
+	// formulaire demande de copie, paragraphes explicatifs
+	"bitstream-request-a-copy.intro": "Ce document n'est pas en libre accès présentement. Vous pouvez cependant faire une demande pour en obtenir une copie en remplissant les champs ci-dessous et en n'oubliant pas de spécifier pour quelles utilisations vous souhaitez obtenir ce document. Votre demande sera acheminée à l'adresse courriel du déposant ou de la déposante que nous avons dans nos dossiers. Nous ne pouvons garantir que cette adresse est toujours valide et par conséquent qu'une réponse sera obtenue.",
+	// MHV : "papyrus.bitstream-request-a-copy.intro.ajout1" en style "warning" pour mettre emphase
+	"papyrus.bitstream-request-a-copy.intro.ajout1":
+	"IMPORTANT : Les documents dans Papyrus sont des oeuvres protégées par le droit d'auteur, toute copie de document obtenue doit être utilisée par le demandeur dans les limites de ce qui est permis par la Loi sur le droit d'auteur et de ce qui est communiqué au demandeur par l'auteur ou le détenteur des droits."
 
 
   /**********************************************************************/

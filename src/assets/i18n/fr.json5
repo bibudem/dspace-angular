@@ -590,7 +590,7 @@
 
   "bitstream-request-a-copy.header": "Demander une copie du fichier",
 
-  "bitstream-request-a-copy.intro": "Entrer les informations suivantes pour demander une copie de l'élément suivant : ",
+  "bitstream-request-a-copy.intro": "Ce document n'est pas en libre accès présentement. Vous pouvez cependant faire une demande pour en obtenir une copie en remplissant les champs ci-dessous et en n'oubliant pas de spécifier pour quelles utilisations vous souhaitez obtenir ce document. Votre demande sera acheminée à l'adresse courriel du déposant ou de la déposante que nous avons dans nos dossiers. Nous ne pouvons garantir que cette adresse est toujours valide et par conséquent qu'une réponse sera obtenue.",
 
   "bitstream-request-a-copy.intro.bitstream.one": "Demander les fichiers suivants : ",
 
@@ -4091,4 +4091,14 @@
   "browse.metadata.advisor.breadcrumbs": "Parcourir par directeur.trice de recherche",
 
   "browse.metadata.titleindex.breadcrumbs": "Parcourir l'index de tous les titres",
+
+  "papyrus.delais.embargo.date": "Sous embargo jusqu'au :",
+
+  "papyrus.demande.une.copie": "Demander une copie",
+
+  "papyrus.bitstream-request-a-copy.intro.ajout1": "IMPORTANT : Les documents dans Papyrus sont des oeuvres protégées par le droit d'auteur, toute copie de document obtenue doit être utilisée par le demandeur dans les limites de ce qui est permis par la Loi sur le droit d'auteur et de ce qui est communiqué au demandeur par l'auteur ou le détenteur des droits.",
+
+  "papyrus.embargo.term": "Période d'embargo demandée :",
+
+  "papyrus.embargo.term.mois": "mois",
 }
