@@ -18,7 +18,7 @@
       <table class="table table-bordered table-hover mb-1">
         <tbody>
           <ng-container *ngFor="let mdEntry of (metadata$ | async) | keyvalue">
-            <ng-container *ngIf="!(mdEntry.key=='UdeM.TestEmbargoTerms')">
+            <ng-container *ngIf="!(mdEntry.key=='UdeM.EmbargoTerms')">
               <tr  *ngFor="let mdValue of mdEntry.value">
                 <td >{{mdEntry.key}}</td>
                 <td>{{mdValue.value}}</td>

@@ -43,7 +43,7 @@ export class FileSectionComponent implements OnInit {
 
   // avril 2022: add UdeM
   embargo: string[] = [
-    'UdeM.TestEmbargoLift'
+    'UdeM.EmbargoLift'
   ];
 
   afficherBoutonResult = false;
