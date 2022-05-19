@@ -30,7 +30,7 @@
         </div>
         <div *ngIf="(editable | async)" class="field-container">
             <textarea class="form-control" type="textarea" attr.aria-labelledby="fieldValue" [(ngModel)]="metadata.value" [dsDebounce]
-                      (onDebounce)="update()"></textarea>
+                      (onDebounce)="update()" *ngIf="(metadata?.key=='dc.date.issued' || metadata?.key=='dc.date.submitted'  )" placeholder="yyyy-mm-dd" ></textarea>
         </div>
     </div>
 </td>
