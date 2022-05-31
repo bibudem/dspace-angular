@@ -146,8 +146,8 @@ export class VersionedItemComponent extends ItemComponent {
   // On compare la date actuelle avec la date d'embargo definit pour cet item
   afficherImageEmbargo(): boolean {
     let afficher = false;
-    let dateValueItem = this.object.firstMetadataValue(['UdeM.EmbargoLift']);
-    if(!dateValueItem || dateValueItem == ''){
+    const dateValueItem = this.object.firstMetadataValue(['UdeM.EmbargoLift']);
+    if (!dateValueItem || dateValueItem === '') {
       return afficher;
     }
     // console.log(dateValueItem)

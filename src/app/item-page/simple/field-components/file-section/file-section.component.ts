@@ -61,9 +61,10 @@ export class FileSectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.getNextPage();
-
+    console.log(this.item);
+    console.log(this.item.allMetadata(['thumbnail']));
     // add UdeM 2022
-    if (!(this.item.allMetadata( this.embargo)[0].value === undefined)) {
+    if (this.item.allMetadata(this.embargo).entries()) {
        this.afficherBoutonResult = this.afficherBouton(this.item.allMetadata(this.embargo)[0].value);
        // exemple de date: 2023-05-12T04:00:00Z
        this.dateEmbargoAfficher = this.item.allMetadata(this.embargo)[0].value.split('T')[0];
