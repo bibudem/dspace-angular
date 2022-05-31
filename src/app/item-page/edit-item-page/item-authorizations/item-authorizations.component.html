@@ -1,7 +1,11 @@
 <div class="container">
   <ds-alert [type]="'alert-info'" [content]="'item.edit.authorizations.heading'"></ds-alert>
   <ds-resource-policies [resourceType]="'item'" [resourceUUID]="(getItemUUID() | async)"></ds-resource-policies>
-  <ng-container *ngFor="let bundle of (getItemBundles() | async); trackById">
+  <ng-container *ngFor="let bundle of (getItemBundles() | async); index as i; trackById">
+    <!-- add UdeM 2022-->
+    <div role="alert" class="alert alert-dismissible alert-warning fade show w-100">
+      <h5>{{'item.bitstreams.upload.bundle' | translate}}{{titreBundle[i]}}</h5>
+    </div>
     <ds-resource-policies [resourceType]="'bundle'"
                           [resourceUUID]="bundle.id"></ds-resource-policies>
     <ng-container *ngFor="let bitstream of (bundleBitstreamsMap.get(bundle.id) | async)?.page; trackById">
@@ -10,4 +14,3 @@
     </ng-container>
   </ng-container>
 </div>
-

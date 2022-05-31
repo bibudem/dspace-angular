@@ -18,6 +18,9 @@ import { ItemDataService } from '../../../../core/data/item-data.service';
 import { WorkspaceItem } from '../../../../core/submission/models/workspaceitem.model';
 import { RouteService } from '../../../../core/services/route.service';
 import { LocaleService } from 'src/app/core/locale/locale.service';
+// add Udem 2022
+import * as moment from 'moment';
+
 
 @Component({
   selector: 'ds-versioned-item',
@@ -28,7 +31,9 @@ export class VersionedItemComponent extends ItemComponent {
 
   // langue par default
   langue = 'fr';
+  // add UdeM 2022 | afficher une image si l'item est sous embargo
 
+  imageEmgargo = false;
 
   constructor(
     private modalService: NgbModal,
@@ -135,5 +140,24 @@ export class VersionedItemComponent extends ItemComponent {
         return langen[param];
         break;
     }
+  }
+
+  // add UdeM 2022 : afficher une image définie si l'item est sous embargo
+  // On compare la date actuelle avec la date d'embargo definit pour cet item
+  afficherImageEmbargo(): boolean {
+    let afficher = false;
+    let dateValueItem = this.object.firstMetadataValue(['UdeM.EmbargoLift']);
+    if(!dateValueItem || dateValueItem == ''){
+      return afficher;
+    }
+    // console.log(dateValueItem)
+    const dateItem = new Date(dateValueItem);
+    const dateNow = new Date(moment().format('yyyy-MM-DD'));
+
+      if (dateNow.toISOString() < dateItem.toISOString()) {
+        afficher = true;
+      }
+
+    return afficher;
   }
 }
