@@ -50,7 +50,6 @@
     "webdriver-manager": "^12.1.8"
   },
   "dependencies": {
-    "@angular-eslint/schematics": "^13.2.1",
     "@angular/animations": "~11.2.14",
     "@angular/cdk": "^11.2.13",
     "@angular/common": "~11.2.14",
@@ -89,6 +88,7 @@
     "file-saver": "^2.0.5",
     "filesize": "^6.1.0",
     "font-awesome": "4.7.0",
+    "highcharts": "^10.1.0",
     "http-proxy-middleware": "^1.0.5",
     "https": "1.0.0",
     "js-cookie": "2.2.1",
