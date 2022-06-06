@@ -1290,7 +1290,7 @@
 
   // page details d'items
   "papyrus.item.tab.details": "Détails",
-  "papyrus.item.tab.voir-plus": "Voir plus",
+  "papyrus.item.tab.voir-plus": "Description",
 
   // titre pour les détails d'un item
   "papyrus.item.page.dcterms.alternative": "Autre.s titre.s",
@@ -1352,9 +1352,22 @@
 	"bitstream-request-a-copy.intro": "Ce document n'est pas en libre accès présentement. Vous pouvez cependant faire une demande pour en obtenir une copie en remplissant les champs ci-dessous et en n'oubliant pas de spécifier pour quelles utilisations vous souhaitez obtenir ce document. Votre demande sera acheminée à l'adresse courriel du déposant ou de la déposante que nous avons dans nos dossiers. Nous ne pouvons garantir que cette adresse est toujours valide et par conséquent qu'une réponse sera obtenue.",
 	// MHV : "papyrus.bitstream-request-a-copy.intro.ajout1" en style "warning" pour mettre emphase
 	"papyrus.bitstream-request-a-copy.intro.ajout1":
-	"IMPORTANT : Les documents dans Papyrus sont des oeuvres protégées par le droit d'auteur, toute copie de document obtenue doit être utilisée par le demandeur dans les limites de ce qui est permis par la Loi sur le droit d'auteur et de ce qui est communiqué au demandeur par l'auteur ou le détenteur des droits."
+	"IMPORTANT : Les documents dans Papyrus sont des oeuvres protégées par le droit d'auteur, toute copie de document obtenue doit être utilisée par le demandeur dans les limites de ce qui est permis par la Loi sur le droit d'auteur et de ce qui est communiqué au demandeur par l'auteur ou le détenteur des droits.",
 
 
+  "grant-deny-request-copy.intro1": "Si vous êtes l'un.e des auteur.e.s du document <a href='{{ url }}'>{{ name }}</a>, veuillez utiliser l'une des options au bas de cette page pour répondre à la demande de l'utilisateur.trice.",
+
+  "grant-deny-request-copy.intro2": "Après avoir choisi une option, une proposition de message de réponse par courrier électronique vous sera présentée, que vous pourrez modifier. Changez la langue de l'interface dans le menu au haut de la page si vous désirez partir d'une réponse modèle en anglais.",
+
+   "papyrus.grant-deny-request-copy.intro.ajout1" : "Si vous n'êtes pas l'un.e des auteur.e.s du document <a href='{{ url }}'>{{ name }}</a>, vous devez rediriger le courriel reçu à l'auteur.e ou aux auteur.e.s qui seul.e.s peuvent autoriser l'envoi d'une copie du document.",
+
+   "papyrus.grant-deny-request-copy.intro.ajout2" : "THÈSE OU MÉMOIRE : La décision de mettre le document sous embargo ayant été prise conjointement par l'auteur étudiant et son directeur ou sa directrice de recherche au moment du dépôt, l'auteur.e souhaitera sans doute consulter son directeur ou sa directrice de recherche avant d'accéder à la demande.",
+
+   "papyrus.grant-deny-request-copy.intro.ajout3" : "ARTICLE PUBLIÉ : Si dans le contrat d'édition vous avez cédé vos droits à l'éditeur, vous ne pouvez accorder à un demandeur des droits que vous n'avez plus, tels que la permission de reproduire le document pour diffusion dans un cours en ligne ou celle d'en imprimer de multiples copies. Vous pouvez cependant envoyer la copie du document au demandeur pour une utilisation personnelle à des fins d'étude ou de recherche.",
+
+   "papyrus.statistics.title.ongle.bref" : "Données d'utilisation",
+
+   "papyrus.statistics.title.ongle.tous" : "Toutes les statistics",
   /**********************************************************************/
 
 }

@@ -1450,9 +1450,9 @@
 
   "grant-deny-request-copy.home-page": "Aller à la page d'accueil",
 
-  "grant-deny-request-copy.intro1": "Si vous êtes l'un des auteur.e.s du document <a href='{{ url }}'>{{ name }}</a>, veuillez utiliser l'une des options ci-dessous pour répondre à la demande de l'utilisateur.trice.",
+  "grant-deny-request-copy.intro1": "Si vous êtes l'un.e des auteur.e.s du document <a href='{{ url }}'>{{ name }}</a>, veuillez utiliser l'une des options au bas de cette page pour répondre à la demande de l'utilisateur.trice.",
 
-  "grant-deny-request-copy.intro2": "Après avoir choisi une option, une proposition de message de réponse par courrier électronique vous sera présentée, que vous pourrez modifier.",
+  "grant-deny-request-copy.intro2": "Après avoir choisi une option, une proposition de message de réponse par courrier électronique vous sera présentée, que vous pourrez modifier. Changez la langue de l'interface dans le menu au haut de la page si vous désirez partir d'une réponse modèle en anglais.",
 
   "grant-deny-request-copy.processed": "Cette demande a déjà été traitée. Vous pouvez utiliser le bouton ci-dessous pour revenir à la page d'accueil.",
 
@@ -4006,7 +4006,7 @@
 
   "papyrus.item.tab.details": "Détails",
 
-  "papyrus.item.tab.voir-plus": "Voir plus",
+  "papyrus.item.tab.voir-plus": "Description",
 
   "papyrus.item.page.dcterms.alternative": "Autre.s titre.s",
 
@@ -4101,4 +4101,14 @@
   "papyrus.embargo.term": "Période d'embargo demandée :",
 
   "papyrus.embargo.term.mois": "mois",
+
+  "papyrus.grant-deny-request-copy.intro.ajout1": "Si vous n'êtes pas l'un.e des auteur.e.s du document <a href='{{ url }}'>{{ name }}</a>, vous devez rediriger le courriel reçu à l'auteur.e ou aux auteur.e.s qui seul.e.s peuvent autoriser l'envoi d'une copie du document.",
+
+  "papyrus.grant-deny-request-copy.intro.ajout2": "THÈSE OU MÉMOIRE : La décision de mettre le document sous embargo ayant été prise conjointement par l'auteur étudiant et son directeur ou sa directrice de recherche au moment du dépôt, l'auteur.e souhaitera sans doute consulter son directeur ou sa directrice de recherche avant d'accéder à la demande.",
+
+  "papyrus.grant-deny-request-copy.intro.ajout3": "ARTICLE PUBLIÉ : Si dans le contrat d'édition vous avez cédé vos droits à l'éditeur, vous ne pouvez accorder à un demandeur des droits que vous n'avez plus, tels que la permission de reproduire le document pour diffusion dans un cours en ligne ou celle d'en imprimer de multiples copies. Vous pouvez cependant envoyer la copie du document au demandeur pour une utilisation personnelle à des fins d'étude ou de recherche.",
+
+  "papyrus.statistics.title.ongle.bref": "Données d'utilisation",
+
+  "papyrus.statistics.title.ongle.tous": "Toutes les statistics",
 }

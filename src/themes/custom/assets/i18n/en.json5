@@ -135,7 +135,24 @@
 	// formulaire demande de copie, paragraphes explicatifs
 	"bitstream-request-a-copy.intro": "This document is currently not available in open access. You can send a request to receive a copy by filling the form below; make sure to mention for what use you wish to obtain this document. Your request will be forwarded to the email address associated in our system with the person who submitted the document. We cannot guarantee that this address is still valid and therefore that you will receive an answer.",
 	// MHV : "papyrus.bitstream-request-a-copy.intro.ajout1" en style "warning" pour mettre emphase
-	"papyrus.bitstream-request-a-copy.intro.ajout1": "IMPORTANT : Documents in Papyrus are works protected by copyright: copies obtained through this request service must be used within the limits of what is permitted by the Copyright Act and what was communicated to the copyright owner in the request."
+	"papyrus.bitstream-request-a-copy.intro.ajout1": "IMPORTANT : Documents in Papyrus are works protected by copyright: copies obtained through this request service must be used within the limits of what is permitted by the Copyright Act and what was communicated to the copyright owner in the request.",
+
+
+  "grant-deny-request-copy.intro1": "If you are one of the authors of the document <a href='{{ url }}'>{{ name }}</a>, then please use one of the options below to respond to the user's request.",
+
+  "grant-deny-request-copy.intro2": "After choosing an option, you will be presented with a suggested email reply which you may edit. You can change the language interface within the menu at the top of the page if you wish to use a reply model in French.",
+
+   "papyrus.grant-deny-request-copy.intro.ajout1" : "If you are not an author of the document <a href='{{ url }}'>{{ name }}</a>, you must forward the email you received to the author or the authors who are the only one(s) that can grant a copy to be sent.",
+
+   "papyrus.grant-deny-request-copy.intro.ajout2" : "THESES AND DISSERTATIONS : The author may wish to consult his/her thesis advisor before answering the request since the decision to embargo the document at the time of submission was taken jointly by the author and the advisor.",
+
+   "papyrus.grant-deny-request-copy.intro.ajout3" : "PUBLISHED ARTICLE : If you have previously transferred your copyright for this document to a publisher, you cannot give rights to a requester that you no longer have, for example the permission to reproduce and use the document in an online course or the permission to print multiple copies. You can however provide a copy of your document to the requester for his/her personal use for study and research purposes.",
+
+   "papyrus.statistics.title.ongle.bref" : "Usage data",
+
+   "papyrus.statistics.title.ongle.tous" : "All statistics"
+
+
 
 
   /**********************************************************************/
