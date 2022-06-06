@@ -58,7 +58,8 @@ export class StatisticsGraphComponent implements OnInit {
             for (const point of this.report.points) {
               // console.log(point.label);
               this.xAxis.categories[i] = point.label;
-              arraySeriesViews.push(point.values['views'].toString());
+              /* tslint:disable:no-string-literal */
+              arraySeriesViews.push(point.values['views']);
               arraySeriesTel.push(0);
               i++;
             }

@@ -48,7 +48,8 @@ export class StatisticsTableComponent implements OnInit {
       if (this.report.reportType === 'TotalVisits') {
         let total =0 ;
         for (const point of this.report.points) {
-           total += Number(point.values['views'].toString());
+          /* tslint:disable:no-string-literal */
+          total += point.values['views'];
         }
         document.getElementById('totalTelChiffre').innerHTML = total.toString();
       }
