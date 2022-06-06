@@ -45,10 +45,10 @@ export class StatisticsTableComponent implements OnInit {
     if (this.hasData) {
       this.headers = Object.keys(this.report.points[0].values);
       // add UdeM 2022 | completer le view
-      if(this.report.reportType == 'TotalVisits'){
+      if (this.report.reportType === 'TotalVisits') {
         let total =0 ;
-        for(let point of this.report.points){
-           total += point.values['views'];
+        for (const point of this.report.points) {
+           total += Number(point.values['views'].toString());
         }
         document.getElementById('totalTelChiffre').innerHTML = total.toString();
       }

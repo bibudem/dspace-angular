@@ -30,14 +30,14 @@ export class StatisticsGraphComponent implements OnInit {
    */
   headers: string[];
 
-  optionsGraphique : any = { };
+  optionsGraphique: any = { };
 
-  xAxis : any = {};
+  xAxis: any = {};
 
   constructor( protected dsoService: DSpaceObjectDataService,
                protected nameService: DSONameService) { }
 
-   ngOnInit():void {
+   ngOnInit(): void {
     this.hasData = this.report.points.length > 0;
     if (this.hasData) {
       this.headers = Object.keys(this.report.points[0].values);
@@ -47,24 +47,24 @@ export class StatisticsGraphComponent implements OnInit {
         enabled: false
       };
           let i = 0;
-          let arraySeriesViews= [];
-          let arraySeriesTel= [];
+          const arraySeriesViews= [];
+          const arraySeriesTel= [];
           this.optionsGraphique.title = { text: null };
           this.optionsGraphique.credits = {enabled: false };
           this.optionsGraphique.yAxis = { min: 0, title: { text: null, align: 'high'} };
           this.optionsGraphique.plotOptions = { bar: { dataLabels: { enabled: true } } };
           this.xAxis.categories = [];
 
-            for(let point of this.report.points){
+            for (const point of this.report.points) {
               // console.log(point.label);
               this.xAxis.categories[i] = point.label;
-              arraySeriesViews.push(point.values['views']);
+              arraySeriesViews.push(point.values['views'].toString());
               arraySeriesTel.push(0);
               i++;
             }
             this.optionsGraphique.series = [
               { name:'Visualisations',data: arraySeriesViews }
-              //,{ name:'Téléchargements',data: arraySeriesTel }
+              // ,{ name:'Téléchargements',data: arraySeriesTel }
               ];
             this.optionsGraphique.Chart = { type: 'area', height: '300' };
 
