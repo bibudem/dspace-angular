@@ -1,7 +1,170 @@
 {
-  // DSpace default: "All of DSpace"
-  "menu.section.browse_global": "Browse DSpace",
 
-  // DSpace default: "DSpace Angular :: "
-  "repository.title.prefix": "DSpace :: ",
+  /**********************************************************************/
+  /****************** Modifications de variables existantes *************/
+  /**********************************************************************/
+
+  // "menu.section.browse_global": "All of DSpace",
+  "menu.section.browse_global": "All of Papyrus",
+
+  // "search.form.scope.all": "All of DSpace",
+  "search.form.scope.all": "All of Papyrus",
+
+  // "nav.browse.header": "All of DSpace",
+  "nav.browse.header": "All of Papyrus",
+
+  // "home.top-level-communities.head": "Communities in DSpace",
+  "home.top-level-communities.head": "Communities in Papyrus",
+
+  // variable non existant
+  "search.filters.namedresourcetype.Archived": "Archived",
+
+  "search.filters.namedresourcetype.Workspace": "Workspace",
+
+  "search.filters.namedresourcetype.Validation": "Validation",
+
+  "search.filters.namedresourcetype.Waiting for Controller": "Waiting for controller",
+
+
+  /**********************************************************************/
+  /******************** Ajout de variables dans Papyrus *****************/
+  /**********************************************************************/
+
+  // contact
+  "papyrus.info.contact.titre.global": "Submission of theses and dissertations, works and publications:",
+  "papyrus.info.contact.courriel.global": "depot@bib.umontreal.ca",
+  "papyrus.info.contact.phone.global": "514-343-6111 x33345",
+  "papyrus.info.contact.titre.creation": "Collection creation:",
+  "papyrus.info.contact.courriel.creation": "Contact your librarian or depot@bib.umontreal.ca",
+  "papyrus.info.contact.titre.administration": "Platform administration:",
+  "papyrus.info.contact.personne.administration": "Marie-Hélène Vézina, Librarian · Digital projects",
+  "papyrus.info.contact.phone.administration": "(514) 343-6111 x5225",
+
+  // top udem
+  "papyrus.top.menu.repertoire": "Directory",
+  "papyrus.top.menu.faculte": "Faculties",
+  "papyrus.top.menu.bibliotheque": "Libraries",
+  "papyrus.top.menu.campus": "Campus map",
+  "papyrus.top.menu.connexion": "Login",
+  "papyrus.top.menu.connexion.monudem": "My UdeM",
+  "papyrus.top.menu.connexion.studium": "StudiUM",
+  "papyrus.top.menu.connexion.nomcourriel": "My email",
+  "papyrus.top.menu.jedonne": "Je donne",
+  "papyrus.top.menu.jedonne.desc": "Make a donation to University of Montreal",
+  "papyrus.top.menu.rechercher": "Search",
+  "papyrus.top.menu.cesite": "This site",
+  "papyrus.top.menu.toutudem": "All UdeM",
+
+  // menu pricipal
+  "papyrus.menu.principale.info": "Info",
+  "papyrus.menu.principale.info.a-propos": "About",
+  "papyrus.menu.principale.info.depot": "Institutional repository",
+  "papyrus.menu.principale.info.droit": "Copyright and Policies",
+  "papyrus.menu.principale.info.interrogation": "Querying Papyrus",
+  "papyrus.menu.principale.contact": "Contact",
+  // variable dynamique, on peut pas changer le nom
+  "menu.section.browse_global_by_discipline": "By Discipline",
+  "menu.section.browse_global_by_affiliation": "By Affiliation",
+  "menu.section.browse_global_by_advisor": "By Advisor",
+  "menu.section.browse_global_by_titleindex": "By Title (All forms)",
+
+
+  // page d'accueil
+  "papyrus.home.search-form.placeholder": "Search",
+  "papyrus.home.accueil.title": "Papyrus: Institutional Repository",
+  "papyrus.home.accueil.depos-memoire": "Thesis or dissertation submission",
+  "papyrus.home.accueil.guide": "Guide for Depositing in Collections \"Works and publications\"",
+  "papyrus.home.btn.about": "About",
+
+  // papyrus footer
+  "papyrus.footer.title": "Papyrus",
+  "papyrus.footer.text": "Université de Montréal Institutional repository",
+  "papyrus.footer.propulse": "Powered by: Bibliothèques",
+  "papyrus.footer.suivi": "Follow us",
+  "papyrus.footer.menu.apropos": "About",
+  "papyrus.footer.menu.depot": "Regulations",
+  "papyrus.footer.menu.politique": "Policies",
+  "papyrus.footer.menu.contact": "Contact",
+  "papyrus.footer.dspace.mention": "Application DSpace [version 7.2]",
+  "papyrus.footer.dspace.duraspace": "DuraSpace",
+
+  // page details d'items
+  "papyrus.item.tab.resume": "Abstract",
+  "papyrus.item.tab.description": "Details",
+
+  // titre pour les détails d'un item
+  "papyrus.item.page.dcterms.alternative": "Other title(s)",
+  "papyrus.item.page.oaire": "Is part of",
+  "papyrus.item.page.affiliation": "Affiliation",
+  "papyrus.item.page.dc.contributor": "Contributor(s)",
+  "papyrus.item.page.dc.contributor.advisor": "Advisor(s)",
+  "papyrus.item.page.identifier.doi": "DOI",
+  "papyrus.item.identifier.isbn": "ISBN",
+  "papyrus.item.identifier.issn": "ISSN",
+  "papyrus.item.degree.level": "Level",
+  "papyrus.item.UdeM.cycle": "Level",
+  "papyrus.item.etd.degree.name": "Grade",
+  "papyrus.item.etd.degree.discipline": "Discipline",
+  "papyrus.item.dcterms.language": "Language",
+  "papyrus.item.dcterms.hasVersion": "Other linguistic version(s)",
+  "papyrus.item.dcterms.description": "Note(s)",
+  "papyrus.item.dcterms.relation": "Related research dataset(s)",
+  "papyrus.item.dcterms.abstract": "Abstract(s)",
+  "papyrus.item.dcterms.tableOfContents": "Table of contents",
+  "papyrus.item.subject": "Keywords",
+  "papyrus.item.rights": "Rights",
+
+  // tab menu
+  "browse.comcol.by.advisor": "Advisor(s)",
+  "browse.comcol.by.discipline": "Discipline",
+  "browse.comcol.by.affiliation": "Affiliation",
+  "browse.comcol.by.titleindex": "All Titles",
+
+  "browse.metadata.advisor": "Advisor",
+  "browse.metadata.discipline": "Discipline",
+  "browse.metadata.affiliation": "Affiliation",
+  "browse.metadata.titleindex": "All Titles",
+
+  "browse.metadata.discipline.breadcrumbs": "Browse by Discipline",
+  "browse.metadata.affiliation.breadcrumbs": "Browse by Affiliation",
+  "browse.metadata.titleindex.breadcrumbs": "Browse all titles forms",
+
+
+  // titre pour les formulaires dans workspaceitems
+  "submission.sections.submit.progressbar.describe.step1": "Step 1",
+  "submission.sections.submit.progressbar.describe.step2": "Step 2",
+
+  // label pour la duré d'embargo
+  "papyrus.delais.embargo.date": "Under embargo until:",
+  "papyrus.demande.une.copie": "Request a copy",
+
+  // titre de la duré d'embargo dans workflow
+  "papyrus.embargo.term": "Embargo period requested :",
+  "papyrus.embargo.term.mois": "months",
+
+	// formulaire demande de copie, paragraphes explicatifs
+	"bitstream-request-a-copy.intro": "This document is currently not available in open access. You can send a request to receive a copy by filling the form below; make sure to mention for what use you wish to obtain this document. Your request will be forwarded to the email address associated in our system with the person who submitted the document. We cannot guarantee that this address is still valid and therefore that you will receive an answer.",
+	// MHV : "papyrus.bitstream-request-a-copy.intro.ajout1" en style "warning" pour mettre emphase
+	"papyrus.bitstream-request-a-copy.intro.ajout1": "IMPORTANT : Documents in Papyrus are works protected by copyright: copies obtained through this request service must be used within the limits of what is permitted by the Copyright Act and what was communicated to the copyright owner in the request.",
+
+
+  "grant-deny-request-copy.intro1": "If you are one of the authors of the document <a href='{{ url }}'>{{ name }}</a>, then please use one of the options below to respond to the user's request.",
+
+  "grant-deny-request-copy.intro2": "After choosing an option, you will be presented with a suggested email reply which you may edit. You can change the language interface within the menu at the top of the page if you wish to use a reply model in French.",
+
+   "papyrus.grant-deny-request-copy.intro.ajout1" : "If you are not an author of the document <a href='{{ url }}'>{{ name }}</a>, you must forward the email you received to the author or the authors who are the only one(s) that can grant a copy to be sent.",
+
+   "papyrus.grant-deny-request-copy.intro.ajout2" : "THESES AND DISSERTATIONS : The author may wish to consult his/her thesis advisor before answering the request since the decision to embargo the document at the time of submission was taken jointly by the author and the advisor.",
+
+   "papyrus.grant-deny-request-copy.intro.ajout3" : "PUBLISHED ARTICLE : If you have previously transferred your copyright for this document to a publisher, you cannot give rights to a requester that you no longer have, for example the permission to reproduce and use the document in an online course or the permission to print multiple copies. You can however provide a copy of your document to the requester for his/her personal use for study and research purposes.",
+
+   "papyrus.statistics.title.ongle.bref" : "Usage data",
+
+   "papyrus.statistics.title.ongle.tous" : "All statistics"
+
+
+
+
+  /**********************************************************************/
+
 }

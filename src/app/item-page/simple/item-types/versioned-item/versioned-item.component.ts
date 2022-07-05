@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import { ItemComponent } from '../shared/item.component';
 import { ItemVersionsSummaryModalComponent } from '../../../../shared/item/item-versions/item-versions-summary-modal/item-versions-summary-modal.component';
 import { getFirstCompletedRemoteData, getFirstSucceededRemoteDataPayload } from '../../../../core/shared/operators';
@@ -17,6 +17,10 @@ import { Item } from '../../../../core/shared/item.model';
 import { ItemDataService } from '../../../../core/data/item-data.service';
 import { WorkspaceItem } from '../../../../core/submission/models/workspaceitem.model';
 import { RouteService } from '../../../../core/services/route.service';
+import { LocaleService } from 'src/app/core/locale/locale.service';
+// add Udem 2022
+import * as moment from 'moment';
+
 
 @Component({
   selector: 'ds-versioned-item',
@@ -24,6 +28,12 @@ import { RouteService } from '../../../../core/services/route.service';
   styleUrls: ['./versioned-item.component.scss']
 })
 export class VersionedItemComponent extends ItemComponent {
+
+  // langue par default
+  langue = 'fr';
+  // add UdeM 2022 | afficher une image si l'item est sous embargo
+
+  imageEmgargo = false;
 
   constructor(
     private modalService: NgbModal,
@@ -35,7 +45,8 @@ export class VersionedItemComponent extends ItemComponent {
     private workspaceItemDataService: WorkspaceitemDataService,
     private searchService: SearchService,
     private itemService: ItemDataService,
-    protected routeService: RouteService
+    protected routeService: RouteService,
+    private localeService: LocaleService
   ) {
     super(routeService);
   }
@@ -76,5 +87,77 @@ export class VersionedItemComponent extends ItemComponent {
       this.router.navigateByUrl(route);
     });
 
+  }
+  /**
+   * mars 2022: Creer des fonctions Udem pour recouperer la langue et les valeurs des attribut selon sa valeur
+   */
+
+  langueSession(): void {
+    if (this.localeService.getCurrentLanguageCode()) {
+      this.langue = this.localeService.getCurrentLanguageCode();
+    }
+  }
+
+  recouperationDonnes(valDonnes): string {
+    this.langueSession();
+    let  donnesRep = '';
+    let valueRetur = '';
+    donnesRep = valDonnes.value.split('/');
+    switch (this.langue) {
+      case 'fr' :
+      case 'fra' :
+        valueRetur = donnesRep[0];
+        break;
+      case 'en' :
+      case 'eng' :
+        valueRetur = donnesRep[0];
+        // si la personne n'a pas saisir du texte en anglais
+        if (donnesRep[1]) {
+          valueRetur = donnesRep[1];
+        }
+
+        break;
+    }
+    return valueRetur;
+  }
+
+  // ecrire au complet la langue
+  langueAuComple(param): string {
+    this.langueSession();
+    if (this.localeService.getCurrentLanguageCode()) {
+      this.langue = this.localeService.getCurrentLanguageCode();
+    }
+
+    const langfr = {'fra' : 'Français', 'fr' : 'Français', 'eng' : 'Anglais', 'en' : 'Anglais', 'spa' : 'Espagnol', 'ita' : 'Italien', 'deu' : 'Allemand', 'por' : 'Portugais', 'ell' : 'Grec', 'lat' : 'Latin'};
+
+    const langen = {'fra' : 'French', 'fr' : 'French', 'eng' : 'English', 'en' : 'English', 'spa' : 'Spanish', 'ita' : 'Italian', 'deu' : 'German', 'por' : 'Portuguese', 'ell' : 'Greek', 'lat' : 'Latin'};
+
+    switch ( this.langue ) {
+      case 'fr' :
+        return langfr[param];
+        break;
+      case 'en' :
+        return langen[param];
+        break;
+    }
+  }
+
+  // add UdeM 2022 : afficher une image définie si l'item est sous embargo
+  // On compare la date actuelle avec la date d'embargo definit pour cet item
+  afficherImageEmbargo(): boolean {
+    let afficher = false;
+    const dateValueItem = this.object.firstMetadataValue(['UdeM.EmbargoLift']);
+    if (!dateValueItem || dateValueItem === '') {
+      return afficher;
+    }
+    // console.log(dateValueItem)
+    const dateItem = new Date(dateValueItem);
+    const dateNow = new Date(moment().format('yyyy-MM-DD'));
+
+      if (dateNow.toISOString() < dateItem.toISOString()) {
+        afficher = true;
+      }
+
+    return afficher;
   }
 }

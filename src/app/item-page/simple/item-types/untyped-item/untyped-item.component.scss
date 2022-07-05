@@ -1,1 +1,48 @@
 @import '../../../../../styles/variables.scss';
+
+.span-udem-item1 {
+  text-transform:uppercase!important;
+  font-size: 0.9em!important;
+  font-weight: 550!important;
+  color: #0a4974!important;
+}
+.span-udem-item2{
+  font-size: 0.9em!important;
+  font-weight: 550!important;
+  color: #262525!important;
+}
+.udem-titre-item {
+  position: relative;
+  font-size: 1.8em;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2!important;
+  color:#222;
+  letter-spacing:1px;
+  font-family: "Playfair Display", sans-serif!important;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.div-border-right{
+  border-right: 3px solid #2e2e2e7a;
+}
+
+.simple-view-element-header {
+  text-transform:uppercase!important;
+  font-size: 0.9em!important;
+}
+
+.text-oblic{
+  font-style: italic;
+}
+.icon-info{
+  font-size: 0.9em!important;
+}
+.m-t10{
+  margin-top:-10px!important;
+}
+.d-block{
+  display:block!important;
+}
+

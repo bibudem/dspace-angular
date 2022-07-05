@@ -1,16 +1,304 @@
 <div class="row" *ngIf="iiifEnabled">
   <div class="col-12">
     <ds-mirador-viewer id="iiif-viewer"
-                   [object]="object"
-                   [searchable]="iiifSearchEnabled"
-                   [query]="iiifQuery$ | async">
+                       [object]="object"
+                       [searchable]="iiifSearchEnabled"
+                       [query]="iiifQuery$ | async">
     </ds-mirador-viewer>
   </div>
 </div>
-<div class="d-flex flex-row">
-  <h2 class="item-page-title-field mr-auto">
+<!--changement du visuel pour les détails d'un item-->
+<div class="row">
+  <div class="col-md-4 col-sm-12">
+    <div class="item-media-udem">
+      <ng-container *ngIf="afficherImageEmbargo()">
+        <img src="assets/images/udem/doc-lock.png" class="img-thumbnail mb-3 p-5 h-220">
+      </ng-container>
+      <ng-container *ngIf="(!mediaViewer.image && !afficherImageEmbargo())">
+        <ds-metadata-field-wrapper [hideIfNoTextContent]="false">
+          <ds-thumbnail [thumbnail]="object?.thumbnail | async"></ds-thumbnail>
+        </ds-metadata-field-wrapper>
+      </ng-container>
+      <ng-container *ngIf="mediaViewer.image">
+        <ds-media-viewer [item]="object" [videoOptions]="mediaViewer.video"></ds-media-viewer>
+      </ng-container>
+    </div>
+    <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
+    <a class="btn btn-outline-dark btn-sm mt-2" [routerLink]="[itemPageRoute + '/full']" role="button">
+      <i class="fas fa-info-circle"></i> {{"item.page.link.full" | translate}}
+    </a>
+  </div>
+  <div class="col-md-8 col-sm-12 udem-item-cart">
+    <div class="pl-2 f-r">
+      <ds-dso-page-version-button (newVersionEvent)="onCreateNewVersion()" [dso]="object"
+                                  [tooltipMsgCreate]="'item.page.version.create'"
+                                  [tooltipMsgHasDraft]="'item.page.version.hasDraft'"></ds-dso-page-version-button>
+      <ds-dso-page-edit-button [pageRoute]="itemPageRoute" [dso]="object" [tooltipMsg]="'item.page.edit'"></ds-dso-page-edit-button>
+    </div>
+    <ds-metadata-field-wrapper *ngIf="object?.allMetadata('dc.identifier.uri').entries()">
+      <a class="f-12 font-weight-bold d-block" *ngFor="let mdValue of object?.allMetadata('dc.identifier.uri'); let last=last;" [href]="mdValue.value" title="{{'item.preview.dc.identifier.uri' | translate}}">
+        <span  class="fa fa-link text-orange mr-1"></span>
+        {{  mdValue.value }}
+      </a>
+    </ds-metadata-field-wrapper>
+    <h3 class="udem-titre-item">
+      <ds-metadata-values [mdValues]="object?.allMetadata(['dc.title'])"></ds-metadata-values>
+    </h3>
+    <ds-metadata-field-wrapper *ngIf="!(object?.allMetadata('dcterms.alternative').length == 0)">
+      <h6 class="simple-view-element-header">{{'papyrus.item.page.dcterms.alternative' | translate}}</h6>
+      <span class="span-udem-item2" *ngFor="let mdValue of object?.allMetadata('dcterms.alternative');">
+        {{  mdValue.value }}
+      </span>
+    </ds-metadata-field-wrapper>
+    <hr>
+    <!--Note udem: pas de libellé-->
+    <div class="m-t10">
+      <p  *ngIf="object?.hasMetadata('dc.type')">
+        <span  class="fa fa fa-bookmark text-info icon-info mr-1"></span>
+        <!--Note udem: pas de libellé; concaténé avec dc.type ; partie en français dans interface français -->
+        <span class="span-udem-item1" *ngFor="let mdValue of object?.allMetadata('dc.type');" >
+              {{ recouperationDonnes(mdValue) }}
+          </span>
+        <span  class="span-udem-item2" *ngFor="let mdValue of object?.allMetadata('UdeM.VersionRioxx');" >
+              [ {{  recouperationDonnes(mdValue) }} ]
+          </span>
+      </p>
+    </div>
+    <!--Note udem: Tous les élément oaire.* doivent être remis en mode référence bibliographique (inspiration MLA) -->
+    <div class="m-t10">
+      <ds-metadata-field-wrapper *ngIf="(object?.hasMetadata('oaire.citationConferencePlace')||object?.hasMetadata('oaire.citationTitle')||object?.hasMetadata('oaire.citationIssue'))">
+        <h6 class="simple-view-element-header">{{'papyrus.item.page.oaire' | translate}}</h6>
+        <span class="text-uppercase" *ngFor="let mdValue of object?.allMetadata('oaire.citationConferencePlace');">
+            {{  mdValue.value }}:
+        </span>
+        <span  *ngFor="let mdValue of object?.allMetadata('oaire.citationTitle');">
+          « {{  mdValue.value }} ».
+        </span>
+        <span class="text-oblic" *ngFor="let mdValue of object?.allMetadata('oaire.citationEdition');">
+           {{  mdValue.value }},
+        </span>
+        <span  *ngFor="let mdValue of object?.allMetadata('oaire.citationConferenceDate');">
+           {{  mdValue.value }},
+        </span>
+        <span  *ngFor="let mdValue of object?.allMetadata('oaire.citationVolume');">
+           vol. {{  mdValue.value }},
+        </span>
+        <span  *ngFor="let mdValue of object?.allMetadata('oaire.citationIssue');">
+            {{  mdValue.value }},
+        </span>
+        <span  *ngFor="let mdValue of object?.allMetadata('oaire.citationStartPage');">
+           p. {{  mdValue.value }},
+        </span>
+        <span  *ngFor="let mdValue of object?.allMetadata('oaire.citationEndPage');">
+           - {{  mdValue.value }}.
+        </span>
+      </ds-metadata-field-wrapper>
+    </div>
+    <!--Si c'est une these-->
+    <div class="m-t10">
+      <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dc.date.submitted')">
+        <span  class="fa fa-calendar-check text-info icon-info mr-1"></span>
+        <span class="dont-break-out" *ngFor="let mdValue of object?.allMetadata('dc.date.submitted');" >
+            {{  mdValue.value }}
+          </span>
+        <span class="dont-break-out" *ngFor="let mdValue of object?.allMetadata('dc.date.issued');" >
+          ( {{  mdValue.value }} )
+          </span>
+      </ds-metadata-field-wrapper>
+    </div>
+    <!--Sinon-->
+    <div class="m-t10">
+      <ds-metadata-field-wrapper *ngIf="!object?.hasMetadata('dc.date.submitted')">
+        <span  class="fa fa-calendar-check text-info icon-info mr-1"></span>
+        <span class="dont-break-out" *ngFor="let mdValue of object?.allMetadata('dc.date.issued');" >
+            {{  mdValue.value }}
+          </span>
+      </ds-metadata-field-wrapper>
+    </div>
+    <!--Note udem: pour thèses seulement, concaténé à la suite de dc.date.issued -->
+    <!--A faire -->
+    <!--Note udem: un par ligne; avec lien hypertexte vers index auteur -->
+    <!--Liste des author avec un hiperlien pour la recherche-->
+    <ds-metadata-field-wrapper *ngIf="object?.allMetadata('dc.contributor.author').entries()">
+      <h6 class="simple-view-element-header">{{'relationships.isAuthorOf' | translate}}</h6>
+      <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dc.contributor.author'); let last=last;" [href]="'/browse/author?value='+mdValue.value">
+        <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
+        {{  mdValue.value }}
+      </a>
+    </ds-metadata-field-wrapper>
+
+    <!--Note udem: une par ligne; avec lien hypertexte vers index affiliation-->
+    <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dc.contributor.affiliation')">
+      <h6 class="simple-view-element-header">{{'papyrus.item.page.affiliation' | translate}}</h6>
+      <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dc.contributor.affiliation'); let last=last;" [href]="'/browse/affiliation?value='+mdValue.value">
+        <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
+        {{  mdValue.value }}
+      </a>
+    </ds-metadata-field-wrapper>
+    <!--Note udem: un par ligne; avec lien hypertexte vers index auteur -->
+    <ds-metadata-field-wrapper *ngIf="!(object?.allMetadata('dc.contributor').length == 0)">
+      <h6 class="simple-view-element-header">{{'papyrus.item.page.dc.contributor' | translate}}</h6>
+      <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dc.contributor'); let last=last;" [href]="'/browse/author?value='+mdValue.value">
+        <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
+        {{  mdValue.value }}
+      </a>
+    </ds-metadata-field-wrapper>
+    <!--Note udem: un par ligne; avec lien hypertexte vers index directeurs -->
+    <ds-metadata-field-wrapper *ngIf="(object?.hasMetadata('dc.contributor.advisor'))">
+      <h6 class="simple-view-element-header">{{'papyrus.item.page.dc.contributor.advisor' | translate}}</h6>
+      <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dc.contributor.advisor'); let last=last;" [href]="'/browse/author?value='+mdValue.value">
+        <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
+        {{  mdValue.value }}
+      </a>
+    </ds-metadata-field-wrapper>
+
+    <!--Note udem: un par ligne;lien hypertexte -->
+    <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dc.identifier.doi')">
+      <h6 class="simple-view-element-header">{{'papyrus.item.page.identifier.doi' | translate}}</h6>
+      <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dc.identifier.doi'); let last=last;" [href]="'https://doi.org/'+mdValue.value" target="_blank">
+        <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
+        {{  mdValue.value }}
+      </a>
+    </ds-metadata-field-wrapper>
+  </div>
+</div>
+<div class="row mt-5 mb-5">
+  <div class="col-12 col-md-12 col-lg-12">
+    <ul class="nav nav-tabs nav-fill" id="itemTabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link udem-tab active" data-toggle="tab" href="#item-details-tab1" role="tab" aria-controls="item-details-tab1" aria-selected="true">{{"papyrus.item.tab.details" | translate}}</a>
+      </li>
+      <li  class="nav-item">
+        <a class="nav-link udem-tab" data-toggle="tab" href="#item-details-tab2" role="tab" aria-controls="item-details-tab2" aria-selected="false">{{"papyrus.item.tab.voir-plus" | translate}}</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active  mt-5 ml-2" id="item-details-tab1" role="tabpanel" aria-labelledby="driver-details-tab1">
+        <!--Onglet 1-->
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dc.publisher')">
+          <h6 class="simple-view-element-header">{{'journal.page.publisher' | translate}}</h6>
+          <p *ngFor="let mdValue of object?.allMetadata('dc.publisher');" >
+            {{  mdValue.value }}
+          </p>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dc.identifier.isbn')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.identifier.isbn' | translate}}</h6>
+          <p *ngFor="let mdValue of object?.allMetadata('dc.identifier.isbn');" >
+            {{  mdValue.value }}
+          </p>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dc.identifier.issn')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.identifier.issn' | translate}}</h6>
+          <p *ngFor="let mdValue of object?.allMetadata('dc.identifier.issn');" >
+            {{  mdValue.value }}
+          </p>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('etd.degree.level')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.degree.level' | translate}}</h6>
+          <p *ngFor="let mdValue of object?.allMetadata('etd.degree.level');" >
+            {{  recouperationDonnes(mdValue) }}
+          </p>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('UdeM.cycle')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.UdeM.cycle' | translate}}</h6>
+          <p *ngFor="let mdValue of object?.allMetadata('UdeM.cycle');" >
+            {{  recouperationDonnes(mdValue) }}
+          </p>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('etd.degree.name')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.etd.degree.name' | translate}}</h6>
+          <p *ngFor="let mdValue of object?.allMetadata('etd.degree.name');" >
+            {{  mdValue.value }}
+          </p>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('etd.degree.discipline')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.etd.degree.discipline' | translate}}</h6>
+          <p *ngFor="let mdValue of object?.allMetadata('etd.degree.discipline');" >
+            {{  mdValue.value }}
+          </p>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dcterms.language')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.dcterms.language' | translate}}</h6>
+          <p *ngFor="let mdValue of object?.allMetadata('dcterms.language');" >
+            {{ langueAuComple(mdValue.value) }}
+          </p>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dcterms.hasVersion')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.dcterms.hasVersion' | translate}}</h6>
+           <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dcterms.hasVersion'); let last=last;" [href]="mdValue.value" target="_blank">
+              <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
+              {{  mdValue.value }}
+           </a>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dcterms.description')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.dcterms.description' | translate}}</h6>
+          <p *ngFor="let mdValue of object?.allMetadata('dcterms.description');" >
+            {{  mdValue.value }}
+          </p>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dcterms.hasVersion')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.dcterms.relation' | translate}}</h6>
+          <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dcterms.hasVersion'); let last=last;" [href]="mdValue.value" target="_blank">
+              <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
+              {{  mdValue.value }}
+           </a>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dc.rights.uri')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.rights' | translate}}</h6>
+          <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dc.rights.uri'); let last=last;" [href]="mdValue.value" target="_blank">
+            <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
+            {{  mdValue.value }}
+          </a>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dc.rights')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.rights' | translate}}</h6>
+          <p *ngFor="let mdValue of object?.allMetadata('dc.rights');" >
+            <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
+            {{  mdValue.value }}
+          </p>
+        </ds-metadata-field-wrapper>
+      </div>
+      <div class="tab-pane  mt-5 ml-2" id="item-details-tab2" role="tabpanel" aria-labelledby="driver-details-tab2">
+        <!--Onglet 2-->
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dcterms.abstract')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.dcterms.abstract' | translate}}</h6>
+          <p *ngFor="let mdValue of object?.allMetadata('dcterms.abstract');" >
+            <i class="fa fa-quote-left fa-2x fa-pull-left fa-border mt-1" aria-hidden="true"></i>
+            {{  mdValue.value }}
+          </p>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="object?.hasMetadata('dcterms.tableOfContents')">
+          <h6 class="simple-view-element-header">{{'papyrus.item.dcterms.tableOfContents' | translate}}</h6>
+          <span  class="fa fa-square f-10 text-info mr-1"></span>
+          <p *ngFor="let mdValue of object?.allMetadata('dcterms.tableOfContents');" >
+            {{  mdValue.value }}
+          </p>
+        </ds-metadata-field-wrapper>
+        <ds-metadata-field-wrapper *ngIf="(object?.hasMetadata('dc.subject')||object?.hasMetadata('dc.subject.mesh')||object?.hasMetadata('dc.subject.other'))">
+          <h6 class="simple-view-element-header">{{'papyrus.item.subject' | translate}}</h6>
+          <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dc.subject'); let last=last;" [href]="'/browse/subject?value='+mdValue.value">
+            <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
+            {{  recouperationDonnes(mdValue) }}
+          </a>
+          <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dc.subject.mesh'); let last=last;" [href]="'/browse/subject?value='+mdValue.value">
+            <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
+            {{  recouperationDonnes(mdValue) }}
+          </a>
+          <a class="item-link-udem" *ngFor="let mdValue of object?.allMetadata('dc.subject.other'); let last=last;" [href]="'/browse/subject?value='+mdValue.value">
+            <span  class="fa fa-chevron-right f-10 text-info mr-1"></span>
+            {{  recouperationDonnes(mdValue) }}
+          </a>
+        </ds-metadata-field-wrapper>
+        <!----------------Fin----------------------------------->
+      </div>
+    </div>
+  </div>
+</div>
+<!--fin du visuel udem-->
+<!--<div class="d-flex flex-row">
+  <h3 class="item-page-title-field mr-auto udem">
     <ds-metadata-values [mdValues]="object?.allMetadata(['dc.title'])"></ds-metadata-values>
-  </h2>
+  </h3>
   <div class="pl-2">
     <ds-dso-page-version-button (newVersionEvent)="onCreateNewVersion()" [dso]="object"
                                 [tooltipMsgCreate]="'item.page.version.create'"
@@ -59,7 +347,6 @@
       [fields]="['dc.description']"
       [label]="'item.page.description'">
     </ds-generic-item-page-field>
-
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.subject']"
       [separator]="','"
@@ -80,4 +367,4 @@
       </a>
     </div>
   </div>
-</div>
+</div>-->

@@ -67,7 +67,7 @@ export class SearchFormComponent implements OnInit {
   /**
    * Defines whether or not to show the scope selector
    */
-  @Input() showScopeSelector = false;
+  @Input() showScopeSelector = true;
 
   /**
    * Output the search data on submit

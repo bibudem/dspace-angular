@@ -3,7 +3,6 @@ import { Item } from '../../../../core/shared/item.model';
 import { ViewMode } from '../../../../core/shared/view-mode.model';
 import { listableObjectComponent } from '../../../../shared/object-collection/shared/listable-object/listable-object.decorator';
 import { VersionedItemComponent } from '../versioned-item/versioned-item.component';
-
 /**
  * Component that represents a publication Item page
  */
@@ -16,5 +15,8 @@ import { VersionedItemComponent } from '../versioned-item/versioned-item.compone
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class UntypedItemComponent extends VersionedItemComponent {
+
+
+
 
 }
