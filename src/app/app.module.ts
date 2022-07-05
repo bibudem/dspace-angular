@@ -60,6 +60,7 @@ import { ThemedAdminSidebarComponent } from './admin/admin-sidebar/themed-admin-
 
 import { APP_CONFIG, AppConfig } from '../config/app-config.interface';
 
+
 export function getConfig() {
   return environment;
 }

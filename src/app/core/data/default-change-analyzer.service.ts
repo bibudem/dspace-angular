@@ -3,7 +3,9 @@ import { compare } from 'fast-json-patch';
 import { Operation } from 'fast-json-patch';
 import { getClassForType } from '../cache/builders/build-decorators';
 import { TypedObject } from '../cache/object-cache.reducer';
-import { DSpaceNotNullSerializer } from '../dspace-rest/dspace-not-null.serializer';
+// UdeM 2022 | correction du bug #1533 https://github.com/DSpace/dspace-angular/pull/1533/files
+// import { DSpaceSerializer } from '../dspace-rest/dspace.serializer';
+import { DSpaceNotNullSerializer  } from '../dspace-rest/dspace-not-null.serializer';
 import { ChangeAnalyzer } from './change-analyzer';
 
 /**
