@@ -36,3 +36,5 @@ package-lock.json
 
 .env
 /nbproject/
+/_Archives/*
+/src/assets/i18n/_Archives/*
