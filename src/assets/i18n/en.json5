@@ -4107,4 +4107,12 @@
   "papyrus.statistics.title.ongle.bref": "Usage data",
 
   "papyrus.statistics.title.ongle.tous": "All statistics",
+
+  "search.filters.namedresourcetype.Archived": "Archived",
+
+  "search.filters.namedresourcetype.Workspace": "Workspace",
+
+  "search.filters.namedresourcetype.Validation": "Validation",
+
+  "search.filters.namedresourcetype.Waiting for Controller": "Waiting for controller",
 }

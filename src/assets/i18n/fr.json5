@@ -4111,4 +4111,12 @@
   "papyrus.statistics.title.ongle.bref": "Données d'utilisation",
 
   "papyrus.statistics.title.ongle.tous": "Toutes les statistics",
+
+  "search.filters.namedresourcetype.Archived": "Archivés",
+
+  "search.filters.namedresourcetype.Workspace": "Espace de travail",
+
+  "search.filters.namedresourcetype.Validation": "En cours de validation",
+
+  "search.filters.namedresourcetype.Waiting for Controller": "En attente d'assignation",
 }

@@ -5,16 +5,26 @@
   /**********************************************************************/
 
   // "menu.section.browse_global": "All of DSpace",
- "menu.section.browse_global": "All of Papyrus",
+  "menu.section.browse_global": "All of Papyrus",
 
   // "search.form.scope.all": "All of DSpace",
-"search.form.scope.all": "All of Papyrus",
+  "search.form.scope.all": "All of Papyrus",
 
   // "nav.browse.header": "All of DSpace",
   "nav.browse.header": "All of Papyrus",
 
   // "home.top-level-communities.head": "Communities in DSpace",
   "home.top-level-communities.head": "Communities in Papyrus",
+
+  // variable non existant
+  "search.filters.namedresourcetype.Archived": "Archived",
+
+  "search.filters.namedresourcetype.Workspace": "Workspace",
+
+  "search.filters.namedresourcetype.Validation": "Validation",
+
+  "search.filters.namedresourcetype.Waiting for Controller": "Waiting for controller",
+
 
   /**********************************************************************/
   /******************** Ajout de variables dans Papyrus *****************/

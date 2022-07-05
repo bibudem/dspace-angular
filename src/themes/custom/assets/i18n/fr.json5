@@ -1009,6 +1009,15 @@
   // "search.filters.filter.submitter.label": "Recherche d'un déposant",
   "search.filters.filter.submitter.label": "Recherche d'un déposant.e",
 
+  // variable non existant
+  "search.filters.namedresourcetype.Archived": "Archivés",
+
+  "search.filters.namedresourcetype.Workspace": "Espace de travail",
+
+  "search.filters.namedresourcetype.Validation": "En cours de validation",
+
+  "search.filters.namedresourcetype.Waiting for Controller": "En attente d'assignation",
+
 
   // "submission.import-external.source.sherpaPublisher": "Éditeurs SHERPA",
   "submission.import-external.source.sherpaPublisher": "Éditeur.trice.s SHERPA",
