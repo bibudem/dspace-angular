@@ -9,7 +9,7 @@ import {
   isNotEmptyOperator,
   isNotNull,
   isNotUndefined,
-  isNull,
+  isNull, isObjectEmpty,
   isUndefined
 } from './empty.util';
 
