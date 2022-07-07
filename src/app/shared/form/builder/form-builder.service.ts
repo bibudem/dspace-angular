@@ -282,6 +282,7 @@ export class FormBuilderService extends DynamicFormService {
                          isInnerForm = false): DynamicFormControlModel[] | never {
      let rows: DynamicFormControlModel[] = [];
      const rawData = typeof json === 'string' ? JSON.parse(json, parseReviver) : json;
+
     if (rawData.rows && !isEmpty(rawData.rows)) {
       rawData.rows.forEach((currentRow) => {
         const rowParsed = this.rowParser.parse(submissionId, currentRow, scopeUUID, sectionData, submissionScope,

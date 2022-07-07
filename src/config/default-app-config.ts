@@ -17,6 +17,8 @@ import { UIServerConfig } from './ui-server-config.interface';
 import { BundleConfig } from './bundle-config.interface';
 import { ActuatorsConfig } from './actuators.config';
 
+
+
 export class DefaultAppConfig implements AppConfig {
   production = false;
 

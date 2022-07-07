@@ -115,7 +115,8 @@ export class ItemRequestDataService extends DataService<ItemRequest> {
       map((endpointURL: string) => {
         const options: HttpOptions = Object.create({});
         let headers = new HttpHeaders();
-        headers = headers.append('Content-Type', 'application/json');
+        // headers = headers.append('Content-Type', 'application/json');
+        headers = headers.append('Content-Type','application/json; charset=UTF-8');
         options.headers = headers;
         return new PutRequest(requestId, endpointURL, JSON.stringify({
           acceptRequest: grant,

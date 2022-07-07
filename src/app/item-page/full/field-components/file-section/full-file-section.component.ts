@@ -52,6 +52,9 @@ export class FullFileSectionComponent extends FileSectionComponent implements On
     protected notificationsService: NotificationsService,
     protected translateService: TranslateService,
     protected paginationService: PaginationService
+
+
+
   ) {
     super(bitstreamDataService, notificationsService, translateService);
   }

@@ -17,6 +17,7 @@ import { BrowseByConfig } from './browse-by-config.interface';
 import { BundleConfig } from './bundle-config.interface';
 import { ActuatorsConfig } from './actuators.config';
 
+
 interface AppConfig extends Config {
   ui: UIServerConfig;
   rest: ServerConfig;
@@ -35,7 +36,8 @@ interface AppConfig extends Config {
   themes: ThemeConfig[];
   mediaViewer: MediaViewerConfig;
   bundle: BundleConfig;
-  actuators: ActuatorsConfig
+  actuators: ActuatorsConfig;
+
 }
 
 const APP_CONFIG = new InjectionToken<AppConfig>('APP_CONFIG');

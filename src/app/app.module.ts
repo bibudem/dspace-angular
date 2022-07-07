@@ -38,6 +38,7 @@ import { NgxMaskModule } from 'ngx-mask';
 import { StoreDevModules } from '../config/store/devtools';
 import { RootModule } from './root.module';
 
+
 export function getConfig() {
   return environment;
 }

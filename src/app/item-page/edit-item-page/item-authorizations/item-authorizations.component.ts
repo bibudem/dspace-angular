@@ -18,6 +18,7 @@ import { Bundle } from '../../../core/shared/bundle.model';
 import { hasValue, isNotEmpty } from '../../../shared/empty.util';
 import { Bitstream } from '../../../core/shared/bitstream.model';
 
+
 /**
  * Interface for a bundle's bitstream map entry
  */
@@ -31,10 +32,14 @@ interface BundleBitstreamsMapEntry {
   templateUrl: './item-authorizations.component.html',
   styleUrls:['./item-authorizations.component.scss']
 })
+
+
 /**
  * Component that handles the item Authorizations
  */
 export class ItemAuthorizationsComponent implements OnInit, OnDestroy {
+  // add UdeM 2022
+  titreBundle = [': ORIGINAL',': LICENSE',': TEXT',': THUMBNAIL',': NAN'];
 
   /**
    * A map that contains all bitstream of the item's bundles
@@ -263,6 +268,7 @@ export class ItemAuthorizationsComponent implements OnInit, OnDestroy {
       .filter((subscription) => hasValue(subscription))
       .forEach((subscription) => subscription.unsubscribe());
   }
+
 }
 
 export interface BitstreamMapValue {

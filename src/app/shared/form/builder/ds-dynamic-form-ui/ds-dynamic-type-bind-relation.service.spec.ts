@@ -51,6 +51,7 @@ describe('DSDynamicTypeBindRelationService test suite', () => {
         );
         const bindType = service.getTypeBindValue(mockMetadataValueObject);
         expect(bindType).toBe('boundType');
+
     });
     it('Should get type authority key "bound-auth-key" from the given metadata object value', () => {
       const mockMetadataValueObject: FormFieldMetadataValueObject = new FormFieldMetadataValueObject(

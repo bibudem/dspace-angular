@@ -64,3 +64,4 @@ export class DSpaceSerializer<T> implements Serializer<T> {
     return Deserialize(response, this.modelType) as T[];
   }
 }
+
