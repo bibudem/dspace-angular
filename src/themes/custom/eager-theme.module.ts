@@ -12,6 +12,8 @@ import { NavbarModule } from '../../app/navbar/navbar.module';
 import { PublicationComponent } from './app/item-page/simple/item-types/publication/publication.component';
 import { ItemPageModule } from '../../app/item-page/item-page.module';
 import { FooterComponent } from './app/footer/footer.component';
+/**********Ajout des components udem***************************/
+import {NavbarTopUdemComponent} from './app/navbar/navbar-top-udem/navbar-top-udem.component';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
@@ -28,6 +30,7 @@ const DECLARATIONS = [
   HeaderNavbarWrapperComponent,
   NavbarComponent,
   FooterComponent,
+  NavbarTopUdemComponent
 ];
 
 @NgModule({

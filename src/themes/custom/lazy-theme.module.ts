@@ -78,12 +78,8 @@ import { WorkflowItemDeleteComponent } from './app/workflowitems-edit-page/workf
 import { WorkflowItemSendBackComponent } from './app/workflowitems-edit-page/workflow-item-send-back/workflow-item-send-back.component';
 import { BreadcrumbsComponent } from './app/breadcrumbs/breadcrumbs.component';
 import { FeedbackComponent } from './app/info/feedback/feedback.component';
+import { CommunityListComponent } from './app/community-list-page/community-list/community-list.component';
 
-
-/**********Ajout des components udem***************************/
-
-import {NavbarTopUdemComponent} from './app/navbar/navbar-top-udem/navbar-top-udem.component';
-import {CommunityListComponent} from '../../app/community-list-page/community-list/community-list.component';
 
 
 const DECLARATIONS = [
@@ -122,8 +118,7 @@ const DECLARATIONS = [
   WorkflowItemSendBackComponent,
   BreadcrumbsComponent,
   FeedbackComponent,
-  CommunityListComponent,
-
+  CommunityListComponent
 ];
 
 @NgModule({
@@ -175,10 +170,7 @@ const DECLARATIONS = [
     ResourcePoliciesModule,
     ComcolModule,
   ],
-    declarations: [
-        DECLARATIONS,
-        NavbarTopUdemComponent
-    ]
+  declarations: DECLARATIONS,
 })
 
   /**
