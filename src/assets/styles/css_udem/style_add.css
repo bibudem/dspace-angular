@@ -346,8 +346,8 @@ a.lead:hover {
   margin-bottom: 1.5rem;
   box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
 }
-.cookie-modal-notice {
-  background-color: #012a47!important;
+.klaro .cookie-notice:not(.cookie-modal-notice)  {
+  background-color: #0b3552!important;
   border-radius: 0!important;
 }
 .klaro .cookie-modal a, .klaro .context-notice a, .klaro .cookie-notice a {
