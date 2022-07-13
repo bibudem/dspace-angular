@@ -69,11 +69,11 @@ jobs:
       # - name: Install Yarn dependencies
       #  run: yarn install --frozen-lockfile
 
-      - name: Run lint
-        run: yarn run lint --quiet
+        #- name: Run lint
+        #run: yarn run lint --quiet
 
-      - name: Check for circular dependencies
-        run: yarn run check-circ-deps
+        #- name: Check for circular dependencies
+        #run: yarn run check-circ-deps
 
 
       #- name: Run build
