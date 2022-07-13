@@ -29,7 +29,8 @@ morgan.log
 
 yarn-error.log
 
-*.css
+## permettre de voir les changements des fichiers css
+##*.css
 
 package-lock.json
 
