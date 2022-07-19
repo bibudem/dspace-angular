@@ -361,3 +361,10 @@ a.lead:hover {
 .klaro .cookie-notice .cm-btn{
   border-radius: 0px!important;
 }
+.workflow-list-udem {
+  background-image: -webkit-gradient(linear,left top,right top,from(hsla(0,3%,74.1%,.10196)),to(#fff))!important;
+  background-image: linear-gradient(90deg,hsla(0,3%,74.1%,.10196),#fff)!important;
+  padding: 15px!important;
+  margin-bottom: 10px!important;
+}
+
