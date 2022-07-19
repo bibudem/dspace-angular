@@ -4115,4 +4115,16 @@
   "search.filters.namedresourcetype.Validation": "Validation",
 
   "search.filters.namedresourcetype.Waiting for Controller": "Waiting for controller",
+
+  "menu.section.health": "Health",
+
+  "health-page.heading": "System Health",
+
+  "health-page.status-tab": "Status",
+
+  "health-page.status :": "Status",
+
+  "health-page.info-tab": "Info",
+
+  "health.breadcrumbs": "Health"
 }

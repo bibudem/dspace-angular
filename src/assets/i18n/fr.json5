@@ -4119,4 +4119,16 @@
   "search.filters.namedresourcetype.Validation": "En cours de validation",
 
   "search.filters.namedresourcetype.Waiting for Controller": "En attente d'assignation",
+
+  "menu.section.health": "Santé",
+
+  "health-page.heading": "Santé du système",
+
+  "health-page.status-tab": "Statut",
+
+  "health-page.status :": "Statut",
+
+  "health-page.info-tab": "Info",
+
+  "health.breadcrumbs": "Santé"
 }

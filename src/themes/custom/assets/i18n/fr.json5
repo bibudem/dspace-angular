@@ -1234,6 +1234,21 @@
   // "home.top-level-communities.head": "Communautés dans DSpace",
   "home.top-level-communities.head": "Communautés représentées dans Papyrus",
 
+  // health variables ajoutés dans 7.3
+
+  // variables ajoutés dans 7.3
+  "menu.section.health": "Santé",
+
+  "health-page.heading": "Santé du système",
+
+  "health-page.status-tab": "Statut",
+
+  "health-page.status :": "Statut",
+
+  "health-page.info-tab": "Info",
+
+  "health.breadcrumbs": "Santé",
+
   /**********************************************************************/
   /******************** Ajout de variables dans Papyrus *****************/
   /**********************************************************************/
