@@ -1243,11 +1243,15 @@
 
   "health-page.status-tab": "Statut",
 
-  "health-page.status :": "Statut",
+  "health-page.status : ": "Statut",
 
   "health-page.info-tab": "Info",
 
   "health.breadcrumbs": "Santé",
+
+  "health-page.section.no-issues": "Aucun problème détecté",
+
+  "collection.edit.item.authorizations.show-bitstreams-button": "Afficher les politiques de flux binaire pour le bundle",
 
   /**********************************************************************/
   /******************** Ajout de variables dans Papyrus *****************/

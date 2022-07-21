@@ -32,7 +32,7 @@ export class NavbarTopUdemComponent implements OnInit {
   send() {
     // implimenter submit form
     let motRechercher = (<HTMLInputElement>document.getElementById("textRecherche")).value;
-    if( motRechercher !=''){
+    if( motRechercher !='') {
        (<HTMLInputElement>document.getElementById("textRecherche")).value = '';
         window.open('https://www.umontreal.ca/#udemwww-search-sites&gsc.q='+motRechercher.toString(), '_blank');
     }

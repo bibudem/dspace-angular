@@ -32,11 +32,15 @@
 
   "health-page.status-tab": "Status",
 
-  "health-page.status :": "Status",
+  "health-page.status : ": "Status",
 
   "health-page.info-tab": "Info",
 
   "health.breadcrumbs": "Health",
+
+  "health-page.section.no-issues": "No issues detected",
+
+  "collection.edit.item.authorizations.show-bitstreams-button": "Show bitstream policies for bundle",
 
 
   /**********************************************************************/
