@@ -80,6 +80,7 @@ export abstract class AuthRequestService {
    * Send a request to retrieve a short-lived token which provides download access of restricted files
    */
   public getShortlivedToken(): Observable<string> {
+
     return this.halService.getEndpoint(this.linkName).pipe(
       filter((href: string) => isNotEmpty(href)),
       distinctUntilChanged(),

@@ -68,10 +68,8 @@ export class XsrfInterceptor implements HttpInterceptor {
 
         // Get request URL
         const reqUrl = req.url.toLowerCase();
-
         // Get root URL of configured REST API
         const restUrl = new RESTURLCombiner('/').toString().toLowerCase();
-
         // Skip any non-mutating request. This is because our REST API does NOT
         // require CSRF verification for read-only requests like GET or HEAD
         // Also skip any request which is NOT to our trusted/configured REST API

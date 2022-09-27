@@ -5,7 +5,7 @@ import { AuthorizationDataService } from '../../core/data/feature-authorization/
 import { FeatureID } from '../../core/data/feature-authorization/feature-id';
 import { hasValue, isNotEmpty } from '../empty.util';
 import { map } from 'rxjs/operators';
-import { of as observableOf, combineLatest as observableCombineLatest, Observable, BehaviorSubject } from 'rxjs';
+import { of as observableOf, combineLatest as observableCombineLatest, Observable } from 'rxjs';
 import { Item } from '../../core/shared/item.model';
 
 
@@ -37,8 +37,7 @@ export class FileDownloadLinkComponent implements OnInit {
   /**
    * A boolean representing if link is shown in same tab or in a new one.
    */
-    // @Input() isBlank = false;
-  @Input() isBlank = true;
+  @Input() isBlank = false;
 
   @Input() enableRequestACopy = true;
 

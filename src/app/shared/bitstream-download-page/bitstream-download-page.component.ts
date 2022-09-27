@@ -46,6 +46,7 @@ export class BitstreamDownloadPageComponent implements OnInit {
 
   ngOnInit(): void {
 
+
     this.bitstreamRD$ = this.route.data.pipe(
       map((data) => data.bitstream));
 
