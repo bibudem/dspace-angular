@@ -151,7 +151,7 @@ nav.navbar {
   border-bottom:none!important;
 }
 nav.nav-udem {
-  border-bottom: 4px solid  #0056a9!important;
+  border-bottom: 5px solid  #0056a9!important;
 }
 /* Color pour les lien dans le menu principale */
 nav.nav-udem>a.nav-link {
@@ -168,7 +168,9 @@ footer > a {
 .font-30 {
   font-size: 30px;
 }
-
+.font-50 {
+  font-size: 50px;
+}
 .font-25 {
   font-size: 25px;
 }
@@ -366,5 +368,40 @@ a.lead:hover {
   background-image: linear-gradient(90deg,hsla(0,3%,74.1%,.10196),#fff)!important;
   padding: 15px!important;
   margin-bottom: 10px!important;
+}
+.home-card {
+  border: none!important;
+  border-radius: 0!important;
+  box-shadow: 0 10px 40px 0 rgb(62 57 107 / 7%), 0 2px 9px 0 rgb(62 57 107 / 6%)!important;
+  background: white!important;
+}
+.card-color-vert {
+  color: #03a7a9 !important;
+}
+
+.card-color-warning {
+  color:#ffa87d!important;
+}
+
+.card-color-purple {
+  color: #808ee8 !important;
+}
+.font-55 {
+  font-size: 55px;
+}
+.bg-blue {
+  background: #0a4974!important;
+}
+.hr {
+  display: block;
+  flex: 1;
+  margin: 0 30px;
+  height: 3px;
+  background: #D4D4D4;
+}
+.headings {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
