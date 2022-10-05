@@ -818,10 +818,10 @@
   "menu.section.browse_community_by_author": "Auteur.e",
 
   // "menu.section.browse_global": "Tout DSpace",
-  "menu.section.browse_global": "Tout le dépôt Papyrus",
+  "menu.section.browse_global": "Tout Papyrus",
 
   // "search.form.scope.all": "Tout le dépôt DSpace",
-  "search.form.scope.all": "Tout le dépôt Papyrus",
+  "search.form.scope.all": "Tout Papyrus",
 
   // "nav.browse.header": "Tout Dspace",
   "nav.browse.header": "Tout Papyrus",

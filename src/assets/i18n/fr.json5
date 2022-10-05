@@ -2284,7 +2284,7 @@
 
   "menu.section.browse_community_by_title": "Titre",
 
-  "menu.section.browse_global": "Tout le dépôt Papyrus",
+  "menu.section.browse_global": "Papyrus",
 
   "menu.section.browse_global_by_author": "Auteur.e",
 
@@ -3182,7 +3182,7 @@
 
   "search.form.search_dspace": "Recherche dans DSpace",
 
-  "search.form.scope.all": "Tout le dépôt Papyrus",
+  "search.form.scope.all": "Tout Papyrus",
 
   "search.results.head": "Résultats de recherche",
 
