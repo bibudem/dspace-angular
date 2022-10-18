@@ -35,9 +35,12 @@ describe('MetadataUriValuesComponent', () => {
           useClass: TranslateLoaderMock
         }
       })],
+<<<<<<< HEAD
       providers: [
         { provide: APP_CONFIG, useValue: environment },
       ],
+=======
+>>>>>>> version-7.3/udem-7.3
       declarations: [MetadataUriValuesComponent],
       schemas: [NO_ERRORS_SCHEMA]
     }).overrideComponent(MetadataUriValuesComponent, {

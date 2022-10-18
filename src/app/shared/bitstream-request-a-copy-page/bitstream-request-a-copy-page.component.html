@@ -5,7 +5,11 @@
         <a [routerLink]="getBitstreamLink()">{{'bitstream-request-a-copy.alert.canDownload2'| translate}}</a>
     </div>
     <div>
-        <p>{{'bitstream-request-a-copy.intro' | translate}} <a [routerLink]="getItemPath()">{{itemName}}</a></p>
+        <p>{{'bitstream-request-a-copy.intro' | translate}} </p>
+        <p class="bg-warning p-2 p-2"><i  class="fa fa-exclamation-triangle fa-2x fa-pull-left  m-3"></i>{{'papyrus.bitstream-request-a-copy.intro.ajout1' | translate}}
+        </p>
+        <br>
+        <h5 class="mb-2"><a [routerLink]="getItemPath()">{{itemName}}</a></h5>
         <p *ngIf="bitstream != undefined && allfiles.value === 'false'">{{'bitstream-request-a-copy.intro.bitstream.one' | translate}} {{bitstreamName}}</p>
         <p *ngIf="allfiles.value === 'true'">{{'bitstream-request-a-copy.intro.bitstream.all' | translate}}</p>
     </div>
@@ -61,10 +65,23 @@
             <div class="row mb-4">
                 <div class="col-12">
                     <label
+<<<<<<< HEAD
                             for="message">{{'bitstream-request-a-copy.message.label' | translate}}</label>
                     <textarea rows="5"
                               [className]="'form-control'"
                               id="message" formControlName="message"></textarea>
+=======
+                            for="message">{{'bitstream-request-a-copy.message.label' | translate}} *</label>
+                    <textarea rows="5"
+                              [className]="'form-control'"
+                              id="message" formControlName="message" required></textarea>
+                  <div *ngIf="message.invalid && (message.dirty || message.touched)"
+                       class="invalid-feedback show-feedback">
+                    <span *ngIf="message.errors && message.errors.required">
+                        {{ 'bitstream-request-a-copy.message.error' | translate }}
+                    </span>
+                  </div>
+>>>>>>> version-7.3/udem-7.3
                 </div>
             </div>
         </div>

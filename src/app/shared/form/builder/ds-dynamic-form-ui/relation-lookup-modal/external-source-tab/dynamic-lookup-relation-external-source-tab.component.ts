@@ -2,7 +2,11 @@ import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angu
 import { SEARCH_CONFIG_SERVICE } from '../../../../../../my-dspace-page/my-dspace-page.component';
 import { SearchConfigurationService } from '../../../../../../core/shared/search/search-configuration.service';
 import { Router } from '@angular/router';
+<<<<<<< HEAD
 import { ExternalSourceDataService } from '../../../../../../core/data/external-source-data.service';
+=======
+import { ExternalSourceService } from '../../../../../../core/data/external-source.service';
+>>>>>>> version-7.3/udem-7.3
 import { RemoteData } from '../../../../../../core/data/remote-data';
 import { PaginatedList } from '../../../../../../core/data/paginated-list.model';
 import { ExternalSourceEntry } from '../../../../../../core/shared/external-source-entry.model';
@@ -125,7 +129,11 @@ export class DsDynamicLookupRelationExternalSourceTabComponent implements OnInit
 
   constructor(private router: Router,
               public searchConfigService: SearchConfigurationService,
+<<<<<<< HEAD
               private externalSourceService: ExternalSourceDataService,
+=======
+              private externalSourceService: ExternalSourceService,
+>>>>>>> version-7.3/udem-7.3
               private modalService: NgbModal,
               private selectableListService: SelectableListService,
               private paginationService: PaginationService

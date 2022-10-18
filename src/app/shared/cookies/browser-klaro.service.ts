@@ -41,7 +41,6 @@ const cookiePurposeMessagePrefix = 'cookies.consent.purpose.';
  * Update request debounce in ms
  */
 const updateDebounce = 300;
-
 /**
  * Browser implementation for the KlaroService, representing a service for handling Klaro consent preferences and UI
  */
@@ -106,7 +105,6 @@ export class BrowserKlaroService extends KlaroService {
         return servicesToHideArray;
       })
     );
-
     this.translateService.setDefaultLang(environment.defaultLanguage);
 
     const user$: Observable<EPerson> = this.getUser$();
@@ -326,5 +324,4 @@ export class BrowserKlaroService extends KlaroService {
   private filterConfigServices(servicesToHide: string[]): Pick<typeof klaroConfiguration, 'services'>[] {
     return this.klaroConfig.services.filter(service => !servicesToHide.some(name => name === service.name));
   }
-
 }

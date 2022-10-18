@@ -10,7 +10,6 @@ export class UIServerConfig extends ServerConfig {
     windowMs: number;
     max: number;
   };
-
   // Trust X-FORWARDED-* headers from proxies
   useProxies: boolean;
 }

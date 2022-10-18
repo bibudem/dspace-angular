@@ -45,7 +45,6 @@
     {{'item.edit.bitstreams.empty' | translate}}
   </div>
   <ds-themed-loading *ngIf="!bundles" message="{{'loading.bitstreams' | translate}}"></ds-themed-loading>
-
   <div class="button-row bottom">
     <div class="mt-4 float-right space-children-mr ml-gap">
       <button class="btn btn-warning" *ngIf="isReinstatable() | async"

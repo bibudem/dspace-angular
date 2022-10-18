@@ -167,8 +167,6 @@ export class ObjectCollectionComponent implements OnInit {
   placeholderFontClass: string;
 
 
-
-
   /**
    * @param cdRef
    *    ChangeDetectorRef service provided by Angular.

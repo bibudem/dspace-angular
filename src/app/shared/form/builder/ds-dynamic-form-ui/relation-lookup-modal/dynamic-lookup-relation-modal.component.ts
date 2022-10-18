@@ -16,14 +16,23 @@ import {
   RemoveRelationshipAction,
   UpdateRelationshipNameVariantAction,
 } from './relationship.actions';
+<<<<<<< HEAD
 import { RelationshipDataService } from '../../../../../core/data/relationship-data.service';
 import { RelationshipTypeDataService } from '../../../../../core/data/relationship-type-data.service';
+=======
+import { RelationshipService } from '../../../../../core/data/relationship.service';
+import { RelationshipTypeService } from '../../../../../core/data/relationship-type.service';
+>>>>>>> version-7.3/udem-7.3
 import { Store } from '@ngrx/store';
 import { AppState } from '../../../../../app.reducer';
 import { Context } from '../../../../../core/shared/context.model';
 import { LookupRelationService } from '../../../../../core/data/lookup-relation.service';
 import { ExternalSource } from '../../../../../core/shared/external-source.model';
+<<<<<<< HEAD
 import { ExternalSourceDataService } from '../../../../../core/data/external-source-data.service';
+=======
+import { ExternalSourceService } from '../../../../../core/data/external-source.service';
+>>>>>>> version-7.3/udem-7.3
 import { Router } from '@angular/router';
 import { RemoteDataBuildService } from '../../../../../core/cache/builders/remote-data-build.service';
 import { getAllSucceededRemoteDataPayload } from '../../../../../core/shared/operators';
@@ -156,9 +165,15 @@ export class DsDynamicLookupRelationModalComponent implements OnInit, OnDestroy 
   constructor(
     public modal: NgbActiveModal,
     private selectableListService: SelectableListService,
+<<<<<<< HEAD
     private relationshipService: RelationshipDataService,
     private relationshipTypeService: RelationshipTypeDataService,
     private externalSourceService: ExternalSourceDataService,
+=======
+    private relationshipService: RelationshipService,
+    private relationshipTypeService: RelationshipTypeService,
+    private externalSourceService: ExternalSourceService,
+>>>>>>> version-7.3/udem-7.3
     private lookupRelationService: LookupRelationService,
     private searchConfigService: SearchConfigurationService,
     private rdbService: RemoteDataBuildService,

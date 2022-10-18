@@ -5,9 +5,13 @@ import { ListableObject } from '../listable-object.model';
 import { GenericConstructor } from '../../../../core/shared/generic-constructor';
 import { Context } from '../../../../core/shared/context.model';
 import { ViewMode } from '../../../../core/shared/view-mode.model';
+<<<<<<< HEAD
 import {
   ItemListElementComponent
 } from '../../../object-list/item-list-element/item-types/item/item-list-element.component';
+=======
+import { ItemListElementComponent } from '../../../object-list/item-list-element/item-types/item/item-list-element.component';
+>>>>>>> version-7.3/udem-7.3
 import { ListableObjectDirective } from './listable-object.directive';
 import { TranslateModule } from '@ngx-translate/core';
 import { By } from '@angular/platform-browser';
@@ -148,7 +152,11 @@ describe('ListableObjectComponentLoaderComponent', () => {
       expect((comp as any).instantiateComponent).not.toHaveBeenCalled();
 
       (listableComponent as any).reloadedObject.emit(reloadedObject);
+<<<<<<< HEAD
       tick(200);
+=======
+      tick();
+>>>>>>> version-7.3/udem-7.3
 
       expect((comp as any).instantiateComponent).toHaveBeenCalledWith(reloadedObject);
     }));
@@ -157,7 +165,11 @@ describe('ListableObjectComponentLoaderComponent', () => {
       expect((comp as any).contentChange.emit).not.toHaveBeenCalled();
 
       (listableComponent as any).reloadedObject.emit(reloadedObject);
+<<<<<<< HEAD
       tick(200);
+=======
+      tick();
+>>>>>>> version-7.3/udem-7.3
 
       expect((comp as any).contentChange.emit).toHaveBeenCalledWith(reloadedObject);
     }));

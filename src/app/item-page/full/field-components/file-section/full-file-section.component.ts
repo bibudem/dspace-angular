@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { BitstreamDataService } from '../../../../core/data/bitstream-data.service';
-
 import { Bitstream } from '../../../../core/shared/bitstream.model';
 import { Item } from '../../../../core/shared/item.model';
 import { followLink } from '../../../../shared/utils/follow-link-config.model';
@@ -52,6 +51,7 @@ export class FullFileSectionComponent extends FileSectionComponent implements On
     protected notificationsService: NotificationsService,
     protected translateService: TranslateService,
     protected paginationService: PaginationService
+
   ) {
     super(bitstreamDataService, notificationsService, translateService);
   }

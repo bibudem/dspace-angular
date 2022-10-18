@@ -29,7 +29,9 @@ morgan.log
 
 yarn-error.log
 
-*.css
+
+## permettre de voir les changements des fichiers css
+##*.css
 
 package-lock.json
 
@@ -39,3 +41,6 @@ package-lock.json
 /nbproject/
 
 junit.xml
+
+## BIB-UdeM
+_Archives/

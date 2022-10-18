@@ -17,7 +17,6 @@ import { LinkService } from '../../../core/cache/builders/link.service';
 import { Bundle } from '../../../core/shared/bundle.model';
 import { hasValue, isNotEmpty } from '../../../shared/empty.util';
 import { Bitstream } from '../../../core/shared/bitstream.model';
-
 /**
  * Interface for a bundle's bitstream map entry
  */

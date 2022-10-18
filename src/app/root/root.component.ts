@@ -1,11 +1,9 @@
 import { map, startWith } from 'rxjs/operators';
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 import { combineLatest as combineLatestObservable, Observable, of } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { TranslateService } from '@ngx-translate/core';
-
 import { MetadataService } from '../core/metadata/metadata.service';
 import { HostWindowState } from '../shared/search/host-window.reducer';
 import { NativeWindowRef, NativeWindowService } from '../core/services/window.service';

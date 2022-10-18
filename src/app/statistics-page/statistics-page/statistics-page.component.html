@@ -7,23 +7,76 @@
       {{ 'statistics.header' | translate: { scope: getName(scope) } }}
     </h2>
   </ng-container>
-
   <ng-container *ngVar="reports$ | async as reports">
-
     <ng-container *ngIf="!reports">
-      <ds-themed-loading></ds-themed-loading>
+      <ds-loading></ds-loading>
     </ng-container>
-
     <ng-container *ngIf="reports">
-      <ds-statistics-table *ngFor="let report of reports"
-                           [report]="report"
-                           class="m-2 {{ report.id }}">
-      </ds-statistics-table>
+      <!-- add UdeM 2022 | Creation du views dans deux onglet pour plusieurs rapport -->
+      <ul class="nav nav-tabs mt-3" id="myTab" role="tablist" *ngIf="( reports.length > 1)">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+            {{ 'papyrus.statistics.title.ongle.bref' | translate }}
+          </a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" id="plus-tab" data-toggle="tab" href="#plus" role="tab" aria-controls="profile" aria-selected="false">
+            {{ 'papyrus.statistics.title.ongle.tous' | translate }}
+          </a>
+        </li>
+      </ul>
+      <div class="tab-content mt-2" id="tabStatistics" *ngIf="(reports.length > 1)">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+            <div class="col-md-3">
+              <div class="card-statistics radius-10 border-start border-0 border-3 border-info mt-4">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div>
+                       <h4 class="mb-0 text-secondary">
+                        {{ 'statistics.table.title.TotalVisits' | translate }}
+                       </h4>
+                      <h1 class="my-1 text-info font-weight-bold" id="totalTelChiffre"></h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <h5 class="m-2">
+                {{ 'statistics.table.title.TotalVisitsPerMonth' | translate }}
+              </h5>
+              <div id="TotalVisitsPerMonth"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="plus" role="tabpanel" aria-labelledby="plus-tab">
+          <ng-container  *ngFor="let report of reports">
+            <ds-statistics-table *ngIf="!(report.reportType == 'TotalVisitsPerMonth')"
+                                 [report]="report"
+                                 class="m-2 {{ report.id }}">
+            </ds-statistics-table>
+            <ng-container *ngIf="(report.reportType == 'TotalVisitsPerMonth')">
+              <ds-statistics-graph  [report]="report">
+              </ds-statistics-graph>
+            </ng-container>
+          </ng-container>
+        </div>
+      </div>
+      <!-- add UdeM 2022 | Creation du views pour le rapport general -->
+      <div class="row" *ngIf="( reports.length == 1)">
+        <div class="col-md-12">
+          <ng-container  *ngFor="let report of reports">
+            <ds-statistics-table
+                                 [report]="report"
+                                 class="m-2 {{ report.id }}">
+            </ds-statistics-table>
+          </ng-container>
+        </div>
+      </div>
       <div *ngIf="!(hasData$ | async)">
         {{ 'statistics.page.no-data' | translate }}
       </div>
     </ng-container>
-
   </ng-container>
-
 </div>

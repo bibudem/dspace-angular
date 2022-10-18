@@ -11,6 +11,10 @@ import { NotificationsService } from '../../../../shared/notifications/notificat
 import { TranslateService } from '@ngx-translate/core';
 import { getFirstCompletedRemoteData } from '../../../../core/shared/operators';
 
+// add Udem 2022
+import * as moment from 'moment';
+
+
 /**
  * This component renders the file section of the item
  * inside a 'ds-metadata-field-wrapper' component.
@@ -37,6 +41,18 @@ export class FileSectionComponent implements OnInit {
 
   pageSize = 5;
 
+
+  // avril 2022: add UdeM
+  embargo: string[] = [
+    'UdeM.EmbargoLift'
+  ];
+
+  afficherBoutonResult = false;
+
+  urlDemandeCopie = '';
+
+  dateEmbargoAfficher = '';
+
   constructor(
     protected bitstreamDataService: BitstreamDataService,
     protected notificationsService: NotificationsService,
@@ -46,6 +62,17 @@ export class FileSectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.getNextPage();
+    //console.log(this.item);
+    //console.log(this.item.allMetadata(['thumbnail']));
+    // add UdeM 2022
+    if (this.item.allMetadata(this.embargo).entries()) {
+       this.afficherBoutonResult = this.afficherBouton(this.item.allMetadata(this.embargo)[0].value);
+       // exemple de date: 2023-05-12T04:00:00Z
+       this.dateEmbargoAfficher = this.item.allMetadata(this.embargo)[0].value.split('T')[0];
+    }
+    this.urlDemandeCopie = '/items/' + this.item.id + '/request-a-copy';
+     // console.log(this.item);
+
   }
 
   /**
@@ -77,5 +104,20 @@ export class FileSectionComponent implements OnInit {
         this.isLastPage = this.currentPage === bitstreamsRD.payload.totalPages;
       }
     });
+  }
+
+  // add UdeM 2022 : afficher le bouton si l'item est sous embargo
+  // On compare la date actuelle avec la date d'embargo definit pour cet item
+  afficherBouton(dateCompare): boolean {
+    const dateItem = new Date(dateCompare);
+    const dateNow = new Date(moment().format('yyyy-MM-DD'));
+    let afficher = false;
+
+    if (!(dateCompare === undefined || dateCompare === '')) {
+      if (dateNow.toISOString() < dateItem.toISOString()) {
+        afficher = true;
+      }
+    }
+    return afficher;
   }
 }

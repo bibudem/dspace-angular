@@ -457,6 +457,7 @@ export class MenuResolver implements Resolve<boolean> {
         } as OnClickMenuItemModel,
         shouldPersistOnRouteChange: true
       });
+
     });
   }
 

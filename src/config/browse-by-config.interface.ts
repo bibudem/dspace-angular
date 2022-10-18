@@ -34,5 +34,4 @@ export interface BrowseByConfig extends Config {
    * menu.  See pageSizeOptions in 'pagination-component-options.model.ts'.
    */
    pageSize: number;
-
 }

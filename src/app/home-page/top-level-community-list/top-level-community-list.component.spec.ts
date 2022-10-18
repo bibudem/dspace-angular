@@ -175,7 +175,6 @@ describe('TopLevelCommunityList Component', () => {
 
   });
 
-
   it('should display a list of top-communities', () => {
     waitForAsync(() => {
       const subComList = fixture.debugElement.queryAll(By.css('li'));
@@ -188,5 +187,4 @@ describe('TopLevelCommunityList Component', () => {
       expect(subComList[4].nativeElement.textContent).toContain('TopCommunity 5');
     });
   });
-
 });

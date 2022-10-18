@@ -258,7 +258,6 @@ describe('BrowserKlaroService', () => {
     });
   });
 
-
   describe('setSettingsForUser when there are changes', () => {
     const cookieConsent = { test: 'testt' };
     const cookieConsentString = '{test: \'testt\'}';

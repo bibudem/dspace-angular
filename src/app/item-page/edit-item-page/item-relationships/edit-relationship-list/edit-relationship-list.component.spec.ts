@@ -207,7 +207,6 @@ describe('EditRelationshipListComponent', () => {
         showThumbnails: true
       }
     };
-
     TestBed.configureTestingModule({
       imports: [SharedModule, TranslateModule.forRoot()],
       declarations: [EditRelationshipListComponent],
@@ -271,7 +270,6 @@ describe('EditRelationshipListComponent', () => {
       expect(findListOptions.elementsPerPage).toEqual(paginationOptions.pageSize);
       expect(findListOptions.currentPage).toEqual(paginationOptions.currentPage);
       expect(linksToFollow.linksToFollow[0].name).toEqual('thumbnail');
-
     });
 
     describe('when the publication is on the left side of the relationship', () => {

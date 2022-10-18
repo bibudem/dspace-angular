@@ -75,7 +75,6 @@ const getDefaultConfigPath = () => {
  * @param env   the environment to get the config file for
  */
 const getEnvConfigFilePath = (env: Environment) => {
-
   // determine app config filename variations
   let envVariations;
   switch (env) {
@@ -89,7 +88,6 @@ const getEnvConfigFilePath = (env: Environment) => {
     default:
       envVariations = ['dev', 'development'];
   }
-
   let envLocalConfigPath;
 
   // check if any environment variations of app config exist

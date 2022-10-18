@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnDestroy, OnInit } from '@angular/core';
 
 import { BehaviorSubject, EMPTY, Observable } from 'rxjs';
@@ -9,16 +10,28 @@ import { SearchResultDetailElementComponent } from '../search-result-detail-elem
 import {
   MyDspaceItemStatusType
 } from '../../../object-collection/shared/mydspace-item-status/my-dspace-item-status-type';
+=======
+import { Component } from '@angular/core';
+
+import { Observable } from 'rxjs';
+import { RemoteData } from '../../../../core/data/remote-data';
+import { PoolTask } from '../../../../core/tasks/models/pool-task-object.model';
+import { SearchResultDetailElementComponent } from '../search-result-detail-element.component';
+import { MyDspaceItemStatusType } from '../../../object-collection/shared/mydspace-item-status/my-dspace-item-status-type';
+>>>>>>> version-7.3/udem-7.3
 import { WorkflowItem } from '../../../../core/submission/models/workflowitem.model';
 import { ViewMode } from '../../../../core/shared/view-mode.model';
 import { listableObjectComponent } from '../../../object-collection/shared/listable-object/listable-object.decorator';
 import { PoolTaskSearchResult } from '../../../object-collection/shared/pool-task-search-result.model';
 import { followLink } from '../../../utils/follow-link-config.model';
 import { LinkService } from '../../../../core/cache/builders/link.service';
+<<<<<<< HEAD
 import { Item } from '../../../../core/shared/item.model';
 import { getFirstCompletedRemoteData } from '../../../../core/shared/operators';
 import { isNotEmpty } from '../../../empty.util';
 import { ObjectCacheService } from '../../../../core/cache/object-cache.service';
+=======
+>>>>>>> version-7.3/udem-7.3
 
 /**
  * This component renders pool task object for the search result in the detail view.
@@ -30,12 +43,16 @@ import { ObjectCacheService } from '../../../../core/cache/object-cache.service'
 })
 
 @listableObjectComponent(PoolTaskSearchResult, ViewMode.DetailedListElement)
+<<<<<<< HEAD
 export class PoolSearchResultDetailElementComponent extends SearchResultDetailElementComponent<PoolTaskSearchResult, PoolTask> implements OnInit, OnDestroy  {
 
   /**
    * The item object that belonging to the result object
    */
   public item$: BehaviorSubject<Item> = new BehaviorSubject<Item>(null);
+=======
+export class PoolSearchResultDetailElementComponent extends SearchResultDetailElementComponent<PoolTaskSearchResult, PoolTask> {
+>>>>>>> version-7.3/udem-7.3
 
   /**
    * A boolean representing if to show submitter information
@@ -50,9 +67,15 @@ export class PoolSearchResultDetailElementComponent extends SearchResultDetailEl
   /**
    * The workflowitem object that belonging to the result object
    */
+<<<<<<< HEAD
   public workflowitem$: BehaviorSubject<WorkflowItem> = new BehaviorSubject<WorkflowItem>(null);
 
   constructor(protected linkService: LinkService, protected objectCache: ObjectCacheService) {
+=======
+  public workflowitemRD$: Observable<RemoteData<WorkflowItem>>;
+
+  constructor(protected linkService: LinkService) {
+>>>>>>> version-7.3/udem-7.3
     super();
   }
 
@@ -65,6 +88,7 @@ export class PoolSearchResultDetailElementComponent extends SearchResultDetailEl
       followLink('item', {}, followLink('bundles')),
       followLink('submitter')
     ), followLink('action'));
+<<<<<<< HEAD
 
     (this.dso.workflowitem as Observable<RemoteData<WorkflowItem>>).pipe(
       getFirstCompletedRemoteData(),
@@ -90,6 +114,9 @@ export class PoolSearchResultDetailElementComponent extends SearchResultDetailEl
   ngOnDestroy() {
     // This ensures the object is removed from cache, when action is performed on task
     this.objectCache.remove(this.dso._links.workflowitem.href);
+=======
+    this.workflowitemRD$ = this.dso.workflowitem as Observable<RemoteData<WorkflowItem>>;
+>>>>>>> version-7.3/udem-7.3
   }
 
 }

@@ -2,9 +2,9 @@
   <h3 class="mb-4">{{'grant-deny-request-copy.header' | translate}}</h3>
   <div *ngIf="itemRequestRD && itemRequestRD.hasSucceeded">
     <div *ngIf="!itemRequestRD.payload.decisionDate">
-      <p [innerHTML]="'grant-deny-request-copy.intro1' | translate:{ url: (itemUrl$ | async), name: (itemName$ | async) }"></p>
-      <p>{{'grant-deny-request-copy.intro2' | translate}}</p>
-
+      <p [innerHTML]="'papyrus.grant-deny-request-copy.intro.ajout1' | translate:{ url: (itemUrl$ | async), name: (itemName$ | async) }"></p>
+      <p class="bg-tme">{{'papyrus.grant-deny-request-copy.intro.ajout2' | translate}}</p>
+      <p>{{'papyrus.grant-deny-request-copy.intro.ajout3' | translate}}</p>
       <div class="btn-group ">
         <a [routerLink]="grantRoute$ | async"
            class="btn btn-outline-primary"

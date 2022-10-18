@@ -44,7 +44,11 @@ import { hasValue, isNotEmpty, isNotNull } from '../../../shared/empty.util';
 import {
   WorkspaceitemSectionAccessesObject
 } from '../../../core/submission/models/workspaceitem-section-accesses.model';
+<<<<<<< HEAD
 import { SubmissionAccessesConfigDataService } from '../../../core/config/submission-accesses-config-data.service';
+=======
+import { SubmissionAccessesConfigService } from '../../../core/config/submission-accesses-config.service';
+>>>>>>> version-7.3/udem-7.3
 import { getFirstSucceededRemoteData } from '../../../core/shared/operators';
 import { FormComponent } from '../../../shared/form/form.component';
 import { FormService } from '../../../shared/form/form.service';
@@ -125,7 +129,11 @@ export class SubmissionSectionAccessesComponent extends SectionModelComponent {
    * @param {SectionFormOperationsService} formOperationsService
    * @param {FormBuilderService} formBuilderService
    * @param {TranslateService} translate
+<<<<<<< HEAD
    * @param {SubmissionAccessesConfigDataService} accessesConfigService
+=======
+   * @param {SubmissionAccessesConfigService} accessesConfigService
+>>>>>>> version-7.3/udem-7.3
    * @param {SectionAccessesService} accessesService
    * @param {SubmissionJsonPatchOperationsService} operationsService
    * @param {string} injectedSubmissionId
@@ -133,7 +141,11 @@ export class SubmissionSectionAccessesComponent extends SectionModelComponent {
   constructor(
     protected sectionService: SectionsService,
     private formBuilderService: FormBuilderService,
+<<<<<<< HEAD
     private accessesConfigService: SubmissionAccessesConfigDataService,
+=======
+    private accessesConfigService: SubmissionAccessesConfigService,
+>>>>>>> version-7.3/udem-7.3
     private accessesService: SectionAccessesService,
     protected formOperationsService: SectionFormOperationsService,
     protected operationsBuilder: JsonPatchOperationsBuilder,

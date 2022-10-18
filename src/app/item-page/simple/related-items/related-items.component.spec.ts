@@ -100,7 +100,6 @@ describe('RelatedItemsComponent', () => {
         fetchThumbnail: true
       }));
     });
-
   });
 
   describe('when decrease is called', () => {

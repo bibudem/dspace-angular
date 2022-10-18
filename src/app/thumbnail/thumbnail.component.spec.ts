@@ -22,7 +22,6 @@ class MockTranslatePipe implements PipeTransform {
 }
 
 const CONTENT = 'content.url';
-
 describe('ThumbnailComponent', () => {
   let comp: ThumbnailComponent;
   let fixture: ComponentFixture<ThumbnailComponent>;
@@ -59,7 +58,6 @@ describe('ThumbnailComponent', () => {
     fixture.detectChanges();
 
     authService = TestBed.inject(AuthService);
-
     comp = fixture.componentInstance; // ThumbnailComponent test instance
     de = fixture.debugElement.query(By.css('div.thumbnail'));
     el = de.nativeElement;

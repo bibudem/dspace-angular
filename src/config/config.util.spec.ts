@@ -25,9 +25,7 @@ describe('Config Util', () => {
         max: 1000
       };
       appConfig.ui.rateLimiter = rateLimiter;
-
       appConfig.ui.useProxies = false;
-
       const autoSaveMetadata = [
         'dc.author',
         'dc.title'

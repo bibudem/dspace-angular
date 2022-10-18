@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { BehaviorSubject, combineLatest, Subscription } from 'rxjs';
 import { filter, mergeMap, switchMap, take, tap } from 'rxjs/operators';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
-
 import { ExternalSourceDataService } from '../../core/data/external-source-data.service';
 import { ExternalSourceData } from './import-external-searchbar/submission-import-external-searchbar.component';
 import { RemoteData } from '../../core/data/remote-data';

@@ -108,7 +108,6 @@ describe('ForgotPasswordFormComponent', () => {
       expect(router.navigate).not.toHaveBeenCalled();
       expect(notificationsService.error).toHaveBeenCalled();
     });
-
     it('should submit a patch request for the user uuid when the form is invalid', () => {
 
       comp.password = 'password';

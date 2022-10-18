@@ -34,7 +34,6 @@ describe('ItemPageAbstractFieldComponent', () => {
   }));
 
   beforeEach(waitForAsync(() => {
-
     fixture = TestBed.createComponent(ItemPageAbstractFieldComponent);
     comp = fixture.componentInstance;
     fixture.detectChanges();

@@ -14,7 +14,8 @@ import { ThemedCollectionStatisticsPageComponent } from './collection-statistics
 import { ThemedCommunityStatisticsPageComponent } from './community-statistics-page/themed-community-statistics-page.component';
 import { ThemedItemStatisticsPageComponent } from './item-statistics-page/themed-item-statistics-page.component';
 import { ThemedSiteStatisticsPageComponent } from './site-statistics-page/themed-site-statistics-page.component';
-
+// add UdeM 2022| declaration du nouveau component
+import { StatisticsGraphComponent } from './statistics-graph/statistics-graph.component';
 const components = [
   StatisticsTableComponent,
   SiteStatisticsPageComponent,
@@ -25,6 +26,8 @@ const components = [
   ThemedCommunityStatisticsPageComponent,
   ThemedItemStatisticsPageComponent,
   ThemedSiteStatisticsPageComponent
+  // add UdeM 2022| declaration du nouveau component
+  StatisticsGraphComponent
 ];
 
 @NgModule({

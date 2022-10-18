@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-
 import { Observable } from 'rxjs';
-
 /**
  * Abstract class representing a service for handling Klaro consent preferences and UI
  */

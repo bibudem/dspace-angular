@@ -56,7 +56,7 @@
   "access-status.embargo.listelement.badge": "Embargo",
 
   // "access-status.metadata.only.listelement.badge": "Metadata only",
- "access-status.metadata.only.listelement.badge": "Somente Metadadados",
+  "access-status.metadata.only.listelement.badge": "Somente Metadadados",
 
   // "access-status.open.access.listelement.badge": "Open Access",
   "access-status.open.access.listelement.badge": "Acesso aberto (Open Access)",
@@ -6075,7 +6075,7 @@
 
   // "submission.sections.accesses.form.until-placeholder": "Until",
   "submission.sections.accesses.form.until-placeholder": "Até",
-  
+
   // "submission.sections.license.granted-label": "Confirmo a licença acima",
   "submission.sections.license.granted-label": "I confirm the license above",
 
@@ -6778,7 +6778,7 @@
 
   // "person.orcid.registry.auth": "ORCID Autorizações",
   "person.orcid.registry.auth": "ORCID Autorizações",
-  
+
   // "home.recent-submissions.head": "Recent Submissions",
   "home.recent-submissions.head": "Submissões Recentes",
 

@@ -24,12 +24,15 @@ import { ConfirmationModalComponent } from './confirmation-modal/confirmation-mo
 import {
   ExportMetadataSelectorComponent
 } from './dso-selector/modal-wrappers/export-metadata-selector/export-metadata-selector.component';
+<<<<<<< HEAD
 import {
   ExportBatchSelectorComponent
 } from './dso-selector/modal-wrappers/export-batch-selector/export-batch-selector.component';
 import {
   ImportBatchSelectorComponent
 } from './dso-selector/modal-wrappers/import-batch-selector/import-batch-selector.component';
+=======
+>>>>>>> version-7.3/udem-7.3
 import { FileDropzoneNoUploaderComponent } from './file-dropzone-no-uploader/file-dropzone-no-uploader.component';
 import { ItemListElementComponent } from './object-list/item-list-element/item-types/item/item-list-element.component';
 import { EnumKeysPipe } from './utils/enum-keys-pipe';
@@ -45,7 +48,10 @@ import {
   SearchResultListElementComponent
 } from './object-list/search-result-list-element/search-result-list-element.component';
 import { ObjectListComponent } from './object-list/object-list.component';
+<<<<<<< HEAD
 import { ThemedObjectListComponent } from './object-list/themed-object-list.component';
+=======
+>>>>>>> version-7.3/udem-7.3
 import {
   CollectionGridElementComponent
 } from './object-grid/collection-grid-element/collection-grid-element.component';
@@ -66,7 +72,10 @@ import {
 import { ViewModeSwitchComponent } from './view-mode-switch/view-mode-switch.component';
 import { VarDirective } from './utils/var.directive';
 import { AuthNavMenuComponent } from './auth-nav-menu/auth-nav-menu.component';
+<<<<<<< HEAD
 import { ThemedAuthNavMenuComponent } from './auth-nav-menu/themed-auth-nav-menu.component';
+=======
+>>>>>>> version-7.3/udem-7.3
 import { LogOutComponent } from './log-out/log-out.component';
 import { DragClickDirective } from './utils/drag-click.directive';
 import { TruncatePipe } from './utils/truncate.pipe';
@@ -132,6 +141,7 @@ import {
   CreateCommunityParentSelectorComponent
 } from './dso-selector/modal-wrappers/create-community-parent-selector/create-community-parent-selector.component';
 import {
+<<<<<<< HEAD
     ThemedCreateCommunityParentSelectorComponent
 } from './dso-selector/modal-wrappers/create-community-parent-selector/themed-create-community-parent-selector.component';
 import {
@@ -147,6 +157,14 @@ import {
     ThemedCreateCollectionParentSelectorComponent
 } from './dso-selector/modal-wrappers/create-collection-parent-selector/themed-create-collection-parent-selector.component';
 import {
+=======
+  CreateItemParentSelectorComponent
+} from './dso-selector/modal-wrappers/create-item-parent-selector/create-item-parent-selector.component';
+import {
+  CreateCollectionParentSelectorComponent
+} from './dso-selector/modal-wrappers/create-collection-parent-selector/create-collection-parent-selector.component';
+import {
+>>>>>>> version-7.3/udem-7.3
   CommunitySearchResultListElementComponent
 } from './object-list/search-result-list-element/community-search-result/community-search-result-list-element.component';
 import {
@@ -156,6 +174,7 @@ import {
   EditItemSelectorComponent
 } from './dso-selector/modal-wrappers/edit-item-selector/edit-item-selector.component';
 import {
+<<<<<<< HEAD
     ThemedEditItemSelectorComponent
 } from './dso-selector/modal-wrappers/edit-item-selector/themed-edit-item-selector.component';
 import {
@@ -171,6 +190,14 @@ import {
     ThemedEditCollectionSelectorComponent
 } from './dso-selector/modal-wrappers/edit-collection-selector/themed-edit-collection-selector.component';
 import {
+=======
+  EditCommunitySelectorComponent
+} from './dso-selector/modal-wrappers/edit-community-selector/edit-community-selector.component';
+import {
+  EditCollectionSelectorComponent
+} from './dso-selector/modal-wrappers/edit-collection-selector/edit-collection-selector.component';
+import {
+>>>>>>> version-7.3/udem-7.3
   ItemListPreviewComponent
 } from './object-list/my-dspace-result-list-element/item-list-preview/item-list-preview.component';
 import {
@@ -297,7 +324,10 @@ import { LinkMenuItemComponent } from './menu/menu-item/link-menu-item.component
 import { OnClickMenuItemComponent } from './menu/menu-item/onclick-menu-item.component';
 import { TextMenuItemComponent } from './menu/menu-item/text-menu-item.component';
 import { SearchNavbarComponent } from '../search-navbar/search-navbar.component';
+<<<<<<< HEAD
 import { ThemedSearchNavbarComponent } from '../search-navbar/themed-search-navbar.component';
+=======
+>>>>>>> version-7.3/udem-7.3
 import {
   ItemVersionsSummaryModalComponent
 } from './item/item-versions/item-versions-summary-modal/item-versions-summary-modal.component';
@@ -316,6 +346,7 @@ import { ExternalLinkMenuItemComponent } from './menu/menu-item/external-link-me
 import { DsoPageOrcidButtonComponent } from './dso-page/dso-page-orcid-button/dso-page-orcid-button.component';
 import { LogInOrcidComponent } from './log-in/methods/orcid/log-in-orcid.component';
 import { BrowserOnlyPipe } from './utils/browser-only.pipe';
+<<<<<<< HEAD
 import { ThemedLoadingComponent } from './loading/themed-loading.component';
 import { PersonPageClaimButtonComponent } from './dso-page/person-page-claim-button/person-page-claim-button.component';
 import { SearchExportCsvComponent } from './search/search-export-csv/search-export-csv.component';
@@ -324,6 +355,10 @@ import {
 } from '../item-page/simple/field-components/specific-field/title/item-page-title-field.component';
 import { MarkdownPipe } from './utils/markdown.pipe';
 import { GoogleRecaptchaModule } from '../core/google-recaptcha/google-recaptcha.module';
+=======
+import { PersonPageClaimButtonComponent } from './dso-page/person-page-claim-button/person-page-claim-button.component';
+import { SearchExportCsvComponent } from './search/search-export-csv/search-export-csv.component';
+>>>>>>> version-7.3/udem-7.3
 
 const MODULES = [
   CommonModule,
@@ -344,8 +379,12 @@ const MODULES = [
   NouisliderModule,
   MomentModule,
   DragDropModule,
+<<<<<<< HEAD
   CdkTreeModule,
   GoogleRecaptchaModule,
+=======
+  CdkTreeModule
+>>>>>>> version-7.3/udem-7.3
 ];
 
 const ROOT_MODULES = [
@@ -368,14 +407,20 @@ const PIPES = [
   ConsolePipe,
   ObjNgFor,
   BrowserOnlyPipe,
+<<<<<<< HEAD
   MarkdownPipe,
+=======
+>>>>>>> version-7.3/udem-7.3
 ];
 
 const COMPONENTS = [
   // put shared components here
   AlertComponent,
   AuthNavMenuComponent,
+<<<<<<< HEAD
   ThemedAuthNavMenuComponent,
+=======
+>>>>>>> version-7.3/udem-7.3
   UserMenuComponent,
   ChipsComponent,
   DsSelectComponent,
@@ -383,12 +428,18 @@ const COMPONENTS = [
   FileSectionComponent,
   LangSwitchComponent,
   LoadingComponent,
+<<<<<<< HEAD
   ThemedLoadingComponent,
+=======
+>>>>>>> version-7.3/udem-7.3
   LogInComponent,
   LogOutComponent,
   NumberPickerComponent,
   ObjectListComponent,
+<<<<<<< HEAD
   ThemedObjectListComponent,
+=======
+>>>>>>> version-7.3/udem-7.3
   ObjectDetailComponent,
   ObjectGridComponent,
   AbstractListableElementComponent,
@@ -429,6 +480,7 @@ const COMPONENTS = [
   DsoInputSuggestionsComponent,
   DSOSelectorComponent,
   CreateCommunityParentSelectorComponent,
+<<<<<<< HEAD
   ThemedCreateCommunityParentSelectorComponent,
   CreateCollectionParentSelectorComponent,
   ThemedCreateCollectionParentSelectorComponent,
@@ -440,6 +492,13 @@ const COMPONENTS = [
   ThemedEditCollectionSelectorComponent,
   EditItemSelectorComponent,
   ThemedEditItemSelectorComponent,
+=======
+  CreateCollectionParentSelectorComponent,
+  CreateItemParentSelectorComponent,
+  EditCommunitySelectorComponent,
+  EditCollectionSelectorComponent,
+  EditItemSelectorComponent,
+>>>>>>> version-7.3/udem-7.3
   CommunitySearchResultListElementComponent,
   CollectionSearchResultListElementComponent,
   BrowseByComponent,
@@ -484,8 +543,11 @@ const COMPONENTS = [
   CollectionDropdownComponent,
   EntityDropdownComponent,
   ExportMetadataSelectorComponent,
+<<<<<<< HEAD
   ImportBatchSelectorComponent,
   ExportBatchSelectorComponent,
+=======
+>>>>>>> version-7.3/udem-7.3
   ConfirmationModalComponent,
   VocabularyTreeviewComponent,
   AuthorizedCollectionSelectorComponent,
@@ -509,9 +571,13 @@ const COMPONENTS = [
   CollectionSidebarSearchListElementComponent,
   CommunitySidebarSearchListElementComponent,
   SearchNavbarComponent,
+<<<<<<< HEAD
   ScopeSelectorModalComponent,
   ItemPageTitleFieldComponent,
   ThemedSearchNavbarComponent,
+=======
+  ScopeSelectorModalComponent
+>>>>>>> version-7.3/udem-7.3
 ];
 
 const ENTRY_COMPONENTS = [
@@ -535,6 +601,7 @@ const ENTRY_COMPONENTS = [
   StartsWithDateComponent,
   StartsWithTextComponent,
   CreateCommunityParentSelectorComponent,
+<<<<<<< HEAD
   ThemedCreateCommunityParentSelectorComponent,
   CreateCollectionParentSelectorComponent,
   ThemedCreateCollectionParentSelectorComponent,
@@ -546,6 +613,13 @@ const ENTRY_COMPONENTS = [
   ThemedEditCollectionSelectorComponent,
   EditItemSelectorComponent,
   ThemedEditItemSelectorComponent,
+=======
+  CreateCollectionParentSelectorComponent,
+  CreateItemParentSelectorComponent,
+  EditCommunitySelectorComponent,
+  EditCollectionSelectorComponent,
+  EditItemSelectorComponent,
+>>>>>>> version-7.3/udem-7.3
   PlainTextMetadataListElementComponent,
   ItemMetadataListElementComponent,
   MetadataRepresentationListElementComponent,
@@ -565,8 +639,11 @@ const ENTRY_COMPONENTS = [
   BitstreamRequestACopyPageComponent,
   CurationFormComponent,
   ExportMetadataSelectorComponent,
+<<<<<<< HEAD
   ImportBatchSelectorComponent,
   ExportBatchSelectorComponent,
+=======
+>>>>>>> version-7.3/udem-7.3
   ConfirmationModalComponent,
   VocabularyTreeviewComponent,
   SidebarSearchListElementComponent,

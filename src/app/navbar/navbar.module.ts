@@ -1,8 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-
 import { EffectsModule } from '@ngrx/effects';
-
 import { CoreModule } from '../core/core.module';
 import { NavbarEffects } from './navbar.effects';
 import { NavbarSectionComponent } from './navbar-section/navbar-section.component';

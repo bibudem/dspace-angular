@@ -14,7 +14,6 @@ export const HAS_AGREED_END_USER = 'dsHasAgreedEndUser';
 export const ANONYMOUS_STORAGE_NAME_KLARO = 'klaro-anonymous';
 
 export const GOOGLE_ANALYTICS_KLARO_KEY = 'google-analytics';
-
 /**
  * Klaro configuration
  * For more information see https://kiprotect.com/docs/klaro/annotated-config

@@ -21,8 +21,13 @@
                                 [importConfig]="importConfig"
                                 (importObject)="import($event)">
         </ds-viewable-collection>
+<<<<<<< HEAD
         <ds-themed-loading *ngIf="!entriesRD || entriesRD?.isLoading"
                     message="{{'loading.search-results' | translate}}"></ds-themed-loading>
+=======
+        <ds-loading *ngIf="!entriesRD || entriesRD?.isLoading"
+                    message="{{'loading.search-results' | translate}}"></ds-loading>
+>>>>>>> version-7.3/udem-7.3
         <ds-error   *ngIf="entriesRD?.hasFailed && (!entriesRD?.errorMessage || entriesRD?.statusCode != 400)"
                     message="{{'error.search-results' | translate}}"></ds-error>
         <div *ngIf="entriesRD?.payload?.page?.length == 0 || entriesRD?.statusCode == 400" id="empty-external-entry-list">

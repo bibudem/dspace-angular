@@ -43,7 +43,8 @@ import {
 
 import { CommunityListElementComponent } from './app/shared/object-list/community-list-element/community-list-element.component';
 import { CollectionListElementComponent} from './app/shared/object-list/collection-list-element/collection-list-element.component';
-
+/**********Ajout des components udem***************************/
+import {NavbarTopUdemComponent} from './app/navbar/navbar-top-udem/navbar-top-udem.component';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
@@ -74,6 +75,8 @@ const DECLARATIONS = [
   EditCollectionSelectorComponent,
   EditCommunitySelectorComponent,
   EditItemSelectorComponent,
+  FooterComponent,
+  NavbarTopUdemComponent
 ];
 
 @NgModule({

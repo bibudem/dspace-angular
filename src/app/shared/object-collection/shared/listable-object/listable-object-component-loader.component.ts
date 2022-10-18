@@ -1,4 +1,5 @@
 import {
+<<<<<<< HEAD
   ChangeDetectorRef,
   Component,
   ComponentRef,
@@ -16,6 +17,21 @@ import {
 import { Subscription } from 'rxjs';
 import { take } from 'rxjs/operators';
 
+=======
+  Component,
+  ComponentFactoryResolver,
+  ElementRef,
+  Input,
+  OnDestroy,
+  OnInit,
+  Output,
+  ViewChild,
+  EventEmitter,
+  SimpleChanges,
+  OnChanges,
+  ComponentRef
+} from '@angular/core';
+>>>>>>> version-7.3/udem-7.3
 import { ListableObject } from '../listable-object.model';
 import { ViewMode } from '../../../../core/shared/view-mode.model';
 import { Context } from '../../../../core/shared/context.model';
@@ -24,7 +40,13 @@ import { GenericConstructor } from '../../../../core/shared/generic-constructor'
 import { ListableObjectDirective } from './listable-object.directive';
 import { CollectionElementLinkType } from '../../collection-element-link.type';
 import { hasValue, isNotEmpty } from '../../../empty.util';
+<<<<<<< HEAD
 import { DSpaceObject } from '../../../../core/shared/dspace-object.model';
+=======
+import { Subscription } from 'rxjs';
+import { DSpaceObject } from '../../../../core/shared/dspace-object.model';
+import { take } from 'rxjs/operators';
+>>>>>>> version-7.3/udem-7.3
 import { ThemeService } from '../../../theme-support/theme.service';
 
 @Component({
@@ -84,7 +106,11 @@ export class ListableObjectComponentLoaderComponent implements OnInit, OnChanges
   /**
    * Directive hook used to place the dynamic child component
    */
+<<<<<<< HEAD
   @ViewChild(ListableObjectDirective, { static: true }) listableObjectDirective: ListableObjectDirective;
+=======
+  @ViewChild(ListableObjectDirective, {static: true}) listableObjectDirective: ListableObjectDirective;
+>>>>>>> version-7.3/udem-7.3
 
   /**
    * View on the badges template, to be passed on to the loaded component (which will place the badges in the desired
@@ -122,6 +148,7 @@ export class ListableObjectComponentLoaderComponent implements OnInit, OnChanges
    * The list of input and output names for the dynamic component
    */
   protected inAndOutputNames: string[] = [
+<<<<<<< HEAD
     'object',
     'index',
     'linkType',
@@ -135,6 +162,22 @@ export class ListableObjectComponentLoaderComponent implements OnInit, OnChanges
   ];
 
   constructor(private cdr: ChangeDetectorRef, private themeService: ThemeService) {
+=======
+      'object',
+      'index',
+      'linkType',
+      'listID',
+      'showLabel',
+      'context',
+      'viewMode',
+      'value',
+    ];
+
+  constructor(
+    private componentFactoryResolver: ComponentFactoryResolver,
+    private themeService: ThemeService
+  ) {
+>>>>>>> version-7.3/udem-7.3
   }
 
   /**
@@ -165,10 +208,16 @@ export class ListableObjectComponentLoaderComponent implements OnInit, OnChanges
 
     const component = this.getComponent(object.getRenderTypes(), this.viewMode, this.context);
 
+<<<<<<< HEAD
+=======
+    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(component);
+
+>>>>>>> version-7.3/udem-7.3
     const viewContainerRef = this.listableObjectDirective.viewContainerRef;
     viewContainerRef.clear();
 
     this.compRef = viewContainerRef.createComponent(
+<<<<<<< HEAD
       component, {
         index: 0,
         injector: undefined,
@@ -177,18 +226,33 @@ export class ListableObjectComponentLoaderComponent implements OnInit, OnChanges
         ]
       }
     );
+=======
+      componentFactory,
+      0,
+      undefined,
+      [
+        [this.badges.nativeElement],
+      ]);
+>>>>>>> version-7.3/udem-7.3
 
     this.connectInputsAndOutputs();
 
     if ((this.compRef.instance as any).reloadedObject) {
+<<<<<<< HEAD
       (this.compRef.instance as any).reloadedObject.pipe(
         take(1)
       ).subscribe((reloadedObject: DSpaceObject) => {
+=======
+      (this.compRef.instance as any).reloadedObject.pipe(take(1)).subscribe((reloadedObject: DSpaceObject) => {
+>>>>>>> version-7.3/udem-7.3
         if (reloadedObject) {
           this.compRef.destroy();
           this.object = reloadedObject;
           this.instantiateComponent(reloadedObject);
+<<<<<<< HEAD
           this.cdr.detectChanges();
+=======
+>>>>>>> version-7.3/udem-7.3
           this.contentChange.emit(reloadedObject);
         }
       });

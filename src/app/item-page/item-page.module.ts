@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { SharedModule } from '../shared/shared.module';
-
 import { ItemPageComponent } from './simple/item-page.component';
 import { ItemPageRoutingModule } from './item-page-routing.module';
 import { MetadataUriValuesComponent } from './field-components/metadata-uri-values/metadata-uri-values.component';

@@ -229,6 +229,7 @@ describe('GoogleAnalyticsService', () => {
           expect(documentSpy.createElement('script')).toBe(scriptElementMock);
 
           expect(innerHTMLSpy).toHaveBeenCalledTimes(1);
+
           expect(innerHTMLSpy.calls.argsFor(0)[0]).toContain(trackingIdV3TestValue);
         });
 
@@ -245,6 +246,5 @@ describe('GoogleAnalyticsService', () => {
       });
 
     });
-
   });
 });

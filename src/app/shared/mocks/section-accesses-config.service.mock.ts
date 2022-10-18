@@ -79,7 +79,6 @@ export function getSubmissionAccessesConfigService(): SubmissionFormsConfigDataS
   });
 }
 
-
 export function getSubmissionAccessesConfigNotChangeDiscoverableService(): SubmissionFormsConfigDataService {
   return jasmine.createSpyObj('SubmissionAccessesConfigService', {
     findByHref: createSuccessfulRemoteDataObject$(configResNotChangeDiscoverable),
