@@ -215,7 +215,4 @@ export class ExistingMetadataListElementComponent implements OnInit, OnChanges, 
   }
 
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> version-7.3/udem-7.3

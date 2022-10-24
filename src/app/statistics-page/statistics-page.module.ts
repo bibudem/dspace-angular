@@ -25,7 +25,7 @@ const components = [
   ThemedCollectionStatisticsPageComponent,
   ThemedCommunityStatisticsPageComponent,
   ThemedItemStatisticsPageComponent,
-  ThemedSiteStatisticsPageComponent
+  ThemedSiteStatisticsPageComponent,
   // add UdeM 2022| declaration du nouveau component
   StatisticsGraphComponent
 ];

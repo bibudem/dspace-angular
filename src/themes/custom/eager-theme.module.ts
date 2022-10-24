@@ -75,7 +75,6 @@ const DECLARATIONS = [
   EditCollectionSelectorComponent,
   EditCommunitySelectorComponent,
   EditItemSelectorComponent,
-  FooterComponent,
   NavbarTopUdemComponent
 ];
 

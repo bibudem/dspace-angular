@@ -8,11 +8,6 @@ import { map } from 'rxjs/operators';
 import { of as observableOf, combineLatest as observableCombineLatest, Observable } from 'rxjs';
 import { Item } from '../../core/shared/item.model';
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> version-7.3/udem-7.3
 @Component({
   selector: 'ds-file-download-link',
   templateUrl: './file-download-link.component.html',
@@ -51,14 +46,8 @@ export class FileDownloadLinkComponent implements OnInit {
 
   canDownload$: Observable<boolean>;
 
-<<<<<<< HEAD
   constructor(
     private authorizationService: AuthorizationDataService,
-=======
-
-  constructor(
-    private authorizationService: AuthorizationDataService
->>>>>>> version-7.3/udem-7.3
   ) {
   }
 
@@ -67,20 +56,12 @@ export class FileDownloadLinkComponent implements OnInit {
       this.canDownload$ = this.authorizationService.isAuthorized(FeatureID.CanDownload, isNotEmpty(this.bitstream) ? this.bitstream.self : undefined);
       const canRequestACopy$ = this.authorizationService.isAuthorized(FeatureID.CanRequestACopy, isNotEmpty(this.bitstream) ? this.bitstream.self : undefined);
       this.bitstreamPath$ = observableCombineLatest([this.canDownload$, canRequestACopy$]).pipe(
-<<<<<<< HEAD
         map(([canDownload, canRequestACopy]) => this.getBitstreamPath(canDownload, canRequestACopy))
       );
-=======
-        map(([canDownload, canRequestACopy]) => this.getBitstreamPath(canDownload, canRequestACopy)));
->>>>>>> version-7.3/udem-7.3
     } else {
       this.bitstreamPath$ = observableOf(this.getBitstreamDownloadPath());
       this.canDownload$ = observableOf(true);
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> version-7.3/udem-7.3
   }
 
   getBitstreamPath(canDownload: boolean, canRequestACopy: boolean) {
@@ -96,8 +77,4 @@ export class FileDownloadLinkComponent implements OnInit {
       queryParams: {}
     };
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> version-7.3/udem-7.3
 }

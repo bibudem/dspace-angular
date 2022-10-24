@@ -6,13 +6,8 @@ import { RelationshipEffects } from './relationship.effects';
 import { AddRelationshipAction, RelationshipActionTypes, RemoveRelationshipAction } from './relationship.actions';
 import { Item } from '../../../../../core/shared/item.model';
 import { MetadataValue } from '../../../../../core/shared/metadata.models';
-<<<<<<< HEAD
 import { RelationshipTypeDataService } from '../../../../../core/data/relationship-type-data.service';
 import { RelationshipDataService } from '../../../../../core/data/relationship-data.service';
-=======
-import { RelationshipTypeService } from '../../../../../core/data/relationship-type.service';
-import { RelationshipService } from '../../../../../core/data/relationship.service';
->>>>>>> version-7.3/udem-7.3
 import { Relationship } from '../../../../../core/shared/item-relationships/relationship.model';
 import { createSuccessfulRemoteDataObject$ } from '../../../../remote-data.utils';
 import { RelationshipType } from '../../../../../core/shared/item-relationships/relationship-type.model';
@@ -121,13 +116,8 @@ describe('RelationshipEffects', () => {
       providers: [
         RelationshipEffects,
         provideMockActions(() => actions),
-<<<<<<< HEAD
         { provide: RelationshipTypeDataService, useValue: mockRelationshipTypeService },
         { provide: RelationshipDataService, useValue: mockRelationshipService },
-=======
-        { provide: RelationshipTypeService, useValue: mockRelationshipTypeService },
-        { provide: RelationshipService, useValue: mockRelationshipService },
->>>>>>> version-7.3/udem-7.3
         {
           provide: SubmissionObjectDataService, useValue: {
             findById: () => createSuccessfulRemoteDataObject$(new WorkspaceItem())

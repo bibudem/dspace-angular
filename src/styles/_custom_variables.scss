@@ -29,7 +29,7 @@
   --ds-navbar-link-color: #{$cyan};
   --ds-navbar-link-color-hover: #{darken($cyan, 15%)};
 
-  $admin-sidebar-bg: darken(#2B4E72, 17%);
+  $admin-sidebar-bg: darken(#393a3b, 17%);
   $admin-sidebar-active-bg: darken($admin-sidebar-bg, 3%);
   --ds-admin-sidebar-bg: #{$admin-sidebar-bg};
   --ds-admin-sidebar-active-bg: #{$admin-sidebar-active-bg};
@@ -37,7 +37,7 @@
 
   --ds-dark-scrollbar-bg: #{$admin-sidebar-active-bg};
   --ds-dark-scrollbar-alt-bg: #{lighten($admin-sidebar-active-bg, 2%)};
-  --ds-dark-scrollbar-fg: #47495d;
+  --ds-dark-scrollbar-fg: #282828;
 
   --ds-submission-sections-margin-bottom: .5rem;
 

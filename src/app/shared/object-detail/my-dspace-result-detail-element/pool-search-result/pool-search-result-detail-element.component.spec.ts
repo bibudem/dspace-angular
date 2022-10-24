@@ -1,22 +1,14 @@
 import { ChangeDetectionStrategy, NO_ERRORS_SCHEMA } from '@angular/core';
-<<<<<<< HEAD
 import { ComponentFixture, fakeAsync, flush, TestBed, tick, waitForAsync } from '@angular/core/testing';
-=======
-import { waitForAsync, ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
->>>>>>> version-7.3/udem-7.3
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { of as observableOf } from 'rxjs';
 
 import { Item } from '../../../../core/shared/item.model';
 import { PoolTask } from '../../../../core/tasks/models/pool-task-object.model';
-<<<<<<< HEAD
 import {
   MyDspaceItemStatusType
 } from '../../../object-collection/shared/mydspace-item-status/my-dspace-item-status-type';
-=======
-import { MyDspaceItemStatusType } from '../../../object-collection/shared/mydspace-item-status/my-dspace-item-status-type';
->>>>>>> version-7.3/udem-7.3
 import { WorkflowItem } from '../../../../core/submission/models/workflowitem.model';
 import { createSuccessfulRemoteDataObject } from '../../../remote-data.utils';
 import { PoolSearchResultDetailElementComponent } from './pool-search-result-detail-element.component';
@@ -25,12 +17,7 @@ import { VarDirective } from '../../../utils/var.directive';
 import { LinkService } from '../../../../core/cache/builders/link.service';
 import { getMockLinkService } from '../../../mocks/link-service.mock';
 import { By } from '@angular/platform-browser';
-<<<<<<< HEAD
 import { ObjectCacheService } from '../../../../core/cache/object-cache.service';
-=======
-import { DSONameService } from '../../../../core/breadcrumbs/dso-name.service';
-import { DSONameServiceMock } from '../../../mocks/dso-name.service.mock';
->>>>>>> version-7.3/udem-7.3
 
 let component: PoolSearchResultDetailElementComponent;
 let fixture: ComponentFixture<PoolSearchResultDetailElementComponent>;
@@ -74,12 +61,9 @@ const workflowitem = Object.assign(new WorkflowItem(), { item: observableOf(rdIt
 const rdWorkflowitem = createSuccessfulRemoteDataObject(workflowitem);
 mockResultObject.indexableObject = Object.assign(new PoolTask(), { workflowitem: observableOf(rdWorkflowitem) });
 const linkService = getMockLinkService();
-<<<<<<< HEAD
 const objectCacheServiceMock = jasmine.createSpyObj('ObjectCacheService', {
   remove: jasmine.createSpy('remove')
 });
-=======
->>>>>>> version-7.3/udem-7.3
 
 describe('PoolSearchResultDetailElementComponent', () => {
   beforeEach(waitForAsync(() => {
@@ -90,11 +74,7 @@ describe('PoolSearchResultDetailElementComponent', () => {
         { provide: 'objectElementProvider', useValue: (mockResultObject) },
         { provide: 'indexElementProvider', useValue: (compIndex) },
         { provide: LinkService, useValue: linkService },
-<<<<<<< HEAD
         { provide: ObjectCacheService, useValue: objectCacheServiceMock }
-=======
-        { provide: DSONameService, useClass: DSONameServiceMock },
->>>>>>> version-7.3/udem-7.3
       ],
       schemas: [NO_ERRORS_SCHEMA]
     }).overrideComponent(PoolSearchResultDetailElementComponent, {
@@ -112,7 +92,6 @@ describe('PoolSearchResultDetailElementComponent', () => {
     fixture.detectChanges();
   });
 
-<<<<<<< HEAD
   it('should init workflowitem properly', fakeAsync(() => {
     flush();
     expect(linkService.resolveLinks).toHaveBeenCalledWith(
@@ -123,19 +102,6 @@ describe('PoolSearchResultDetailElementComponent', () => {
     expect(component.workflowitem$.value).toEqual(workflowitem);
     expect(component.item$.value).toEqual(item);
   }));
-=======
-  it('should init workflowitem properly', (done) => {
-    component.workflowitemRD$.subscribe((workflowitemRD) => {
-      expect(linkService.resolveLinks).toHaveBeenCalledWith(
-        component.dso,
-        jasmine.objectContaining({ name: 'workflowitem' }),
-        jasmine.objectContaining({ name: 'action' })
-      );
-      expect(workflowitemRD.payload).toEqual(workflowitem);
-      done();
-    });
-  });
->>>>>>> version-7.3/udem-7.3
 
   it('should have properly status', () => {
     expect(component.status).toEqual(MyDspaceItemStatusType.WAITING_CONTROLLER);

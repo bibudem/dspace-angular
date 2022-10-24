@@ -6,13 +6,8 @@ import { of as observableOf, Subscription } from 'rxjs';
 import { DsDynamicLookupRelationModalComponent } from './dynamic-lookup-relation-modal.component';
 import { NgbActiveModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SelectableListService } from '../../../../object-list/selectable-list/selectable-list.service';
-<<<<<<< HEAD
 import { RelationshipDataService } from '../../../../../core/data/relationship-data.service';
 import { RelationshipTypeDataService } from '../../../../../core/data/relationship-type-data.service';
-=======
-import { RelationshipService } from '../../../../../core/data/relationship.service';
-import { RelationshipTypeService } from '../../../../../core/data/relationship-type.service';
->>>>>>> version-7.3/udem-7.3
 import { Store } from '@ngrx/store';
 import { Item } from '../../../../../core/shared/item.model';
 import { ItemSearchResult } from '../../../../object-collection/shared/item-search-result.model';
@@ -23,11 +18,7 @@ import { PaginatedSearchOptions } from '../../../../search/models/paginated-sear
 import { ExternalSource } from '../../../../../core/shared/external-source.model';
 import { createSuccessfulRemoteDataObject$ } from '../../../../remote-data.utils';
 import { createPaginatedList } from '../../../../testing/utils.test';
-<<<<<<< HEAD
 import { ExternalSourceDataService } from '../../../../../core/data/external-source-data.service';
-=======
-import { ExternalSourceService } from '../../../../../core/data/external-source.service';
->>>>>>> version-7.3/udem-7.3
 import { LookupRelationService } from '../../../../../core/data/lookup-relation.service';
 import { RemoteDataBuildService } from '../../../../../core/cache/builders/remote-data-build.service';
 import { WorkspaceItem } from '../../../../../core/submission/models/workspaceitem.model';
@@ -120,25 +111,15 @@ describe('DsDynamicLookupRelationModalComponent', () => {
             paginatedSearchOptions: observableOf(pSearchOptions)
           }
         },
-<<<<<<< HEAD
         { provide: ExternalSourceDataService, useValue: externalSourceService },
-=======
-        { provide: ExternalSourceService, useValue: externalSourceService },
->>>>>>> version-7.3/udem-7.3
         { provide: LookupRelationService, useValue: lookupRelationService },
         {
           provide: SelectableListService, useValue: selectableListService
         },
         {
-<<<<<<< HEAD
           provide: RelationshipDataService, useValue: { getNameVariant: () => observableOf(nameVariant) }
         },
         { provide: RelationshipTypeDataService, useValue: {} },
-=======
-          provide: RelationshipService, useValue: { getNameVariant: () => observableOf(nameVariant) }
-        },
-        { provide: RelationshipTypeService, useValue: {} },
->>>>>>> version-7.3/udem-7.3
         { provide: RemoteDataBuildService, useValue: rdbService },
         {
           provide: Store, useValue: {

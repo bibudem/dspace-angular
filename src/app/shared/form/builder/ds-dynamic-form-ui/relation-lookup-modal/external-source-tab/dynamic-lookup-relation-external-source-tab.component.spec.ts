@@ -12,11 +12,7 @@ import {
   createPendingRemoteDataObject$,
   createSuccessfulRemoteDataObject$
 } from '../../../../../remote-data.utils';
-<<<<<<< HEAD
 import { ExternalSourceDataService } from '../../../../../../core/data/external-source-data.service';
-=======
-import { ExternalSourceService } from '../../../../../../core/data/external-source.service';
->>>>>>> version-7.3/udem-7.3
 import { ExternalSource } from '../../../../../../core/shared/external-source.model';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { By } from '@angular/platform-browser';
@@ -111,11 +107,7 @@ describe('DsDynamicLookupRelationExternalSourceTabComponent', () => {
             paginatedSearchOptions: observableOf(pSearchOptions)
           }
         },
-<<<<<<< HEAD
         { provide: ExternalSourceDataService, useValue: externalSourceService },
-=======
-        { provide: ExternalSourceService, useValue: externalSourceService },
->>>>>>> version-7.3/udem-7.3
         { provide: SelectableListService, useValue: selectableListService },
         { provide: PaginationService, useValue: new PaginationServiceStub() }
       ],
@@ -153,13 +145,8 @@ describe('DsDynamicLookupRelationExternalSourceTabComponent', () => {
       expect(viewableCollection).toBeNull();
     });
 
-<<<<<<< HEAD
     it('should display a ds-themed-loading component', () => {
       const loading = fixture.debugElement.query(By.css('ds-themed-loading'));
-=======
-    it('should display a ds-loading component', () => {
-      const loading = fixture.debugElement.query(By.css('ds-loading'));
->>>>>>> version-7.3/udem-7.3
       expect(loading).not.toBeNull();
     });
   });

@@ -27,11 +27,7 @@ export interface DsDynamicInputModelConfig extends DynamicInputModelConfig {
   hasSelectableMetadata: boolean;
   metadataValue?: FormFieldMetadataValueObject;
   isModelOfInnerForm?: boolean;
-<<<<<<< HEAD
   hideErrorMessages?: boolean;
-=======
-
->>>>>>> version-7.3/udem-7.3
 }
 
 export class DsDynamicInputModel extends DynamicInputModel {
@@ -50,10 +46,7 @@ export class DsDynamicInputModel extends DynamicInputModel {
   @serializable() hasSelectableMetadata: boolean;
   @serializable() metadataValue: FormFieldMetadataValueObject;
   @serializable() isModelOfInnerForm: boolean;
-<<<<<<< HEAD
   @serializable() hideErrorMessages?: boolean;
-=======
->>>>>>> version-7.3/udem-7.3
 
 
   constructor(config: DsDynamicInputModelConfig, layout?: DynamicFormControlLayout) {
@@ -69,10 +62,7 @@ export class DsDynamicInputModel extends DynamicInputModel {
     this.metadataValue = config.metadataValue;
     this.place = config.place;
     this.isModelOfInnerForm = (hasValue(config.isModelOfInnerForm) ? config.isModelOfInnerForm : false);
-<<<<<<< HEAD
     this.hideErrorMessages = config.hideErrorMessages;
-=======
->>>>>>> version-7.3/udem-7.3
 
     this.language = config.language;
     if (!this.language) {

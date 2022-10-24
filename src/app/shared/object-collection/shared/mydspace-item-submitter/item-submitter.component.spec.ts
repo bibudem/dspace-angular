@@ -11,20 +11,11 @@ import { EPersonMock } from '../../../testing/eperson.mock';
 import { TranslateLoaderMock } from '../../../mocks/translate-loader.mock';
 import { By } from '@angular/platform-browser';
 import { createSuccessfulRemoteDataObject } from '../../../remote-data.utils';
-<<<<<<< HEAD
 import { LinkService } from '../../../../core/cache/builders/link.service';
 import { getMockLinkService } from '../../../mocks/link-service.mock';
 
 let component: ItemSubmitterComponent;
 let fixture: ComponentFixture<ItemSubmitterComponent>;
-=======
-
-let component: ItemSubmitterComponent;
-let fixture: ComponentFixture<ItemSubmitterComponent>;
-
-const compIndex = 1;
-
->>>>>>> version-7.3/udem-7.3
 let mockResultObject: PoolTask;
 
 const rdSumbitter = createSuccessfulRemoteDataObject(EPersonMock);
@@ -44,12 +35,9 @@ describe('ItemSubmitterComponent', () => {
         })
       ],
       declarations: [ItemSubmitterComponent],
-<<<<<<< HEAD
       providers: [
         { provide: LinkService, useValue: getMockLinkService() },
       ],
-=======
->>>>>>> version-7.3/udem-7.3
       schemas: [NO_ERRORS_SCHEMA]
     }).overrideComponent(ItemSubmitterComponent, {
       set: { changeDetection: ChangeDetectionStrategy.Default }

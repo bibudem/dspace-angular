@@ -105,7 +105,6 @@ export class ThumbnailComponent implements OnChanges {
 
   /**
    * Handle image download errors.
-<<<<<<< HEAD
    * If the image can't be loaded, try re-requesting it with an authorization token in case it's a restricted Bitstream
    * Otherwise, fall back to the default image or a HTML placeholder
    */

@@ -1,27 +1,14 @@
 import { APP_BASE_HREF, CommonModule, DOCUMENT } from '@angular/common';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-<<<<<<< HEAD
 import { NgModule } from '@angular/core';
-=======
-import { APP_INITIALIZER, NgModule } from '@angular/core';
->>>>>>> version-7.3/udem-7.3
 import { AbstractControl } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { EffectsModule } from '@ngrx/effects';
 import { RouterStateSerializer, StoreRouterConnectingModule } from '@ngrx/router-store';
-<<<<<<< HEAD
 import { MetaReducer, StoreModule, USER_PROVIDED_META_REDUCERS } from '@ngrx/store';
 import { DYNAMIC_ERROR_MESSAGES_MATCHER, DYNAMIC_MATCHER_PROVIDERS, DynamicErrorMessagesMatcher } from '@ng-dynamic-forms/core';
-=======
-import { MetaReducer, Store, StoreModule, USER_PROVIDED_META_REDUCERS } from '@ngrx/store';
-import {
-  DYNAMIC_ERROR_MESSAGES_MATCHER,
-  DYNAMIC_MATCHER_PROVIDERS,
-  DynamicErrorMessagesMatcher
-} from '@ng-dynamic-forms/core';
->>>>>>> version-7.3/udem-7.3
 import { TranslateModule } from '@ngx-translate/core';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AppRoutingModule } from './app-routing.module';
@@ -29,10 +16,6 @@ import { AppComponent } from './app.component';
 import { appEffects } from './app.effects';
 import { appMetaReducers, debugMetaReducers } from './app.metareducers';
 import { appReducers, AppState, storeModuleConfig } from './app.reducer';
-<<<<<<< HEAD
-=======
-import { CheckAuthenticationTokenAction } from './core/auth/auth.actions';
->>>>>>> version-7.3/udem-7.3
 import { CoreModule } from './core/core.module';
 import { ClientCookieService } from './core/services/client-cookie.service';
 import { NavbarModule } from './navbar/navbar.module';
@@ -44,19 +27,11 @@ import { LocaleInterceptor } from './core/locale/locale.interceptor';
 import { XsrfInterceptor } from './core/xsrf/xsrf.interceptor';
 import { LogInterceptor } from './core/log/log.interceptor';
 import { EagerThemesModule } from '../themes/eager-themes.module';
-<<<<<<< HEAD
-=======
-
->>>>>>> version-7.3/udem-7.3
 import { APP_CONFIG, AppConfig } from '../config/app-config.interface';
 import { NgxMaskModule } from 'ngx-mask';
 import { StoreDevModules } from '../config/store/devtools';
 import { RootModule } from './root.module';
 
-<<<<<<< HEAD
-=======
-
->>>>>>> version-7.3/udem-7.3
 export function getConfig() {
   return environment;
 }
@@ -100,13 +75,6 @@ const IMPORTS = [
 
 const PROVIDERS = [
   {
-<<<<<<< HEAD
-=======
-    provide: APP_CONFIG,
-    useFactory: getConfig
-  },
-  {
->>>>>>> version-7.3/udem-7.3
     provide: APP_BASE_HREF,
     useFactory: getBaseHref,
     deps: [DOCUMENT, APP_CONFIG]
@@ -121,18 +89,6 @@ const PROVIDERS = [
     useClass: DSpaceRouterStateSerializer
   },
   ClientCookieService,
-<<<<<<< HEAD
-=======
-  // Check the authentication token when the app initializes
-  {
-    provide: APP_INITIALIZER,
-    useFactory: (store: Store<AppState>,) => {
-      return () => store.dispatch(new CheckAuthenticationTokenAction());
-    },
-    deps: [Store],
-    multi: true
-  },
->>>>>>> version-7.3/udem-7.3
   // register AuthInterceptor as HttpInterceptor
   {
     provide: HTTP_INTERCEPTORS,

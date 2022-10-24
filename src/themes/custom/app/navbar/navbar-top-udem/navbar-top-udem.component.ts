@@ -21,10 +21,10 @@ export class NavbarTopUdemComponent implements OnInit {
               private router: Router ) { }
 
   ngOnInit() {
-    if (this.trouverLangueSession()) {
+   if (this.trouverLangueSession()) {
       this.langue = this.trouverLangueSession();
     }
-
+    console.log(this.langue);
     // titre du logo avec la session du langue
     this.imageLogo = 'logo-papyrus-' + this.langue + '.png';
   }

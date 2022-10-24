@@ -65,23 +65,10 @@
             <div class="row mb-4">
                 <div class="col-12">
                     <label
-<<<<<<< HEAD
                             for="message">{{'bitstream-request-a-copy.message.label' | translate}}</label>
                     <textarea rows="5"
                               [className]="'form-control'"
                               id="message" formControlName="message"></textarea>
-=======
-                            for="message">{{'bitstream-request-a-copy.message.label' | translate}} *</label>
-                    <textarea rows="5"
-                              [className]="'form-control'"
-                              id="message" formControlName="message" required></textarea>
-                  <div *ngIf="message.invalid && (message.dirty || message.touched)"
-                       class="invalid-feedback show-feedback">
-                    <span *ngIf="message.errors && message.errors.required">
-                        {{ 'bitstream-request-a-copy.message.error' | translate }}
-                    </span>
-                  </div>
->>>>>>> version-7.3/udem-7.3
                 </div>
             </div>
         </div>

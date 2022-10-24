@@ -3999,7 +3999,7 @@
 
   "papyrus.footer.menu.contact": "Nous joindre",
 
-  "papyrus.footer.dspace.mention": "DSpace software [version 7.3]",
+  "papyrus.footer.dspace.mention": "DSpace software [version 7.4]",
 
   "papyrus.footer.dspace.duraspace": "DuraSpace",
 
@@ -4135,4 +4135,3 @@
 
   "collection.edit.item.authorizations.show-bitstreams-button": "Afficher les politiques de flux binaire pour le bundle",
 }
->>>>>>> version-7.3/udem-7.3

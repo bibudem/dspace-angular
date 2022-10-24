@@ -1,9 +1,5 @@
 import { ChangeDetectionStrategy, NO_ERRORS_SCHEMA } from '@angular/core';
-<<<<<<< HEAD
 import { ComponentFixture, fakeAsync, flush, TestBed, tick, waitForAsync } from '@angular/core/testing';
-=======
-import { ComponentFixture, TestBed, tick, waitForAsync, fakeAsync} from '@angular/core/testing';
->>>>>>> version-7.3/udem-7.3
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { of as observableOf } from 'rxjs';
@@ -11,13 +7,9 @@ import { of as observableOf } from 'rxjs';
 import { Item } from '../../../../core/shared/item.model';
 import { ClaimedTaskSearchResultDetailElementComponent } from './claimed-task-search-result-detail-element.component';
 import { ClaimedTask } from '../../../../core/tasks/models/claimed-task-object.model';
-<<<<<<< HEAD
 import {
   MyDspaceItemStatusType
 } from '../../../object-collection/shared/mydspace-item-status/my-dspace-item-status-type';
-=======
-import { MyDspaceItemStatusType } from '../../../object-collection/shared/mydspace-item-status/my-dspace-item-status-type';
->>>>>>> version-7.3/udem-7.3
 import { WorkflowItem } from '../../../../core/submission/models/workflowitem.model';
 import { createSuccessfulRemoteDataObject } from '../../../remote-data.utils';
 import { ClaimedTaskSearchResult } from '../../../object-collection/shared/claimed-task-search-result.model';
@@ -25,10 +17,7 @@ import { VarDirective } from '../../../utils/var.directive';
 import { LinkService } from '../../../../core/cache/builders/link.service';
 import { getMockLinkService } from '../../../mocks/link-service.mock';
 import { By } from '@angular/platform-browser';
-<<<<<<< HEAD
 import { ObjectCacheService } from '../../../../core/cache/object-cache.service';
-=======
->>>>>>> version-7.3/udem-7.3
 
 let component: ClaimedTaskSearchResultDetailElementComponent;
 let fixture: ComponentFixture<ClaimedTaskSearchResultDetailElementComponent>;
@@ -72,12 +61,9 @@ const workflowitem = Object.assign(new WorkflowItem(), { item: observableOf(rdIt
 const rdWorkflowitem = createSuccessfulRemoteDataObject(workflowitem);
 mockResultObject.indexableObject = Object.assign(new ClaimedTask(), { workflowitem: observableOf(rdWorkflowitem) });
 const linkService = getMockLinkService();
-<<<<<<< HEAD
 const objectCacheServiceMock = jasmine.createSpyObj('ObjectCacheService', {
   remove: jasmine.createSpy('remove')
 });
-=======
->>>>>>> version-7.3/udem-7.3
 
 describe('ClaimedTaskSearchResultDetailElementComponent', () => {
   beforeEach(waitForAsync(() => {
@@ -85,12 +71,8 @@ describe('ClaimedTaskSearchResultDetailElementComponent', () => {
       imports: [NoopAnimationsModule],
       declarations: [ClaimedTaskSearchResultDetailElementComponent, VarDirective],
       providers: [
-<<<<<<< HEAD
         { provide: LinkService, useValue: linkService },
         { provide: ObjectCacheService, useValue: objectCacheServiceMock }
-=======
-        { provide: LinkService, useValue: linkService }
->>>>>>> version-7.3/udem-7.3
       ],
       schemas: [NO_ERRORS_SCHEMA]
     }).overrideComponent(ClaimedTaskSearchResultDetailElementComponent, {
@@ -108,7 +90,6 @@ describe('ClaimedTaskSearchResultDetailElementComponent', () => {
     fixture.detectChanges();
   });
 
-<<<<<<< HEAD
   it('should init workflowitem properly', fakeAsync(() => {
     flush();
     expect(linkService.resolveLinks).toHaveBeenCalledWith(
@@ -119,20 +100,6 @@ describe('ClaimedTaskSearchResultDetailElementComponent', () => {
     expect(component.workflowitem$.value).toEqual(workflowitem);
     expect(component.item$.value).toEqual(item);
   }));
-=======
-  it('should init workflowitem properly', (done) => {
-    component.workflowitemRD$.subscribe((workflowitemRD) => {
-      // Make sure the necessary links are being resolved
-      expect(linkService.resolveLinks).toHaveBeenCalledWith(
-        component.dso,
-        jasmine.objectContaining({ name: 'workflowitem' }),
-        jasmine.objectContaining({ name: 'action' })
-      );
-      expect(workflowitemRD.payload).toEqual(workflowitem);
-      done();
-    });
-  });
->>>>>>> version-7.3/udem-7.3
 
   it('should have properly status', () => {
     expect(component.status).toEqual(MyDspaceItemStatusType.VALIDATION);

@@ -17,11 +17,7 @@ import { Item } from '../../../../../../core/shared/item.model';
 import { LookupRelationService } from '../../../../../../core/data/lookup-relation.service';
 import { PaginationService } from '../../../../../../core/pagination/pagination.service';
 import { PaginationServiceStub } from '../../../../../testing/pagination-service.stub';
-<<<<<<< HEAD
 import { RelationshipDataService } from '../../../../../../core/data/relationship-data.service';
-=======
-import { RelationshipService } from '../../../../../../core/data/relationship.service';
->>>>>>> version-7.3/udem-7.3
 import { relatedRelationships } from '../../../../../testing/related-relationships.mock';
 import { RelationshipType } from '../../../../../../core/shared/item-relationships/relationship-type.model';
 import { SearchObjects } from '../../../../../search/models/search-objects.model';
@@ -110,11 +106,7 @@ describe('DsDynamicLookupRelationSearchTabComponent', () => {
         },
         { provide: LookupRelationService, useValue: lookupRelationService },
         { provide: PaginationService, useValue: new PaginationServiceStub() },
-<<<<<<< HEAD
         { provide: RelationshipDataService, useValue: relationshipService }
-=======
-        { provide: RelationshipService, useValue: relationshipService }
->>>>>>> version-7.3/udem-7.3
 
       ],
       schemas: [NO_ERRORS_SCHEMA]

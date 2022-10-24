@@ -20,11 +20,11 @@ $gray-700: #495057 !default;  // Bootstrap $gray-700
 $gray-100: #f8f9fa !default;  //           $gray-100
 
 /* Reassign color vars to semantic color scheme */
-$blue:   #2B4E72 !default;
-$green:  #94BA65 !default;
-$cyan:   #006666 !default;
-$yellow: #ec9433 !default;
-$red:    #CF4444 !default;
+$blue: #0057ac !default;
+$green: #2e8821 !default;
+$cyan: #094d79 !default;
+$yellow: #de831f !default;
+$red: #b03c3c !default;
 $dark:   darken($blue, 17%) !default;
 
 $theme-colors: (

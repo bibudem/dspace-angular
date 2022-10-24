@@ -17,11 +17,7 @@ import { CollectionElementLinkType } from '../../../../../object-collection/coll
 import { Context } from '../../../../../../core/shared/context.model';
 import { LookupRelationService } from '../../../../../../core/data/lookup-relation.service';
 import { PaginationService } from '../../../../../../core/pagination/pagination.service';
-<<<<<<< HEAD
 import { RelationshipDataService } from '../../../../../../core/data/relationship-data.service';
-=======
-import { RelationshipService } from '../../../../../../core/data/relationship.service';
->>>>>>> version-7.3/udem-7.3
 import { RelationshipType } from '../../../../../../core/shared/item-relationships/relationship-type.model';
 
 import { Relationship } from '../../../../../../core/shared/item-relationships/relationship.model';
@@ -155,11 +151,7 @@ export class DsDynamicLookupRelationSearchTabComponent implements OnInit, OnDest
     private selectableListService: SelectableListService,
     public searchConfigService: SearchConfigurationService,
     public lookupRelationService: LookupRelationService,
-<<<<<<< HEAD
     private relationshipService: RelationshipDataService,
-=======
-    private relationshipService: RelationshipService,
->>>>>>> version-7.3/udem-7.3
     private paginationService: PaginationService
   ) {
   }

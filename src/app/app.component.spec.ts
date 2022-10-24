@@ -4,13 +4,11 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-
 // Load the implementations that should be tested
 import { AppComponent } from './app.component';
 import { HostWindowState } from './shared/search/host-window.reducer';
 import { HostWindowResizeAction } from './shared/host-window.actions';
 import { MetadataService } from './core/metadata/metadata.service';
-
 import { NativeWindowRef, NativeWindowService } from './core/services/window.service';
 import { TranslateLoaderMock } from './shared/mocks/translate-loader.mock';
 import { MetadataServiceMock } from './shared/mocks/metadata-service.mock';

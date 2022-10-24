@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 import { Component, Inject, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { MetadataValue } from '../../../core/shared/metadata.models';
 import { APP_CONFIG, AppConfig } from '../../../../config/app-config.interface';
-=======
-import { Component, Input } from '@angular/core';
-import { MetadataValue } from '../../../core/shared/metadata.models';
->>>>>>> version-7.3/udem-7.3
 
 /**
  * This component renders the configured 'values' into the ds-metadata-field-wrapper component.
@@ -16,16 +11,12 @@ import { MetadataValue } from '../../../core/shared/metadata.models';
   styleUrls: ['./metadata-values.component.scss'],
   templateUrl: './metadata-values.component.html'
 })
-<<<<<<< HEAD
 export class MetadataValuesComponent implements OnChanges {
 
   constructor(
     @Inject(APP_CONFIG) private appConfig: AppConfig,
   ) {
   }
-=======
-export class MetadataValuesComponent {
->>>>>>> version-7.3/udem-7.3
 
   /**
    * The metadata values to display
@@ -42,7 +33,6 @@ export class MetadataValuesComponent {
    */
   @Input() label: string;
 
-<<<<<<< HEAD
   /**
    * Whether the {@link MarkdownPipe} should be used to render these metadata values.
    * This will only have effect if {@link MarkdownConfig#enabled} is true.
@@ -58,6 +48,4 @@ export class MetadataValuesComponent {
   ngOnChanges(changes: SimpleChanges): void {
     this.renderMarkdown = !!this.appConfig.markdown.enabled && this.enableMarkdown;
   }
-=======
->>>>>>> version-7.3/udem-7.3
 }

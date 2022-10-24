@@ -12,7 +12,6 @@ import { DSONameService } from '../../../../../core/breadcrumbs/dso-name.service
 import { TruncatableService } from '../../../../truncatable/truncatable.service';
 import { BitstreamDataService } from '../../../../../core/data/bitstream-data.service';
 
-
 @listableObjectComponent('PublicationSearchResult', ViewMode.GridElement)
 @listableObjectComponent(ItemSearchResult, ViewMode.GridElement)
 @Component({

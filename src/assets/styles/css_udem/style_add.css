@@ -404,4 +404,16 @@ a.lead:hover {
   flex-wrap: nowrap;
   align-items: center;
 }
+.text-lite-gray{
+  color: #D4D4D4 !important;
+}
+.cacher-petite-ecran{
+  display: inherit!important;
+}
+/*** css for phone ecrans */
+@media only screen and (max-width: 600px) {
+  .cacher-petite-ecran{
+    display: none!important;
+  }
+}
 

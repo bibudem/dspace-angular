@@ -1,7 +1,7 @@
 {
-  /**********************************************************************/
-  /****************** Modifications de variables existantes *************/
-  /**********************************************************************/
+  //**********************************************************************/
+  //****************** Modifications de variables existantes *************//
+  //**********************************************************************//
 
   // "menu.section.browse_global": "All of DSpace",
   "menu.section.browse_global": "All of Papyrus",
@@ -177,9 +177,4 @@
    "papyrus.statistics.title.ongle.bref" : "Usage data",
 
    "papyrus.statistics.title.ongle.tous" : "All statistics"
-
-
-
-
-  /**********************************************************************/
 }
