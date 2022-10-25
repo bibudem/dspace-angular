@@ -5,8 +5,8 @@
       <p class="t-white">{{ 'info.feedback.info' | translate }}</p>
       <fieldset class="col p-0">
         <div class="row">
-          <div class="control-group col-sm-12">
-            <label class="control-label" for="email">{{ 'info.feedback.email-label' | translate }}&nbsp;</label>
+          <div class="control-group col-sm-12 mt-2">
+            <label class="control-label text-lite-gray" for="email">{{ 'info.feedback.email-label' | translate }}&nbsp;</label>
             <input id="email" class="form-control" name="email" type="text" value="" formControlName="email" autofocus="autofocus" title="{{ 'info.feedback.email_help' | translate }}">
             <small class="text-lite-gray">{{ 'info.feedback.email_help' | translate }}</small>
           </div>
@@ -19,7 +19,7 @@
         </ng-container>
         <div class="row">
           <div class="control-group col-sm-12">
-            <label class="control-label text-white" for="comments">{{ 'info.feedback.comments' | translate }}:&nbsp;</label>
+            <label class="control-label text-lite-gray mt-2" for="comments">{{ 'info.feedback.comments' | translate }}:&nbsp;</label>
             <textarea id="comments" formControlName="message" class="form-control" name="message" cols="20" rows="5"> </textarea>
           </div>
         </div>
