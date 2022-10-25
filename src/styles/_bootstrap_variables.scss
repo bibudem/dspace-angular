@@ -6,21 +6,25 @@ $sidebar-items-width: 250px !default;
 $total-sidebar-width: $collapsed-sidebar-width + $sidebar-items-width !default;
 
 /* Fonts */
-$fa-font-path: "/assets/fonts" !default;
+// Starting this url with a caret (^) allows it to be a relative path based on UI's deployment path
+// See https://github.com/angular/angular-cli/issues/12797#issuecomment-598534241
+$fa-font-path: "^assets/fonts" !default;
 /* Images */
 $image-path: "../assets/images" !default;
+// enable-responsive-font-sizes allows text to scale more naturally across device and viewport sizes
+$enable-responsive-font-sizes: true;
 
 /** Bootstrap Variables **/
 /* Colors */
-$gray-700: #191a1a !default;  // Bootstrap $gray-700
+$gray-700: #495057 !default;  // Bootstrap $gray-700
 $gray-100: #f8f9fa !default;  //           $gray-100
 
 /* Reassign color vars to semantic color scheme */
-$blue: #025d9d !default;
-$green:  #A5CD9D !default;
-$cyan:   #0a4974 !default;
-$yellow: #FBD769 !default;
-$red:    #F0553D !default;
+$blue: #0057ac !default;
+$green: #2e8821 !default;
+$cyan: #094d79 !default;
+$yellow: #de831f !default;
+$red: #b03c3c !default;
 $dark:   darken($blue, 17%) !default;
 
 $theme-colors: (
@@ -37,7 +41,7 @@ $theme-colors: (
 $link-color: map-get($theme-colors, info) !default;
 
 $navbar-dark-color: rgba(white, .5) !default;
-$navbar-light-color: rgba(#292b2c, .5) !default;
+$navbar-light-color: rgba(black, .5) !default;
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,<svg+viewBox='0+0+30+30'+xmlns='http://www.w3.org/2000/svg'><path+stroke='#{$navbar-dark-color}'+stroke-width='2'+stroke-linecap='round'+stroke-miterlimit='10'+d='M4+7h22M4+15h22M4+23h22'/></svg>") !default;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,<svg+viewBox='0+0+30+30'+xmlns='http://www.w3.org/2000/svg'><path+stroke='#{$navbar-light-color}'+stroke-width='2'+stroke-linecap='round'+stroke-miterlimit='10'+d='M4+7h22M4+15h22M4+23h22'/></svg>") !default;
 

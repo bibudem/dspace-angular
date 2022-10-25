@@ -1,5 +1,4 @@
 {
-
   "401.help": "Vous n'êtes pas autorisé à accéder à cette page. Vous pouvez utiliser le bouton ci-dessous pour revenir à la page d'accueil.",
 
   "401.link.home-page": "Retour à la page d'accueil",
@@ -1230,25 +1229,9 @@
 
   "dso-selector.placeholder": "Rechercher un(e) {{ type }}",
 
-<<<<<<< HEAD
-  // "dso-selector.select.collection.head": "Select a collection",
-  "dso-selector.select.collection.head": "Sélectionner une collection",
-
-  // "dso-selector.set-scope.community.head": "Select a search scope",
-  "dso-selector.set-scope.community.head": "Sélectionnez un champ de recherche",
-
-  // "dso-selector.set-scope.community.button": "Search all of DSpace",
-  "dso-selector.set-scope.community.button": "Chercher dans toutes les collections",
-
-  // "dso-selector.set-scope.community.input-header": "Search for a community or collection",
-  "dso-selector.set-scope.community.input-header": "Chercher une communauté ou une collection",
-
-
-=======
   "dso-selector.select.collection.head": "Sélectionner une collection",
 
   "dso-selector.set-scope.community.head": "Sélectionner un champ de recherche",
->>>>>>> udem-7.2
 
   "dso-selector.set-scope.community.button": "Chercher dans toutes les collections",
 
@@ -1778,7 +1761,7 @@
 
   "item.edit.private.confirm": "Définir comme privé",
 
-  "item.edit.private.description": "Êtes-vous certain(e) de vouloir définir ce document comme privé ?",
+  "item.edit.private.description": "Êtes-vous certain(e) de vouloir définir ce document comme privé?",
 
   "item.edit.private.error": "Une erreur s'est produite lors de la privatisation du document",
 
@@ -1790,7 +1773,7 @@
 
   "item.edit.public.confirm": "Définir comme public",
 
-  "item.edit.public.description": "Êtes-vous certain(e) de vouloir définir ce document comme public ?",
+  "item.edit.public.description": "Êtes-vous certain(e) de vouloir définir ce document comme public?",
 
   "item.edit.public.error": "Une erreur s'est produite lors de la définition du document en tant que document public",
 
@@ -1802,7 +1785,7 @@
 
   "item.edit.reinstate.confirm": "Réintégrer",
 
-  "item.edit.reinstate.description": "Êtes-vous certain(e) de vouloir réintégrer ce document ?",
+  "item.edit.reinstate.description": "Êtes-vous certain(e) de vouloir réintégrer ce document?",
 
   "item.edit.reinstate.error": "Une erreur s'est produite lors de la réintégration du document",
 
@@ -1920,7 +1903,7 @@
 
   "item.edit.withdraw.confirm": "Retirer",
 
-  "item.edit.withdraw.description": "Êtes-vous certain que ce document doit être retiré du dépôt ?",
+  "item.edit.withdraw.description": "Êtes-vous certain que ce document doit être retiré du dépôt?",
 
   "item.edit.withdraw.error": "Une erreur s'est produite lors du retrait du document",
 
@@ -1964,15 +1947,15 @@
 
   "item.page.files": "Fichiers",
 
-  "item.page.filesection.description": "Description :",
+  "item.page.filesection.description": "Description:",
 
   "item.page.filesection.download": "Télécharger",
 
-  "item.page.filesection.format": "Format :",
+  "item.page.filesection.format": "Format:",
 
-  "item.page.filesection.name": "Nom :",
+  "item.page.filesection.name": "Nom:",
 
-  "item.page.filesection.size": "Taille :",
+  "item.page.filesection.size": "Taille:",
 
   "item.page.journal.search.title": "Articles dans cette revue",
 
@@ -2154,7 +2137,7 @@
 
   "journal.page.publisher": "Éditeur.trice",
 
-  "journal.page.titleprefix": "Revue : ",
+  "journal.page.titleprefix": "Revue: ",
 
   "journal.search.results.head": "Résultats de recherche de revues",
 
@@ -2176,7 +2159,7 @@
 
   "journalissue.page.number": "Nombre",
 
-  "journalissue.page.titleprefix": "Numéro de revue : ",
+  "journalissue.page.titleprefix": "Numéro de revue: ",
 
   "journalvolume.listelement.badge": "Volume de la revue",
 
@@ -2186,7 +2169,7 @@
 
   "journalvolume.page.issuedate": "Date de publication",
 
-  "journalvolume.page.titleprefix": "Volume de la revue : ",
+  "journalvolume.page.titleprefix": "Volume de la revue: ",
 
   "journalvolume.page.volume": "Volume",
 
@@ -2250,11 +2233,11 @@
 
   "login.form.email": "Adresse électronique",
 
-  "login.form.forgot-password": "Mot de passe oublié ?",
+  "login.form.forgot-password": "Mot de passe oublié?",
 
   "login.form.header": "Se connecter à DSpace",
 
-  "login.form.new-user": "Pas encore de compte ? Cliquer ici pour vous enregistrer.",
+  "login.form.new-user": "Pas encore de compte? Cliquer ici pour vous enregistrer.",
 
   "login.form.or-divider": "ou",
 
@@ -2300,7 +2283,7 @@
 
   "menu.section.browse_community_by_title": "Titre",
 
-  "menu.section.browse_global": "Tout le dépôt Papyrus",
+  "menu.section.browse_global": "Papyrus",
 
   "menu.section.browse_global_by_author": "Auteur.e",
 
@@ -3198,7 +3181,7 @@
 
   "search.form.search_dspace": "Recherche dans DSpace",
 
-  "search.form.scope.all": "Tout le dépôt Papyrus",
+  "search.form.scope.all": "Tout Papyrus",
 
   "search.results.head": "Résultats de recherche",
 
@@ -3240,8 +3223,6 @@
 
   "sorting.dc.title.DESC": "Titre décroissant",
 
-  // "statistics.title": "Statistics",
-
   "sorting.score.ASC": "Le moins pertinent",
 
   "sorting.score.DESC": "Le plus pertinent",
@@ -3257,7 +3238,6 @@
   "sorting.lastModified.ASC": "Dernière modification (croissante)",
 
   "sorting.lastModified.DESC": "Dernière modification (décroissante)",
-
 
   "statistics.title": "Statistiques",
 
@@ -4019,7 +3999,7 @@
 
   "papyrus.footer.menu.contact": "Nous joindre",
 
-  "papyrus.footer.dspace.mention": "DSpace software [version 7.2]",
+  "papyrus.footer.dspace.mention": "DSpace software [version 7.4]",
 
   "papyrus.footer.dspace.duraspace": "DuraSpace",
 
@@ -4138,4 +4118,20 @@
   "search.filters.namedresourcetype.Validation": "En cours de validation",
 
   "search.filters.namedresourcetype.Waiting for Controller": "En attente d'assignation",
+
+  "menu.section.health": "Santé",
+
+  "health-page.heading": "Santé du système",
+
+  "health-page.status-tab": "Statut",
+
+  "health-page.status : ": "Statut",
+
+  "health-page.info-tab": "Info",
+
+  "health.breadcrumbs": "Santé",
+
+  "health-page.section.no-issues": "Aucun problème détecté",
+
+  "collection.edit.item.authorizations.show-bitstreams-button": "Afficher les politiques de flux binaire pour le bundle",
 }

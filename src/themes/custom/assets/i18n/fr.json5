@@ -818,10 +818,10 @@
   "menu.section.browse_community_by_author": "Auteur.e",
 
   // "menu.section.browse_global": "Tout DSpace",
-  "menu.section.browse_global": "Tout le dépôt Papyrus",
+  "menu.section.browse_global": "Tout Papyrus",
 
   // "search.form.scope.all": "Tout le dépôt DSpace",
-  "search.form.scope.all": "Tout le dépôt Papyrus",
+  "search.form.scope.all": "Tout Papyrus",
 
   // "nav.browse.header": "Tout Dspace",
   "nav.browse.header": "Tout Papyrus",
@@ -1234,6 +1234,25 @@
   // "home.top-level-communities.head": "Communautés dans DSpace",
   "home.top-level-communities.head": "Communautés représentées dans Papyrus",
 
+  // health variables ajoutés dans 7.3
+
+  // variables ajoutés dans 7.3
+  "menu.section.health": "Santé",
+
+  "health-page.heading": "Santé du système",
+
+  "health-page.status-tab": "Statut",
+
+  "health-page.status : ": "Statut",
+
+  "health-page.info-tab": "Info",
+
+  "health.breadcrumbs": "Santé",
+
+  "health-page.section.no-issues": "Aucun problème détecté",
+
+  "collection.edit.item.authorizations.show-bitstreams-button": "Afficher les politiques de flux binaire pour le bundle",
+
   /**********************************************************************/
   /******************** Ajout de variables dans Papyrus *****************/
   /**********************************************************************/
@@ -1294,7 +1313,7 @@
   "papyrus.footer.menu.depot": "Règlements",
   "papyrus.footer.menu.politique": "Politiques",
   "papyrus.footer.menu.contact": "Nous joindre",
-  "papyrus.footer.dspace.mention": "DSpace software [version 7.2]",
+  "papyrus.footer.dspace.mention": "DSpace software [version 7.3]",
   "papyrus.footer.dspace.duraspace": "DuraSpace",
 
   // page details d'items
@@ -1376,7 +1395,6 @@
 
    "papyrus.statistics.title.ongle.bref" : "Données d'utilisation",
 
-   "papyrus.statistics.title.ongle.tous" : "Toutes les statistics",
-  /**********************************************************************/
+   "papyrus.statistics.title.ongle.tous" : "Toutes les statistics"
 
 }

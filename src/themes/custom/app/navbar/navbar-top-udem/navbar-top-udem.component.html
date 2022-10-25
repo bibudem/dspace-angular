@@ -31,7 +31,7 @@
       </li>
       <li class=" pl-4 pl-md-0 ml-0 ml-md-4">
         <div id="udem-search-menu" >
-          <form method="get"  action="https://google.com/cse" class="udem-search-form">
+          <form    class="udem-search-form">
 
             <input type="hidden" name="cx" value="011926736769028447783:qlpu3so2kqq">
             <input type="hidden" name="sa.x" value="23">
@@ -39,7 +39,7 @@
             <input type="hidden" name="ie" value="UTF-8">
 
             <div class="clearfix">
-              <input type="text" name="q" value="" class="udem-search-input" placeholder="{{'papyrus.top.menu.rechercher' | translate}}">
+              <input type="text" name="textRecherche" id="textRecherche" #textRecherche  class="udem-search-input" placeholder="{{'papyrus.top.menu.rechercher' | translate}}">
               <button type="button" class="udem-search-button" (click)="send()">
                 <i class="fa fa-search"></i>
                 <span class="sr-only sr-only-focusable">{{'papyrus.top.menu.rechercher' | translate}}</span>

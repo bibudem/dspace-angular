@@ -17,15 +17,14 @@
             </a>
         </div>
     </div>
-  <!--- add UdeM 2022 | cacher la partie recherche par mot cle pour le filtre Statut--->
-  <!--<ds-filter-input-suggestions [suggestions]="(filterSearchResults | async)"
+    <ds-filter-input-suggestions [suggestions]="(filterSearchResults | async)"
                           [placeholder]="'search.filters.filter.' + filterConfig.name + '.placeholder' | translate"
                           [label]="'search.filters.filter.' + filterConfig.name + '.label' | translate"
                           [action]="currentUrl"
                           [name]="filterConfig.paramName"
                           [(ngModel)]="filter"
                           (submitSuggestion)="onSubmit($event)"
-                          (clickSuggestion)="onSubmit($event)"
+                          (clickSuggestion)="onClick($event)"
                           (findSuggestions)="findSuggestions($event)"
-                          ngDefaultControl></ds-filter-input-suggestions>-->
+                          ngDefaultControl></ds-filter-input-suggestions>
 </div>

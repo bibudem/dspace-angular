@@ -1,7 +1,8 @@
 <div class="container">
+
   <ng-container *ngVar="(scope$ | async) as scope">
     <h2 *ngIf="scope"
-        class="header mb-1"
+        class="header"
         id="{{ scope.id }}">
       {{ 'statistics.header' | translate: { scope: getName(scope) } }}
     </h2>

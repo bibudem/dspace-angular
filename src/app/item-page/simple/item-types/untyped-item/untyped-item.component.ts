@@ -16,7 +16,4 @@ import { VersionedItemComponent } from '../versioned-item/versioned-item.compone
 })
 export class UntypedItemComponent extends VersionedItemComponent {
 
-
-
-
 }

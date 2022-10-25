@@ -10,4 +10,3 @@ export function getMockFindByIdDataService(propertyKey: string, ...values: strin
     })
   });
 }
-

@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { ItemComponent } from '../shared/item.component';
 import { ItemVersionsSummaryModalComponent } from '../../../../shared/item/item-versions/item-versions-summary-modal/item-versions-summary-modal.component';
 import { getFirstCompletedRemoteData, getFirstSucceededRemoteDataPayload } from '../../../../core/shared/operators';
@@ -20,7 +20,6 @@ import { RouteService } from '../../../../core/services/route.service';
 import { LocaleService } from 'src/app/core/locale/locale.service';
 // add Udem 2022
 import * as moment from 'moment';
-
 
 @Component({
   selector: 'ds-versioned-item',
@@ -73,6 +72,8 @@ export class VersionedItemComponent extends ItemComponent {
     activeModal.componentInstance.createVersionEvent.pipe(
       switchMap((summary: string) => this.versionHistoryService.createVersion(item._links.self.href, summary)),
       getFirstCompletedRemoteData(),
+      // close model (should be displaying loading/waiting indicator) when version creation failed/succeeded
+      tap(() => activeModal.close()),
       // show success/failure notification
       tap((res: RemoteData<Version>) => { this.itemVersionShared.notifyCreateNewVersion(res); }),
       // get workspace item

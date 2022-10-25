@@ -5,15 +5,15 @@ import { BitstreamDataService } from '../../../../core/data/bitstream-data.servi
 import { Bitstream } from '../../../../core/shared/bitstream.model';
 import { Item } from '../../../../core/shared/item.model';
 import { RemoteData } from '../../../../core/data/remote-data';
-import { hasValue, isNotEmpty } from '../../../../shared/empty.util';
+import { hasValue } from '../../../../shared/empty.util';
 import { PaginatedList } from '../../../../core/data/paginated-list.model';
 import { NotificationsService } from '../../../../shared/notifications/notifications.service';
 import { TranslateService } from '@ngx-translate/core';
 import { getFirstCompletedRemoteData } from '../../../../core/shared/operators';
+
 // add Udem 2022
-import { of as observableOf, combineLatest as observableCombineLatest, Observable } from 'rxjs';
-import { FeatureID } from 'src/app/core/data/feature-authorization/feature-id';
 import * as moment from 'moment';
+
 
 /**
  * This component renders the file section of the item
@@ -41,6 +41,7 @@ export class FileSectionComponent implements OnInit {
 
   pageSize = 5;
 
+
   // avril 2022: add UdeM
   embargo: string[] = [
     'UdeM.EmbargoLift'
@@ -61,8 +62,8 @@ export class FileSectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.getNextPage();
-    console.log(this.item);
-    console.log(this.item.allMetadata(['thumbnail']));
+    //console.log(this.item);
+    //console.log(this.item.allMetadata(['thumbnail']));
     // add UdeM 2022
     if (this.item.allMetadata(this.embargo).entries()) {
        this.afficherBoutonResult = this.afficherBouton(this.item.allMetadata(this.embargo)[0].value);

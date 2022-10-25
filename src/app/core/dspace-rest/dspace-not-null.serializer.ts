@@ -73,5 +73,4 @@ function getSerializedObjectWithoutNullFields(serializedObjectBefore): any {
     }
   }
   return copySerializedObject;
-
 }

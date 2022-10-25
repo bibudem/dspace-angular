@@ -22,6 +22,11 @@ export class AbstractIncrementalListComponent<T> implements OnInit, OnDestroy {
   objects: T[];
 
   /**
+   * Placeholder css class (defined in global-styles)
+   */
+  placeholderFontClass: string;
+
+  /**
    * A list of open subscriptions
    */
   subscriptions: Subscription[];

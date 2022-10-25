@@ -1,6 +1,7 @@
 import { TOKENITEM } from '../../core/auth/models/auth-token-info.model';
 import { IMPERSONATING_COOKIE, REDIRECT_COOKIE } from '../../core/auth/auth.service';
 import { LANG_COOKIE } from '../../core/locale/locale.service';
+import { CAPTCHA_COOKIE, CAPTCHA_NAME } from '../../core/google-recaptcha/google-recaptcha.service';
 
 /**
  * Cookie for has_agreed_end_user
@@ -12,6 +13,7 @@ export const HAS_AGREED_END_USER = 'dsHasAgreedEndUser';
  */
 export const ANONYMOUS_STORAGE_NAME_KLARO = 'klaro-anonymous';
 
+export const GOOGLE_ANALYTICS_KLARO_KEY = 'google-analytics';
 /**
  * Klaro configuration
  * For more information see https://kiprotect.com/docs/klaro/annotated-config
@@ -24,7 +26,7 @@ export const klaroConfiguration: any = {
   /*
   Setting 'hideLearnMore' to 'true' will hide the "learn more / customize" link in
   the consent notice. We strongly advise against using this under most
-  circumstances, as it keeps the user from customizing his/her consent choices.
+  circumstances, as it keeps the user from customizing their consent choices.
   */
   hideLearnMore: false,
 
@@ -113,7 +115,7 @@ export const klaroConfiguration: any = {
       ]
     },
     {
-      name: 'google-analytics',
+      name: GOOGLE_ANALYTICS_KLARO_KEY,
       purposes: ['statistical'],
       required: false,
       cookies: [
@@ -155,5 +157,17 @@ export const klaroConfiguration: any = {
       */
       onlyOnce: true,
     },
+    {
+      name: CAPTCHA_NAME,
+      purposes: ['registration-password-recovery'],
+      required: false,
+      cookies: [
+        [/^klaro-.+$/],
+        CAPTCHA_COOKIE
+      ],
+      onAccept: `window.refreshCaptchaScript?.call()`,
+      onDecline: `window.refreshCaptchaScript?.call()`,
+      onlyOnce: true,
+    }
   ],
 };

@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-
 import { Item } from '../../../../../core/shared/item.model';
 import { ItemPageFieldComponent } from '../item-page-field.component';
 
@@ -34,7 +33,6 @@ export class ItemPageDateFieldComponent extends ItemPageFieldComponent {
     /**
      * Label i18n key for the rendered metadata
      */
-    // label = 'item.page.date';
-    label = '';
+    label = 'item.page.date';
 
 }

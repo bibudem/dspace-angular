@@ -67,7 +67,7 @@ export class SearchFormComponent implements OnInit {
   /**
    * Defines whether or not to show the scope selector
    */
-  @Input() showScopeSelector = true;
+  @Input() showScopeSelector = false;
 
   /**
    * Output the search data on submit
@@ -98,6 +98,9 @@ export class SearchFormComponent implements OnInit {
    * @param data Values submitted using the form
    */
   onSubmit(data: any) {
+    if (isNotEmpty(this.scope)) {
+      data = Object.assign(data, { scope: this.scope });
+    }
     this.updateSearch(data);
     this.submitSearch.emit(data);
   }

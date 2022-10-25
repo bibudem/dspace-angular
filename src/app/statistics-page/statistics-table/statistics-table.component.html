@@ -1,19 +1,19 @@
 <div *ngIf="hasData"
      class="m-1">
 
-  <h4 class="m-1">
+  <h3 class="m-1">
     {{ 'statistics.table.title.' + report.reportType | translate }}
-  </h4>
+  </h3>
 
-  <table class="table table-bordered table-hover">
+  <table class="table table-striped">
 
     <tbody>
 
     <tr>
-      <th scope="col" class="bg-light"></th>
+      <th scope="col"></th>
       <th scope="col"
           *ngFor="let header of headers"
-          class="{{header}}-header bg-light">
+          class="{{header}}-header">
         {{ header }}
       </th>
     </tr>

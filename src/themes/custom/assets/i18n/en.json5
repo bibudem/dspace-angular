@@ -1,8 +1,7 @@
 {
-
-  /**********************************************************************/
-  /****************** Modifications de variables existantes *************/
-  /**********************************************************************/
+  //**********************************************************************/
+  //****************** Modifications de variables existantes *************//
+  //**********************************************************************//
 
   // "menu.section.browse_global": "All of DSpace",
   "menu.section.browse_global": "All of Papyrus",
@@ -24,6 +23,23 @@
   "search.filters.namedresourcetype.Validation": "Validation",
 
   "search.filters.namedresourcetype.Waiting for Controller": "Waiting for controller",
+
+  // variables ajoutés dans 7.3
+  "menu.section.health": "Health",
+
+  "health-page.heading": "System Health",
+
+  "health-page.status-tab": "Status",
+
+  "health-page.status : ": "Status",
+
+  "health-page.info-tab": "Info",
+
+  "health.breadcrumbs": "Health",
+
+  "health-page.section.no-issues": "No issues detected",
+
+  "collection.edit.item.authorizations.show-bitstreams-button": "Show bitstream policies for bundle",
 
 
   /**********************************************************************/
@@ -85,7 +101,7 @@
   "papyrus.footer.menu.depot": "Regulations",
   "papyrus.footer.menu.politique": "Policies",
   "papyrus.footer.menu.contact": "Contact",
-  "papyrus.footer.dspace.mention": "Application DSpace [version 7.2]",
+  "papyrus.footer.dspace.mention": "Application DSpace [version 7.3]",
   "papyrus.footer.dspace.duraspace": "DuraSpace",
 
   // page details d'items
@@ -161,10 +177,4 @@
    "papyrus.statistics.title.ongle.bref" : "Usage data",
 
    "papyrus.statistics.title.ongle.tous" : "All statistics"
-
-
-
-
-  /**********************************************************************/
-
 }

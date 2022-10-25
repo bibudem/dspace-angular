@@ -781,7 +781,7 @@
 
   // "admin.metadata-import.page.dropMsgReplace": "Drop to replace the metadata CSV to import",
   // TODO New key - Add a translation
-  "admin.metadata-import.page.dropMsgReplace": "Leig às airson a chur an àite metadata CSV agus a steach-ghluasad", 
+  "admin.metadata-import.page.dropMsgReplace": "Leig às airson a chur an àite metadata CSV agus a steach-ghluasad",
 
   // "admin.metadata-import.page.button.return": "Back",
   "admin.metadata-import.page.button.return": "Air Ais",
@@ -888,7 +888,7 @@
 
   // "bitstream-request-a-copy.intro.bitstream.one": "Requesting the following file: ",
    "bitstream-request-a-copy.intro.bitstream.one": "Ag iarraidh an fhaidhle a leanas: ",
-  
+
   // "bitstream-request-a-copy.intro.bitstream.all": "Requesting all files. ",
    "bitstream-request-a-copy.intro.bitstream.all": "Ag iarraidh nam faidhlichean gu lèir. ",
 
@@ -1392,71 +1392,71 @@
 
   // "collection.source.controls.head": "Harvest Controls",
    "collection.source.controls.head": "Riaghladairean Togail",
-  
+
   // "collection.source.controls.test.submit.error": "Something went wrong with initiating the testing of the settings",
     "collection.source.controls.test.submit.error": "Chaidh rudeigin ceàrr a' tòiseachadh feuchainn an t-seataidh",
-  
+
   // "collection.source.controls.test.failed": "The script to test the settings has failed",
    "collection.source.controls.test.failed": "Chan do dh'obraich an sgriobt airson feuchainn an t-seataidh",
-  
+
   // "collection.source.controls.test.completed": "The script to test the settings has successfully finished",
   "collection.source.controls.test.completed": "Chrìochnaich an sgriobt airson feuchainn an t-seataidh",
-  
+
   // "collection.source.controls.test.submit": "Test configuration",
   "collection.source.controls.test.submit": "Rèiteachadh feuchainn",
-  
+
   // "collection.source.controls.test.running": "Testing configuration...",
    "collection.source.controls.test.running": "A' feuchainn rèiteachadh...",
-  
+
   // "collection.source.controls.import.submit.success": "The import has been successfully initiated",
   "collection.source.controls.import.submit.success": "Thòisich an steach-ghluasad",
-  
+
   // "collection.source.controls.import.submit.error": "Something went wrong with initiating the import",
   "collection.source.controls.import.submit.error": "Chaidh rudeigin ceàrr a' tòiseachadh an steach-ghluasaid",
-  
+
   // "collection.source.controls.import.submit": "Import now",
   "collection.source.controls.import.submit": "Steach-ghluais a-nis",
-  
+
   // "collection.source.controls.import.running": "Importing...",
   "collection.source.controls.import.running": "A' steach-ghluasad...",
-  
+
   // "collection.source.controls.import.failed": "An error occurred during the import",
    "collection.source.controls.import.failed": "Bha mearachd anns an steach-ghluasad",
-  
+
   // "collection.source.controls.import.completed": "The import completed",
   "collection.source.controls.import.completed": "Tha an steach-ghluasad dèante",
-  
+
   // "collection.source.controls.reset.submit.success": "The reset and reimport has been successfully initiated",
    "collection.source.controls.reset.submit.success": "Thòisich an t-ath-sheatadh agus an t-ath-steach-ghluasad",
-  
+
   // "collection.source.controls.reset.submit.error": "Something went wrong with initiating the reset and reimport",
   "collection.source.controls.reset.submit.error": "Chaidh rudeigin ceàrr a' tòiseachadh an ath-sheataidh agus an ath-steach-ghluasaid",
-  
+
   // "collection.source.controls.reset.failed": "An error occurred during the reset and reimport",
   "collection.source.controls.reset.failed": "Bha mearachd san ath-sheatadh agus san ath-steach-ghluasad",
-  
+
   // "collection.source.controls.reset.completed": "The reset and reimport completed",
    "collection.source.controls.reset.completed": "Tha an t-ath-sheatadh agus an t-ath-steach-ghluasad dèante",
-  
+
   // "collection.source.controls.reset.submit": "Reset and reimport",
    "collection.source.controls.reset.submit": "Ath-sheat agus ath-steach-ghluais",
-  
+
   // "collection.source.controls.reset.running": "Resetting and reimporting...",
   "collection.source.controls.reset.running": "Ag ath-sheatadh agus ag ath-steach-ghluasad...",
-  
+
   // "collection.source.controls.harvest.status": "Harvest status:",
    "collection.source.controls.harvest.status": "Inbhe togail:",
-  
+
   // "collection.source.controls.harvest.start": "Harvest start time:",
   "collection.source.controls.harvest.start": "Àm-tòiseachaidh togail:",
-  
+
   // "collection.source.controls.harvest.last": "Last time harvested:",
   // TODO New key - Add a translation
   "collection.source.controls.harvest.last": "Uair an togail mu dheireadh:",
-  
+
   // "collection.source.controls.harvest.message": "Harvest info:",
   "collection.source.controls.harvest.message": "Fiosrachadh togail:",
-  
+
   // "collection.source.controls.harvest.no-information": "N/A",
    "collection.source.controls.harvest.no-information": "N/A",
 
@@ -2010,7 +2010,7 @@
   // "error.invalid-search-query": "Search query is not valid. Please check <a href=\"https://solr.apache.org/guide/query-syntax-and-parsing.html\" target=\"_blank\">Solr query syntax</a> best practices for further information about this error.",
   // TODO New key - Add a translation
   "error.invalid-search-query": "Chan eil a' cheist rannsachaidh brìgheil. Thoir sùil air <a href=\"https://solr.apache.org/guide/query-syntax-and-parsing.html\" targaid=\"_bàn\">Solr query syntax</a> sàr chleachdadh airson tuilleadh fiosrachaidh air a' mhearachd seo.",
- 
+
   // "error.sub-collections": "Error fetching sub-collections",
   "error.sub-collections": "Mearachd a' faighinn fo-chruinneachaidhean",
 
@@ -2019,7 +2019,7 @@
 
   // "error.submission.sections.init-form-error": "An error occurred during section initialize, please check your input-form configuration. Details are below : <br> <br>",
   // TODO New key - Add a translation
-  "error.submission.sections.init-form-error": "Bha mearachd ann a' tòiseachadh na h-earrainn; thoir sùil air rèiteachadh an fhoirm steach-chuir. Tha mion-fhiosrachadh fo : <br> <br>", 
+  "error.submission.sections.init-form-error": "Bha mearachd ann a' tòiseachadh na h-earrainn; thoir sùil air rèiteachadh an fhoirm steach-chuir. Tha mion-fhiosrachadh fo : <br> <br>",
 
   // "error.top-level-communities": "Error fetching top-level communities",
   "error.top-level-communities": "Mearachd a' faighinn choimhearsnachdan sàr-ìre",
@@ -2936,7 +2936,7 @@
   // "item.edit.tabs.status.labels.itemPage": "Item Page",
   "item.edit.tabs.status.labels.itemPage": "Duilleag Nì",
 
-  // "item.edit.tabs.status.labels.lastModified": "Last Modified", 
+  // "item.edit.tabs.status.labels.lastModified": "Last Modified",
   "item.edit.tabs.status.labels.lastModified": "Atharraichte mu dheireadh",
 
   // "item.edit.tabs.status.title": "Item Edit -  Status",
@@ -4126,7 +4126,7 @@
 
   // "process.detail.script" : "Script",
   "process.detail.script" : "Sgriobt",
-  
+
   // "process.detail.title" : "Process: {{ id }} - {{ name }}",
   "process.detail.title" : "Pròiseas: {{ id }} - {{ name }}",
 
@@ -5167,7 +5167,7 @@
    "submission.import-external.title.JournalIssue": "Steach-ghluais deasachadh diornal bho stòr a-muigh",
 
   // "submission.import-external.title.JournalVolume": "Import a journal volume from an external source",
-   "submission.import-external.title.JournalVolume": "Steach-ghluais àireamh diornal bho stòr a-muigh", 
+   "submission.import-external.title.JournalVolume": "Steach-ghluais àireamh diornal bho stòr a-muigh",
 
   // "submission.import-external.title.OrgUnit": "Import a publisher from an external source",
   "submission.import-external.title.OrgUnit": "Steach-ghluais foillsichear bho stòr a-muigh",
@@ -5386,7 +5386,7 @@
 
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.isJournalOfPublication": "Local Journals ({{ count }})",
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.isJournalOfPublication": "Diornalan Ionadail({{ count }})",
-  
+
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.Project": "Local Projects ({{ count }})",
    "submission.sections.describe.relationship-lookup.search-tab.tab-title.Project": "Pròiseactan Ionadail ({{ count }})",
 
@@ -5410,13 +5410,13 @@
 
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.isJournalIssueOfPublication": "Local Journal Issues ({{ count }})",
    "submission.sections.describe.relationship-lookup.search-tab.tab-title.isJournalIssueOfPublication": "Deasachaidhean Diornal Ionadail ({{ count }})",
-  
+
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.JournalIssue": "Local Journal Issues ({{ count }})",
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.JournalIssue": "Deasachaidhean Diornal Ionadail ({{ count }})",
 
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.isJournalVolumeOfPublication": "Local Journal Volumes ({{ count }})",
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.isJournalVolumeOfPublication": "Àireamhan Diornal Ionadail ({{ count }})",
-  
+
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.JournalVolume": "Local Journal Volumes ({{ count }})",
    "submission.sections.describe.relationship-lookup.search-tab.tab-title.JournalVolume": "Àireamhan Diornal Ionadail ({{ count }})",
 
@@ -5479,13 +5479,13 @@
 
   // "submission.sections.describe.relationship-lookup.title.isJournalIssueOfPublication": "Journal Issues",
     "submission.sections.describe.relationship-lookup.title.isJournalIssueOfPublication": "Deasachaidhean Diornal",
-  
+
   // "submission.sections.describe.relationship-lookup.title.JournalIssue": "Journal Issues",
    "submission.sections.describe.relationship-lookup.title.JournalIssue": "Deasachaidhean Diornal",
 
   // "submission.sections.describe.relationship-lookup.title.isJournalVolumeOfPublication": "Journal Volumes",
   "submission.sections.describe.relationship-lookup.title.isJournalVolumeOfPublication": "Àireamhan Diornal",
-  
+
   // "submission.sections.describe.relationship-lookup.title.JournalVolume": "Journal Volumes",
    "submission.sections.describe.relationship-lookup.title.JournalVolume": "Àireamhan Diornal",
 
@@ -5497,7 +5497,7 @@
 
   // "submission.sections.describe.relationship-lookup.title.isFundingAgencyOfPublication": "Funding Agency",
     "submission.sections.describe.relationship-lookup.title.isFundingAgencyOfPublication": "Buidheann Maoineachaidh",
-  
+
   // "submission.sections.describe.relationship-lookup.title.Project": "Projects",
     "submission.sections.describe.relationship-lookup.title.Project": "Pròiseactan",
 
@@ -5543,7 +5543,7 @@
 
   // "submission.sections.describe.relationship-lookup.selection-tab.title.isJournalVolumeOfPublication": "Selected Journal Volume",
    "submission.sections.describe.relationship-lookup.selection-tab.title.isJournalVolumeOfPublication": "Àireamh Diornal Taghte",
-  
+
   // "submission.sections.describe.relationship-lookup.selection-tab.title.Project": "Selected Projects",
    "submission.sections.describe.relationship-lookup.selection-tab.title.Project": "Pròiseactan Taghte",
 
@@ -5567,7 +5567,7 @@
 
   // "submission.sections.describe.relationship-lookup.selection-tab.title.isJournalIssueOfPublication": "Selected Issue",
   "submission.sections.describe.relationship-lookup.selection-tab.title.isJournalIssueOfPublication": "Deasachadh Diornal Taghte",
-  
+
   // "submission.sections.describe.relationship-lookup.selection-tab.title.JournalVolume": "Selected Journal Volume",
   "submission.sections.describe.relationship-lookup.selection-tab.title.JournalVolume": "Àireamh Diornal Taghte",
 
@@ -5576,7 +5576,7 @@
 
   // "submission.sections.describe.relationship-lookup.selection-tab.title.isFundingOfPublication": "Selected Funding",
   "submission.sections.describe.relationship-lookup.selection-tab.title.isFundingOfPublication": "Maoineachadh Taghte",
-  
+
   // "submission.sections.describe.relationship-lookup.selection-tab.title.JournalIssue": "Selected Issue",
    "submission.sections.describe.relationship-lookup.selection-tab.title.JournalIssue": "Deasachadh Diornal Taghte",
 
@@ -5979,8 +5979,8 @@
 
   // "uploader.or": ", or ",
     "uploader.or": ", no ",
-
-  // "uploader.processing": "Processing",
+  // "uploader.processing": "Processing uploaded file(s)... (it's now safe to close this page)",
+  // TODO Source message changed - Revise the translation
    "uploader.processing": "A' pròiseasadh",
 
   // "uploader.queue-length": "Queue length",
