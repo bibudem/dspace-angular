@@ -1,4 +1,5 @@
 {
+
   "401.help": "Vous n'êtes pas autorisé à accéder à cette page. Vous pouvez utiliser le bouton ci-dessous pour revenir à la page d'accueil.",
 
   "401.link.home-page": "Retour à la page d'accueil",
@@ -1761,7 +1762,7 @@
 
   "item.edit.private.confirm": "Définir comme privé",
 
-  "item.edit.private.description": "Êtes-vous certain(e) de vouloir définir ce document comme privé?",
+  "item.edit.private.description": "Êtes-vous certain(e) de vouloir définir ce document comme privé ?",
 
   "item.edit.private.error": "Une erreur s'est produite lors de la privatisation du document",
 
@@ -1773,7 +1774,7 @@
 
   "item.edit.public.confirm": "Définir comme public",
 
-  "item.edit.public.description": "Êtes-vous certain(e) de vouloir définir ce document comme public?",
+  "item.edit.public.description": "Êtes-vous certain(e) de vouloir définir ce document comme public ?",
 
   "item.edit.public.error": "Une erreur s'est produite lors de la définition du document en tant que document public",
 
@@ -1785,7 +1786,7 @@
 
   "item.edit.reinstate.confirm": "Réintégrer",
 
-  "item.edit.reinstate.description": "Êtes-vous certain(e) de vouloir réintégrer ce document?",
+  "item.edit.reinstate.description": "Êtes-vous certain(e) de vouloir réintégrer ce document ?",
 
   "item.edit.reinstate.error": "Une erreur s'est produite lors de la réintégration du document",
 
@@ -1903,7 +1904,7 @@
 
   "item.edit.withdraw.confirm": "Retirer",
 
-  "item.edit.withdraw.description": "Êtes-vous certain que ce document doit être retiré du dépôt?",
+  "item.edit.withdraw.description": "Êtes-vous certain que ce document doit être retiré du dépôt ?",
 
   "item.edit.withdraw.error": "Une erreur s'est produite lors du retrait du document",
 
@@ -2283,7 +2284,7 @@
 
   "menu.section.browse_community_by_title": "Titre",
 
-  "menu.section.browse_global": "Papyrus",
+  "menu.section.browse_global": "Tout Papyrus",
 
   "menu.section.browse_global_by_author": "Auteur.e",
 
@@ -3999,7 +4000,7 @@
 
   "papyrus.footer.menu.contact": "Nous joindre",
 
-  "papyrus.footer.dspace.mention": "DSpace software [version 7.4]",
+  "papyrus.footer.dspace.mention": "DSpace software [version 7.3]",
 
   "papyrus.footer.dspace.duraspace": "DuraSpace",
 
@@ -4134,4 +4135,36 @@
   "health-page.section.no-issues": "Aucun problème détecté",
 
   "collection.edit.item.authorizations.show-bitstreams-button": "Afficher les politiques de flux binaire pour le bundle",
+
+  "browse.back.all-results": "Tous les résultats de navigation",
+
+  "submission.workspace.generic.view": "Voir",
+
+  "submission.workspace.generic.view-help": "Sélectionnez cette option pour afficher les métadonnées de l'élément.",
+
+  "resource-policies.form.eperson-group-list.modal.header": "Impossible de changer de type",
+
+  "resource-policies.form.eperson-group-list.modal.text1.toGroup": "Il n'est pas possible de remplacer une ePerson par un groupe.",
+
+  "resource-policies.form.eperson-group-list.modal.text1.toEPerson": "Il n'est pas possible de remplacer un groupe par une ePerson.",
+
+  "resource-policies.form.eperson-group-list.modal.text2": "Supprimez la stratégie de ressources actuelle et créez-en une nouvelle avec le type souhaité.",
+
+  "resource-policies.form.eperson-group-list.modal.close": "Fermer",
+
+  "item.truncatable-part.show-less": "Effondrement",
+
+  "process.overview.table.actions": "Actions",
+
+  "home.recent-submissions.head": "Soumissions récentes",
+
+  "feed.description": "Flux de syndication",
+
+  "metadata-export-search.tooltip": "Exporter les résultats de la recherche au format CSV",
+
+  "metadata-export-search.submit.success": "L'exportation a été lancée avec succès",
+
+  "metadata-export-search.submit.error": "Le démarrage de l'exportation a échoué",
+
+  "action.load.more": "Charger plus...",
 }

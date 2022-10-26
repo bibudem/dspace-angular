@@ -31,7 +31,7 @@
 
   "health-page.status-tab": "Status",
 
-  "health-page.status : ": "Status",
+  "health-page.status": "Status",
 
   "health-page.info-tab": "Info",
 
@@ -40,6 +40,40 @@
   "health-page.section.no-issues": "No issues detected",
 
   "collection.edit.item.authorizations.show-bitstreams-button": "Show bitstream policies for bundle",
+
+  // variables ajoutés dans 7.4
+
+  "browse.back.all-results": "All browse results",
+
+  "submission.workspace.generic.view": "View",
+
+  "submission.workspace.generic.view-help": "Select this option to view the item's metadata.",
+
+  "resource-policies.form.eperson-group-list.modal.header": "Cannot change type",
+
+  "resource-policies.form.eperson-group-list.modal.text1.toGroup": "It is not possible to replace an ePerson with a group.",
+
+  "resource-policies.form.eperson-group-list.modal.text1.toEPerson": "It is not possible to replace a group with an ePerson.",
+
+  "resource-policies.form.eperson-group-list.modal.text2": "Delete the current resource policy and create a new one with the desired type.",
+
+  "resource-policies.form.eperson-group-list.modal.close": "Ok",
+
+  "item.truncatable-part.show-less": "Collapse",
+
+  "process.overview.table.actions": "Actions",
+
+  "home.recent-submissions.head": "Recent Submissions",
+
+  "feed.description": "Syndication feed",
+
+  "metadata-export-search.tooltip": "Export search results as CSV",
+
+  "metadata-export-search.submit.success": "The export was started successfully",
+
+  "metadata-export-search.submit.error": "Starting the export has failed",
+
+  "action.load.more": "Load more...",
 
 
   /**********************************************************************/

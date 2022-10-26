@@ -1252,6 +1252,39 @@
   "health-page.section.no-issues": "Aucun problème détecté",
 
   "collection.edit.item.authorizations.show-bitstreams-button": "Afficher les politiques de flux binaire pour le bundle",
+  // variables ajoutés dans 7.4
+
+  "browse.back.all-results": "Tous les résultats de navigation",
+
+  "submission.workspace.generic.view": "Voir",
+
+  "submission.workspace.generic.view-help": "Sélectionnez cette option pour afficher les métadonnées de l'élément.",
+
+  "resource-policies.form.eperson-group-list.modal.header": "Impossible de changer de type",
+
+  "resource-policies.form.eperson-group-list.modal.text1.toGroup": "Il n'est pas possible de remplacer une ePerson par un groupe.",
+
+  "resource-policies.form.eperson-group-list.modal.text1.toEPerson": "Il n'est pas possible de remplacer un groupe par une ePerson.",
+
+  "resource-policies.form.eperson-group-list.modal.text2": "Supprimez la stratégie de ressources actuelle et créez-en une nouvelle avec le type souhaité.",
+
+  "resource-policies.form.eperson-group-list.modal.close": "Fermer",
+
+  "item.truncatable-part.show-less": "Effondrement",
+
+  "process.overview.table.actions": "Actions",
+
+  "home.recent-submissions.head": "Soumissions récentes",
+
+  "feed.description": "Flux de syndication",
+
+  "metadata-export-search.tooltip": "Exporter les résultats de la recherche au format CSV",
+
+  "metadata-export-search.submit.success": "L'exportation a été lancée avec succès",
+
+  "metadata-export-search.submit.error": "Le démarrage de l'exportation a échoué",
+
+  "action.load.more": "Charger plus...",
 
   /**********************************************************************/
   /******************** Ajout de variables dans Papyrus *****************/
