@@ -151,7 +151,7 @@ nav.navbar {
   border-bottom:none!important;
 }
 nav.nav-udem {
-  border-bottom: 5px solid  #0056a9!important;
+  border-bottom: 7px solid  #0056a9!important;
 }
 /* Color pour les lien dans le menu principale */
 nav.nav-udem>a.nav-link {
@@ -369,6 +369,12 @@ a.lead:hover {
   padding: 15px!important;
   margin-bottom: 10px!important;
 }
+li.udem-list-style {
+  background-image: -webkit-gradient(linear,left top,right top,from(hsla(0,3%,74.1%,.10196)),to(#fff))!important;
+  background-image: linear-gradient(90deg,hsla(0,3%,74.1%,.10196),#fff)!important;
+  padding: 15px!important;
+  margin-bottom: 10px!important;
+}
 .home-card {
   border: none!important;
   border-radius: 0!important;
@@ -409,6 +415,12 @@ a.lead:hover {
 }
 .cacher-petite-ecran{
   display: inherit!important;
+}
+.ml-20-m{
+  margin-left: -20px!important;
+}
+.t-titre {
+  color: #094d79!important;
 }
 /*** css for phone ecrans */
 @media only screen and (max-width: 600px) {

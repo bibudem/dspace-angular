@@ -2235,7 +2235,7 @@
 
   "login.form.forgot-password": "Mot de passe oublié?",
 
-  "login.form.header": "Se connecter à DSpace",
+  "login.form.header": "Se connecter à Papyrus",
 
   "login.form.new-user": "Pas encore de compte? Cliquer ici pour vous enregistrer.",
 
@@ -2253,7 +2253,7 @@
 
   "login.breadcrumbs": "Connexion",
 
-  "logout.form.header": "Se déconnecter de DSpace",
+  "logout.form.header": "Se déconnecter de Papyrus",
 
   "logout.form.submit": "Se déconnecter",
 

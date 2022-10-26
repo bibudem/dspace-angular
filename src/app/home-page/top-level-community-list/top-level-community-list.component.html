@@ -1,6 +1,7 @@
 <ng-container *ngVar="(communitiesRD$ | async) as communitiesRD">
-  <div *ngIf="communitiesRD?.hasSucceeded ">
-  <h2>{{'home.top-level-communities.head' | translate}}</h2>
+  <div *ngIf="communitiesRD?.hasSucceeded " class="mt-4">
+  <h4 class="text-uppercase f-titre">{{'home.top-level-communities.head' | translate}}</h4>
+    <div class="d-flex flex-row border-bottom mb-4"></div>
   <p class="lead">{{'home.top-level-communities.help' | translate}}</p>
   <ds-viewable-collection
     [config]="config"
