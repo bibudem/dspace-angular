@@ -4000,7 +4000,7 @@
 
   "papyrus.footer.menu.contact": "Nous joindre",
 
-  "papyrus.footer.dspace.mention": "DSpace software [version 7.3]",
+  "papyrus.footer.dspace.mention": "DSpace software [version 7.4]",
 
   "papyrus.footer.dspace.duraspace": "DuraSpace",
 
@@ -4152,7 +4152,7 @@
 
   "resource-policies.form.eperson-group-list.modal.close": "Fermer",
 
-  "item.truncatable-part.show-less": "Effondrement",
+  "item.truncatable-part.show-less": "Voir moins",
 
   "process.overview.table.actions": "Actions",
 
@@ -4167,4 +4167,18 @@
   "metadata-export-search.submit.error": "Le démarrage de l'exportation a échoué",
 
   "action.load.more": "Charger plus...",
+
+  "item.truncatable-part.show-more": "Voir plus",
+
+  "submission.sections.license.granted-label": "Je confirme la licence ci-dessus",
+
+  "submission.sections.license.required": "Vous devez accepter la licence",
+
+  "profile.security.form.label.current-password": "Mot de passe actuel",
+
+  "health-page.status": "Statut",
+
+  "process.detail.actions": "Actions",
+
+  "process.detail.delete.button": "Processus de suppression",
 }

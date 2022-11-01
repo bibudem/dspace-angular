@@ -422,6 +422,11 @@ li.udem-list-style {
 .t-titre {
   color: #094d79!important;
 }
+/*barre coloré*/
+.titre-udem-decoration{
+  width: 10%;
+
+}
 /*** css for phone ecrans */
 @media only screen and (max-width: 600px) {
   .cacher-petite-ecran{
