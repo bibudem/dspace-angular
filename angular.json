@@ -63,7 +63,11 @@
                 "bundleName": "dspace-theme"
               }
             ],
-            "scripts": [],
+            "scripts": [
+              "src/themes/custom/assets/scripts-udem/jquery.slim.min.js",
+              "src/themes/custom/assets/scripts-udem/popper.min.js",
+              "src/themes/custom/assets/scripts-udem/bootstrap.bundle.min.js"
+            ],
             "baseHref": "/"
           },
           "configurations": {

@@ -427,6 +427,7 @@ li.udem-list-style {
   width: 10%;
 
 }
+
 /*** css for phone ecrans */
 @media only screen and (max-width: 600px) {
   .cacher-petite-ecran{

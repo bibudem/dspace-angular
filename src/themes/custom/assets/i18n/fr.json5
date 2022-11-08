@@ -1252,6 +1252,7 @@
   "health-page.section.no-issues": "Aucun problème détecté",
 
   "collection.edit.item.authorizations.show-bitstreams-button": "Afficher les politiques de flux binaire pour le bundle",
+
   // variables ajoutés dans 7.4
 
   "browse.back.all-results": "Tous les résultats de navigation",
