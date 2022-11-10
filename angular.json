@@ -58,15 +58,20 @@
                 "bundleName": "custom-theme"
               },
               {
+                "input": "src/themes/papyrus/styles/theme.scss",
+                "inject": false,
+                "bundleName": "papyrus-theme"
+              },
+              {
                 "input": "src/themes/dspace/styles/theme.scss",
                 "inject": false,
                 "bundleName": "dspace-theme"
               }
             ],
             "scripts": [
-              "src/themes/custom/assets/scripts-udem/jquery.slim.min.js",
-              "src/themes/custom/assets/scripts-udem/popper.min.js",
-              "src/themes/custom/assets/scripts-udem/bootstrap.bundle.min.js"
+              "src/themes/papyrus/assets/scripts-udem/jquery.slim.min.js",
+              "src/themes/papyrus/assets/scripts-udem/popper.min.js",
+              "src/themes/papyrus/assets/scripts-udem/bootstrap.bundle.min.js"
             ],
             "baseHref": "/"
           },
