@@ -6,6 +6,7 @@
         id="{{ scope.id }}">
       {{ 'statistics.header' | translate: { scope: getName(scope) } }}
     </h2>
+    <div class="d-flex flex-row border-bottom mb-4 titre-udem-decoration"></div>
   </ng-container>
   <ng-container *ngVar="reports$ | async as reports">
     <ng-container *ngIf="!reports">
