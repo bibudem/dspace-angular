@@ -1,0 +1,38 @@
+.titre-home{
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 20px;
+}
+.description-home {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.link-footer:hover{
+  text-decoration: none;
+  background: #212529db;
+  color: white!important;
+}
+.text-muted:hover{
+  color: white!important;
+}
+.mt-1{
+  margin-top: 10px;
+}
+.card-footer:hover {
+  color: white!important;
+}
+@media (min-width: 768px) {
+  .home-card{
+    flex: none!important;
+    margin-bottom: 20px!important;
+    width: 30%;
+  }
+}
+@media (max-width: 767px) {
+  .home-card{
+    flex: none!important;
+    margin-bottom: 10px!important;
+    width: 100%;
+  }
+}

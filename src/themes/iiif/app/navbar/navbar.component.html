@@ -1,0 +1,24 @@
+<ds-navbar-top-udem></ds-navbar-top-udem>
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav-iiif">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler toggler-iiif" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fa fa-bars navbar-toggler-icon icon- icon-iiif"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto menu-iiif">
+      <li class="nav-item"><a class="nav-link link-iiif" href="/info/feedback">À propos</a></li>
+      <ng-container *ngFor="let section of (sections | async)">
+        <ng-container *ngComponentOutlet="(sectionMap$ | async).get(section.id)?.component; injector: (sectionMap$ | async).get(section.id)?.injector;"></ng-container>
+      </ng-container>
+      <!--Ajout des liens dans le menu-->
+      <li class="nav-item"><a class="nav-link link-iiif" href="/info/feedback">Nous joindre</a></li>
+    </ul>
+    <div class="form-inline iiif-menu my-2 my-lg-0">
+      <ds-themed-search-navbar></ds-themed-search-navbar>
+      <ds-lang-switch></ds-lang-switch>
+      <ds-themed-auth-nav-menu></ds-themed-auth-nav-menu>
+      <ds-impersonate-navbar></ds-impersonate-navbar>
+    </div>
+  </div>
+</nav>

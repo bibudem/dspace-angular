@@ -1,0 +1,158 @@
+// This file combines the other scss files in to one. You usually shouldn't edit this file directly
+
+@import './_theme_sass_variable_overrides.scss';
+@import '../../../styles/_variables.scss';
+@import '../../../styles/_mixins.scss';
+@import '../../../styles/helpers/font_awesome_imports.scss';
+@import '../../../styles/_vendor.scss';
+@import '../../../styles/_custom_variables.scss';
+@import './_theme_css_variable_overrides.scss';
+@import '../../../styles/bootstrap_variables_mapping.scss';
+@import '../../../styles/_truncatable-part.component.scss';
+@import './_global-styles.scss';
+
+/*Add style pour le menu blue avec les elements blanc*/
+ul.menu-iiif li div.nav-item ds-link-menu-item a {
+  color: #f8f9fa !important;
+  font-weight: 500!important;
+  font-size: 16px!important;
+  text-transform: uppercase!important;
+}
+ul.menu-iiif li div.nav-item ds-link-menu-item a:hover {
+  color: #ffffff!important;
+}
+
+ul.menu-iiif li div.nav-item ds-link-menu-item a:active{
+  color: #ffffff !important;
+  text-shadow: 0.25px 0.5px #212529;
+}
+
+.dropdown-toggle i.fa-globe-asia {
+  color: #f8f9fa !important;
+  text-shadow: 0.25px 0.5px #212529;
+}
+.dropdown-toggle i.fa-globe-asia:hover {
+  color: #ffffff!important;
+}
+
+a.dropdownLogin:hover {
+  color: #ffffff!important;
+  text-shadow: 0.25px 0.5px #212529;
+}
+.nav-iiif {
+  background: #0057ac!important;
+  padding: 20px!important;
+  margin-bottom: 20px;
+}
+ul.menu-iiif li div.nav-item  a {
+  color: #f8f9fa !important;
+  font-weight: 500!important;
+  font-size: 16px!important;
+  text-transform: uppercase!important;
+}
+
+ul.menu-iiif li a:hover {
+  color: #ffffff!important;
+}
+ ul.dropdown-menu{
+   background: #074581 !important;
+ }
+ul.navbar-nav li.nav-item div.dropdown a.dropdownLogin {
+  color: #f8f9fa !important;
+}
+ul.navbar-nav li.nav-item div.dropdown a.dropdownLogin:hover {
+  color: #ffffff!important;
+}
+.nav-iiif {
+  background: #0057ac!important;
+  padding: 20px!important;
+}
+ul.menu-iiif li div.nav-item  a.nav-link {
+  color: #f8f9fa !important;
+  font-weight: 500!important;
+  font-size: 16px!important;
+  text-transform: uppercase!important;
+}
+
+ul.menu-iiif li a.nav-link:hover {
+  color: #ffffff!important;
+}
+ds-expandable-navbar-section div.nav-item  a.dropdown-toggle ds-text-menu-item span {
+  color: #f8f9fa !important;
+  font-weight: 500!important;
+  font-size: 16px!important;
+  text-transform: uppercase!important;
+}
+ds-expandable-navbar-section div.nav-item  a.dropdown-toggle ds-text-menu-item span:hover {
+  color: #ffffff!important;
+}
+ul.dropdown-menu ds-link-menu-item a.nav-item{
+  color: #f8f9fa !important;
+  font-weight: 500!important;
+  font-size: 16px!important;
+}
+ul.dropdown-menu ds-link-menu-item a.nav-item:hover{
+  color: #ffffff!important;
+}
+.nav-phone-iiif {
+  display: none!important;
+}
+
+.ngx-gallery-layout {
+  padding-right: 30px;
+}
+.link-iiif{
+  color: #f8f9fa!important;
+  font-weight: 500!important;
+  font-size: 16px!important;
+  text-transform: uppercase!important;
+}
+.menu-iiif{
+  margin-left: 5%;
+}
+a.submit-icon{
+  color: #f8f9fa!important;
+}
+.toggler-iiif{
+  border-color: #e5dddd1c;
+}
+.icon-iiif{
+  color: #f8f9fa!important;
+  padding-top: 5px;
+}
+.iiif-menu{
+  margin-left: 15%;
+  float: right;
+}
+
+.nav-iiif{
+  padding: 30px!important;
+
+}
+li.nav-item {
+  color: #f8f9fa!important;
+}
+ul.navbar-nav ng-tns-c449-5 li.nav-item a{
+  color: #f8f9fa!important;
+}
+a#logoutLink{
+  color: #f8f9fa!important;
+}
+ds-themed-search-navbar {
+  color: #f8f9fa!important;
+}
+a#logoutLink i{
+  color: #f8f9fa!important;
+}
+
+@media screen and (max-width: 768px){
+  a.submit-icon {
+    color: #f8f9fa!important;
+  }
+}
+@media screen and (max-width: 768px){
+ a.submit-icon[_ngcontent-dspace-angular-c449] {
+   color: #f8f9fa!important;
+  }
+}
+/*Fin style menu*/

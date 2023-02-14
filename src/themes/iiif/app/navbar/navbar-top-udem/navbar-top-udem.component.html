@@ -1,0 +1,66 @@
+<nav id="udem-top-barre" class="navbar navbar-expand-lg navbar-light udem-top-barre">
+  <div class="d-flex flex-row justify-content-between barre-udem-logo">
+    <a class="navbar-brand my-2" href="/home">
+      <img src="/assets/iiif/images/logo-bib.png" [attr.alt]="'menu.header.image.logo' | translate" class="pt-3 top-logo-udem">
+    </a>
+  </div>
+  <div class="collapse navbar-collapse flex-grow-1 text-right " >
+    <ul class="navbar-nav ml-auto flex-nowrap">
+      <li class="nav-item mt-0 pt-0 ml-2">
+        <a class="nav-link udem-item mt-0 pt-0"  href="https://www.umontreal.ca/#udemwww-search-personne" target="_blank" >Répertoire</a>
+      </li>
+      <li class="nav-item  udem-item mt-0 pt-0 ml-3">
+        <a class="nav-link udem-item mt-0 pt-0" href="https://www.umontreal.ca/facultes-et-ecoles/" target="_blank">Facultés</a>
+      </li>
+      <li class="nav-item  udem-item mt-0 pt-0 ml-3">
+        <a class="nav-link udem-item mt-0 pt-0" href="https://bib.umontreal.ca/" target="_blank">Bibliothèques</a>
+      </li>
+      <li class="nav-item udem-item mt-0 pt-0 ml-3">
+        <a class="nav-link udem-item mt-0 pt-0" href="https://plancampus.umontreal.ca/" target="_blank">Plan campus</a>
+      </li>
+      <li class="nav-item dropdown udem-item pt-0 ml-3">
+        <a class="nav-link dropdown-toggle udem-item mt-0 pt-0" href="#" id="navbardrop" data-toggle="dropdown">
+          Connexion
+        </a>
+        <div class="dropdown-menu udem-sous-menu">
+          <a class="dropdown-item udem-item" href="https://monudem.umontreal.ca/" target="_blank">Mon UdeM</a>
+          <a class="dropdown-item udem-item" href="https://studium.umontreal.ca/" target="_blank">StudiUM</a>
+          <a class="dropdown-item udem-item" href="https://outlook.umontreal.ca/" target="_blank">Mon courriel</a>
+        </div>
+      </li>
+      <li class=" pl-4 pl-md-0 ml-0 ml-md-4">
+        <div id="udem-search-menu" >
+          <form    class="udem-search-form">
+
+            <input type="hidden" name="cx" value="011926736769028447783:qlpu3so2kqq">
+            <input type="hidden" name="sa.x" value="23">
+            <input type="hidden" name="sa.y" value="10">
+            <input type="hidden" name="ie" value="UTF-8">
+
+            <div class="clearfix">
+              <input type="text" name="textRecherche" id="textRecherche" #textRecherche  class="udem-search-input" placeholder="Rechercher">
+              <button type="button" class="udem-search-button" (click)="send()">
+                <i class="fa fa-search"></i>
+                <span class="sr-only sr-only-focusable">Rechercher</span>
+              </button>
+            </div>
+            <div class="clearfix mt-1">
+              <!-- <label>
+                <input type="radio" name="scope" value="bib.umontreal.ca" checked="checked">
+                {{'papyrus.top.menu.cesite' | translate}}
+              </label>-->
+              <label class="font-11">
+                <input class="ml-2" type="radio" name="scope" value="umontreal.ca" checked="checked">
+                Tout UdeM
+              </label>
+            </div>
+          </form>
+        </div>
+      </li>
+      <li>
+        <a href="http://donner.umontreal.ca/" title="Je donne" target="_blank" class="btn btn-primary btn-sm  ml-1 donne-udem"><span>Je donne</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

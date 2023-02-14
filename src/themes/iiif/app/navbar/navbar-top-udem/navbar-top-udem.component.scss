@@ -1,0 +1,58 @@
+/*=======Navigation udem top======================= */
+.udem-top-barre{
+  margin-top: -60px!important;
+}
+.top-logo-udem{
+  display: block!important;
+}
+
+.donne-udem {
+  height: 25px!important;
+  font-size: 11px!important;
+  background: #0047b6!important;
+  color: white!important;
+}
+.udem-item {
+  color: #343a40!important;
+  font-size: 11px!important;
+  padding-left: 0px!important ;
+  padding-right: 0px!important;
+}
+.udem-item:hover{
+  color:black!important;
+  text-decoration: underline!important;
+  transition: all 2000ms linear;
+}
+
+.udem-search-input {
+  display: inline-block;
+  float: left;
+  font-size: 12px;
+  padding: 1px 3px;
+  border: 1px solid #ccc;
+  width: 160px;
+  margin-top:2px;
+}
+.font-11{
+  font-size: 11px!important;
+}
+.udem-search-button {
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  padding: 1px 3px;
+  margin-top: -2px!important;
+}
+.udem-sous-menu{
+  padding: 5px;
+  margin-top: -30px;
+}
+.udem-sous-menu a:hover {
+  font-weight: bold;
+  background: white!important;
+}
+@media only screen and (max-width: 600px) {
+  #udem-top-barre{
+    display: none!important;
+  }
+}
